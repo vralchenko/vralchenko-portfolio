@@ -2,8 +2,7 @@ import { ProjectCard } from "@/components/ProjectCard"
 
 export default function ProjectsPage() {
     return (
-        <main className="p-4 md:p-8 max-w-6xl mx-auto">
-            <h1 className="text-4xl font-bold mb-8">My Projects</h1>
+        <main className="px-4 pt-1 pb-4 md:px-8 md:pt-4 md:pb-8 max-w-6xl mx-auto">
 
             <ProjectCard
                 title="Item Flow – Full-Stack TypeScript Application"

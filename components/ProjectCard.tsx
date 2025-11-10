@@ -28,10 +28,12 @@ export function ProjectCard({
                                 imageSrc,
                             }: ProjectCardProps) {
     return (
-        <Card className="flex flex-col md:flex-row mb-6 hover:shadow-lg transition-shadow duration-300">
+        // ИЗМЕНЕНИЕ: Добавлен p-4 для общей серой рамки
+        <Card className="flex flex-col md:flex-row mb-6 p-4 hover:shadow-lg transition-shadow duration-300">
 
             {imageSrc && (
-                <div className="md:w-2/5 p-4 relative aspect-[16/10] overflow-hidden">
+                // ИЗМЕНЕНИЕ: md:w-2/5 p-0 relative aspect-[16/10] (удален pl-4)
+                <div className="md:w-2/5 p-0 relative aspect-[16/10] overflow-hidden">
                     <Image
                         src={imageSrc}
                         alt={`Screenshot of ${title}`}
@@ -42,7 +44,8 @@ export function ProjectCard({
                 </div>
             )}
 
-            <CardContent className={`p-6 flex flex-col justify-between ${imageSrc ? 'md:w-3/5' : 'md:w-full'}`}>
+            {/* ИЗМЕНЕНИЕ: Убран p-6 из CardContent, чтобы избежать двойных отступов */}
+            <CardContent className={`flex flex-col justify-between ${imageSrc ? 'md:w-3/5' : 'md:w-full'}`}>
                 <div className="mb-4">
                     <div className="flex justify-between items-start">
                         <CardTitle className="text-2xl font-bold">{title}</CardTitle>

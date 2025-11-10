@@ -3,6 +3,7 @@
 import Link from "next/link"
 import {
     Card,
+    CardHeader,
     CardTitle,
     CardContent,
 } from "@/components/ui/card"
@@ -13,24 +14,27 @@ import { Button } from "@/components/ui/button"
 import { Mail, Github, Linkedin } from "lucide-react"
 import { sendEmail } from "../_actions"
 import { useState, useRef } from "react"
+import { toast } from "sonner"
 
 export default function ContactPage() {
-    const [status, setStatus] = useState<string | null>(null)
+    const [isSending, setIsSending] = useState(false)
     const formRef = useRef<HTMLFormElement>(null)
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
-        setStatus("Sending...")
+        setIsSending(true)
 
         const formData = new FormData(event.currentTarget)
         const result = await sendEmail(formData)
 
         if (result.success) {
-            setStatus("Message sent successfully!")
+            toast.success("Message sent successfully! I will get back to you shortly.")
             formRef.current?.reset()
         } else {
-            setStatus("Error: Could not send message.")
+            toast.error("Failed to send message. Please try again or use the email link.")
         }
+
+        setIsSending(false)
     }
 
     return (
@@ -45,8 +49,8 @@ export default function ContactPage() {
                                 <Mail className="w-4 h-4" />
                             </div>
                             <span className="font-medium text-sm">
-                vralchenko@gmail.com
-              </span>
+                                vralchenko@gmail.com
+                            </span>
                         </CardContent>
                     </Card>
                 </Link>
@@ -87,10 +91,9 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-center gap-4">
-                    <Button type="submit" variant="secondary" className="w-full">
-                        Send Message
+                    <Button type="submit" variant="secondary" className="w-full" disabled={isSending}>
+                        {isSending ? "Sending..." : "Send Message"}
                     </Button>
-                    {status && <p className="text-sm text-muted-foreground">{status}</p>}
                 </div>
             </form>
 
