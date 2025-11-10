@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VIKTOR RALCHENKO - SENIOR SOFTWARE DEVELOPER PORTFOLIO
 
-## Getting Started
+This is a personal portfolio website for Viktor Ralchenko, a Senior Software Developer with 20 years of experience, showcasing his expertise in full-stack architecture, microservices, and high-performance data solutions.
 
-First, run the development server:
+The design is inspired by the modern, card-based aesthetic of Jan Prysowecki's portfolio.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 LIVE DEMO
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[View Live Demo Here](https://viktor-portfolio.vercel.app/) (Replace with your Vercel URL)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 💡 KEY FEATURES
 
-To learn more about Next.js, take a look at the following resources:
+* **Modern, Dark-Themed UI:** Clean, responsive, card-based layout designed for high readability.
+* **Full-Stack Capabilities:** Demonstrates expertise across backend (.NET, C#) and frontend (React, TypeScript).
+* **Functional Contact Form:** Serverless email submission via **Resend** (API Routes/Server Actions).
+* **Interactive Tech Stack:** Detailed technology matrix with tooltips, showcasing proficiency in over 30 tools (Cloud, Databases, DevOps, Testing).
+* **Optimized Performance:** Built with Next.js App Router for fast, optimized deployment on Vercel.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ TECH STACK
 
-## Deploy on Vercel
+The application is built using the latest Next.js features and industry-standard tools.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Frontend & UI
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Stack | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Framework** | Next.js (App Router) | React framework for server-side rendering and routing. |
+| **Styling** | Tailwind CSS | Utility-first CSS framework for rapid styling. |
+| **Components**| shadcn/ui | Pre-styled, accessible component library built on Tailwind and Radix. |
+| **Flags** | react-world-flags | Used for displaying language proficiency icons. |
+
+### Backend & Deployment
+
+| Stack | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Email Service** | Resend | Reliable API for handling portfolio contact form submissions. |
+| **Environment**| Node.js | Runtime environment used for running Next.js and tools. |
+| **Deployment** | Vercel | Hosting platform optimized for Next.js applications. |
+| **CI/CD** | GitHub Actions | Automated workflow used for continuous integration/deployment. |
+
+---
+
+## ⚙️ GETTING STARTED
+
+### Prerequisites
+
+1.  Node.js (LTS version)
+2.  A Resend API Key for the contact form.
+
+### Local Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/vralchenko/viktor-portfolio.git](https://github.com/vralchenko/viktor-portfolio.git)
+    cd viktor-portfolio
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Set Environment Variables:**
+    Create a file named **`.env.local`** in the root directory and add your Resend key:
+    ```
+    RESEND_API_KEY="YOUR_RESEND_API_KEY_HERE"
+    ```
+
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) to view the application.
