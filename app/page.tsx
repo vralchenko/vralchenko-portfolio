@@ -52,8 +52,9 @@ import {
     SiHtml5,
     SiCss3,
     SiJest,
-    SiGitlab
+    SiGitlab,
 } from "react-icons/si"
+import { LuGraduationCap } from "react-icons/lu";
 
 export default function Home() {
     return (
@@ -318,12 +319,25 @@ export default function Home() {
                 <Card className="md:col-span-2">
                     <CardContent className="py-2">
                         <TooltipProvider>
-                            <div className="flex flex-row gap-6 justify-around items-center p-2">
+                            <div className="flex flex-row gap-6 justify-around p-4">
 
                                 <Tooltip>
                                     <TooltipTrigger className="flex flex-col items-center gap-1">
-                                        <Flag code="GB" className="w-8 h-8" />
-                                        <p className="text-muted-foreground text-xs">English</p>
+                                        <LuGraduationCap className="w-8 h-8" /> {/* Уменьшена иконка */}
+                                        <p className="text-muted-foreground text-xs">Master</p> {/* Уменьшен текст */}
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p className="font-bold">Master's Degree (Diploma with Honor)</p>
+                                        <p>Computer Systems and Networks</p>
+                                        <p>National State Polytechnic University</p>
+                                        <p>1996 - 2002</p>
+                                    </TooltipContent>
+                                </Tooltip>
+
+                                <Tooltip>
+                                    <TooltipTrigger className="flex flex-col items-center gap-1">
+                                        <Flag code="GB" className="w-8 h-8" /> {/* Уменьшен флаг */}
+                                        <p className="text-muted-foreground text-xs">English</p> {/* Уменьшен текст */}
                                     </TooltipTrigger>
                                     <TooltipContent><p>C1 (Professional)</p></TooltipContent>
                                 </Tooltip>
