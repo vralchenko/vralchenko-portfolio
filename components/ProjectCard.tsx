@@ -28,11 +28,8 @@ export function ProjectCard({
                                 imageSrc,
                             }: ProjectCardProps) {
     return (
-        // ИЗМЕНЕНИЕ: Добавлен p-4 для общей серой рамки
         <Card className="flex flex-col md:flex-row mb-6 p-4 hover:shadow-lg transition-shadow duration-300">
-
             {imageSrc && (
-                // ИЗМЕНЕНИЕ: md:w-2/5 p-0 relative aspect-[16/10] (удален pl-4)
                 <div className="md:w-2/5 p-0 relative aspect-[16/10] overflow-hidden">
                     <Image
                         src={imageSrc}
@@ -44,7 +41,6 @@ export function ProjectCard({
                 </div>
             )}
 
-            {/* ИЗМЕНЕНИЕ: Убран p-6 из CardContent, чтобы избежать двойных отступов */}
             <CardContent className={`flex flex-col justify-between ${imageSrc ? 'md:w-3/5' : 'md:w-full'}`}>
                 <div className="mb-4">
                     <div className="flex justify-between items-start">
@@ -66,14 +62,14 @@ export function ProjectCard({
 
                     <div className="flex gap-4">
                         {liveLink && (
-                            <Link href={liveLink} target="_blank" passHref className="text-sm font-semibold hover:text-primary transition-colors">
+                            <Link href={liveLink} target="_blank" className="text-sm font-semibold hover:text-primary transition-colors">
                                 <div className="flex items-center gap-1">
                                     Live Demo <ExternalLink className="w-4 h-4" />
                                 </div>
                             </Link>
                         )}
                         {githubLink && (
-                            <Link href={githubLink} target="_blank" passHref className="text-sm font-semibold hover:text-primary transition-colors">
+                            <Link href={githubLink} target="_blank" className="text-sm font-semibold hover:text-primary transition-colors">
                                 <div className="flex items-center gap-1">
                                     GitHub <ExternalLink className="w-4 h-4" />
                                 </div>

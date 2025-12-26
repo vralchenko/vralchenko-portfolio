@@ -126,7 +126,6 @@ export default function Home() {
                     <CardContent>
                         <TooltipProvider>
                             <div className="grid grid-cols-8 gap-4">
-
                                 <Tooltip>
                                     <TooltipTrigger><SiSharp className="w-8 h-8" /></TooltipTrigger>
                                     <TooltipContent><p>C#</p></TooltipContent>
@@ -287,7 +286,6 @@ export default function Home() {
                                     <TooltipTrigger><SiJest className="w-8 h-8" /></TooltipTrigger>
                                     <TooltipContent><p>Testing (xUnit/NUnit)</p></TooltipContent>
                                 </Tooltip>
-
                             </div>
                         </TooltipProvider>
                     </CardContent>
@@ -320,11 +318,10 @@ export default function Home() {
                     <CardContent className="py-2">
                         <TooltipProvider>
                             <div className="flex flex-row gap-6 justify-around p-4">
-
                                 <Tooltip>
                                     <TooltipTrigger className="flex flex-col items-center gap-1">
-                                        <LuGraduationCap className="w-8 h-8" /> {/* Уменьшена иконка */}
-                                        <p className="text-muted-foreground text-xs">Master</p> {/* Уменьшен текст */}
+                                        <LuGraduationCap className="w-8 h-8" />
+                                        <p className="text-muted-foreground text-xs">Master</p>
                                     </TooltipTrigger>
                                     <TooltipContent>
                                         <p className="font-bold">Master's Degree (Diploma with Honor)</p>
@@ -333,15 +330,13 @@ export default function Home() {
                                         <p>1996 - 2002</p>
                                     </TooltipContent>
                                 </Tooltip>
-
                                 <Tooltip>
                                     <TooltipTrigger className="flex flex-col items-center gap-1">
-                                        <Flag code="GB" className="w-8 h-8" /> {/* Уменьшен флаг */}
-                                        <p className="text-muted-foreground text-xs">English</p> {/* Уменьшен текст */}
+                                        <Flag code="GB" className="w-8 h-8" />
+                                        <p className="text-muted-foreground text-xs">English</p>
                                     </TooltipTrigger>
                                     <TooltipContent><p>C1 (Professional)</p></TooltipContent>
                                 </Tooltip>
-
                                 <Tooltip>
                                     <TooltipTrigger className="flex flex-col items-center gap-1">
                                         <Flag code="DE" className="w-8 h-8" />
@@ -349,7 +344,6 @@ export default function Home() {
                                     </TooltipTrigger>
                                     <TooltipContent><p>B1 (Limited)</p></TooltipContent>
                                 </Tooltip>
-
                                 <Tooltip>
                                     <TooltipTrigger className="flex flex-col items-center gap-1">
                                         <Flag code="UA" className="w-8 h-8" />
@@ -357,7 +351,6 @@ export default function Home() {
                                     </TooltipTrigger>
                                     <TooltipContent><p>C2 (Native)</p></TooltipContent>
                                 </Tooltip>
-
                                 <Tooltip>
                                     <TooltipTrigger className="flex flex-col items-center gap-1">
                                         <Flag code="RU" className="w-8 h-8" />
@@ -365,7 +358,6 @@ export default function Home() {
                                     </TooltipTrigger>
                                     <TooltipContent><p>C2 (Fluent)</p></TooltipContent>
                                 </Tooltip>
-
                             </div>
                         </TooltipProvider>
                     </CardContent>
