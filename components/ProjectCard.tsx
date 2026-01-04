@@ -1,79 +1,73 @@
-import {
-    Card,
-    CardTitle,
-    CardContent,
-} from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import Link from "next/link"
-import { ExternalLink } from "lucide-react"
+import { Github, ExternalLink } from "lucide-react"
 import Image from "next/image"
+import React from "react"
 
 interface ProjectCardProps {
-    title: string
-    subtitle: string
-    description: string
-    technologies: string[]
-    githubLink?: string
-    liveLink?: string
-    imageSrc?: string
+    title: React.ReactNode;
+    description: string;
+    technologies: string[];
+    githubLink?: string;
+    liveLink?: string;
+    imageSrc?: string;
 }
 
 export function ProjectCard({
                                 title,
-                                subtitle,
                                 description,
                                 technologies,
                                 githubLink,
                                 liveLink,
-                                imageSrc,
+                                imageSrc
                             }: ProjectCardProps) {
     return (
-        <Card className="flex flex-col md:flex-row mb-6 p-4 hover:shadow-lg transition-shadow duration-300">
-            {imageSrc && (
-                <div className="md:w-2/5 p-0 relative aspect-[16/10] overflow-hidden">
-                    <Image
-                        src={imageSrc}
-                        alt={`Screenshot of ${title}`}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 33vw"
-                        className="object-contain w-full h-full"
-                    />
-                </div>
-            )}
-
-            <CardContent className={`flex flex-col justify-between ${imageSrc ? 'md:w-3/5' : 'md:w-full'}`}>
-                <div className="mb-4">
-                    <div className="flex justify-between items-start">
-                        <CardTitle className="text-2xl font-bold">{title}</CardTitle>
-                        <span className="text-sm text-muted-foreground">{subtitle}</span>
-                    </div>
-
-                    <p className="mt-3 text-muted-foreground">{description}</p>
-                </div>
-
-                <div>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                        {technologies.map((tech) => (
-                            <Badge key={tech} variant="secondary">
-                                {tech}
-                            </Badge>
-                        ))}
-                    </div>
-
-                    <div className="flex gap-4">
-                        {liveLink && (
-                            <Link href={liveLink} target="_blank" className="text-sm font-semibold hover:text-primary transition-colors">
-                                <div className="flex items-center gap-1">
-                                    Live Demo <ExternalLink className="w-4 h-4" />
-                                </div>
-                            </Link>
-                        )}
-                        {githubLink && (
-                            <Link href={githubLink} target="_blank" className="text-sm font-semibold hover:text-primary transition-colors">
-                                <div className="flex items-center gap-1">
-                                    GitHub <ExternalLink className="w-4 h-4" />
-                                </div>
-                            </Link>
+        <Card className="mb-6 overflow-hidden">
+            <CardHeader className="pb-2 pt-6">
+                <CardTitle className="w-full font-normal">
+                    {title}
+                </CardTitle>
+            </CardHeader>
+            <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-10 gap-6 items-start">
+                    {imageSrc && (
+                        <div className="md:col-span-4 relative w-full aspect-video rounded-md overflow-hidden border bg-muted/10">
+                            <Image
+                                src={imageSrc}
+                                alt="Project preview"
+                                fill
+                                className="object-contain"
+                                priority
+                            />
+                        </div>
+                    )}
+                    {/* Если картинки нет, занимаем все 10 колонок (всю длину) */}
+                    <div className={`flex flex-col h-full ${imageSrc ? 'md:col-span-6' : 'md:col-span-10'}`}>
+                        <div className="flex-grow">
+                            <p className="text-muted-foreground mb-4 text-lg leading-relaxed">
+                                {description}
+                            </p>
+                            <div className="flex flex-wrap gap-2 mb-6">
+                                {technologies.map((tech) => (
+                                    <Badge key={tech} variant="secondary">
+                                        {tech}
+                                    </Badge>
+                                ))}
+                            </div>
+                        </div>
+                        {(liveLink || githubLink) && (
+                            <div className="flex gap-6 mt-auto">
+                                {liveLink && (
+                                    <a href={liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-base font-medium hover:underline text-primary">
+                                        <ExternalLink size={18} /> Live Demo
+                                    </a>
+                                )}
+                                {githubLink && (
+                                    <a href={githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-base font-medium hover:underline text-primary">
+                                        <Github size={18} /> GitHub
+                                    </a>
+                                )}
+                            </div>
                         )}
                     </div>
                 </div>
