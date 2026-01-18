@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="dark">
-            <body className={`${inter.className} h-dvh flex flex-col overflow-hidden`}>
+            <body className={`${inter.className} min-h-dvh md:h-dvh flex flex-col md:overflow-hidden`}>
                 <Navbar />
                 {children}
                 <Footer />
