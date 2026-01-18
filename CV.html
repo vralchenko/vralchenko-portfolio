@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Viktor Ralchenko</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #525659;
+        }
+
+        * {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .cv-container {
+            width: 210mm;
+            background: #fff;
+            display: flex;
+            box-shadow: none;
+            min-height: 297mm;
+            margin: 0 auto;
+        }
+
+        .sidebar {
+            width: 350px;
+            background: #1a1a1a url('https://www.transparenttextures.com/patterns/dark-matter.png');
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+
+        .photo-area {
+            width: 100%;
+            height: 320px;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .photo-box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 15%;
+            filter: grayscale(100%) contrast(1.1);
+            display: block;
+        }
+
+        .sidebar-padding {
+            padding: 10px 25px 25px 25px;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+        }
+
+        .contact-row {
+            margin-bottom: 12px;
+            font-size: 13px;
+            color: #ddd;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-row a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid #444;
+        }
+
+        .contact-row span {
+            margin-right: 10px;
+        }
+
+        .sidebar-h2 {
+            font-size: 19px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #444;
+            margin: 20px 0 10px 0;
+            padding-bottom: 5px;
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        .sidebar-list {
+            list-style: disc;
+            padding-left: 18px;
+            margin: 0;
+        }
+
+        .sidebar-list li {
+            font-size: 12.5px;
+            margin-bottom: 14px;
+            line-height: 1.4;
+            color: #ccc;
+            text-align: justify;
+        }
+
+        .sidebar-list li b {
+            display: block;
+            margin-bottom: 3px;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        .edu-item {
+            margin-bottom: 18px;
+            font-size: 12.5px;
+            color: #ccc;
+        }
+
+        .edu-title {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 11px;
+            margin-bottom: 4px;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 50px;
+            background: #fff;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 72px;
+            margin: 0;
+            text-transform: uppercase;
+            line-height: 0.85;
+            font-weight: 900;
+            color: #000;
+        }
+
+        .job-title-main {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 15px 0 0 0;
+            letter-spacing: 4px;
+            color: #222;
+        }
+
+        .summary-section p {
+            font-size: 14.5px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #333;
+            text-align: justify;
+        }
+
+        .summary-section p,
+        .main-content p {
+            text-align: justify;
+        }
+
+        h2.section-header {
+            font-size: 22px;
+            text-transform: uppercase;
+            border-bottom: 3px solid #000;
+            padding-bottom: 5px;
+            margin: 25px 0 15px 0;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .experience-block {
+            margin-bottom: 18px;
+            page-break-inside: avoid;
+        }
+
+        .exp-row-1 {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        .exp-row-2 {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0 10px 0;
+            font-size: 14px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .main-list {
+            padding-left: 20px;
+            margin: 0;
+            list-style: disc;
+        }
+
+        .main-list li {
+            margin-bottom: 7px;
+            font-size: 13.5px;
+            color: #222;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .stack-line {
+            font-size: 12px;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 15mm 0;
+            }
+
+            body {
+                background: none;
+                padding: 0;
+            }
+
+            .experience-block,
+            .edu-item,
+            .sidebar-h2,
+            h2.section-header,
+            .contact-list,
+            .sidebar-list {
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+            }
+
+            edu-item, .experience-block, .sidebar-h2, h2.section-header {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+
+            h2.section-header,
+            .sidebar-h2 {
+                page-break-after: avoid !important;
+                break-after: avoid !important;
+            }
+
+            h2.section-header {
+                page-break-after: avoid;
+            }
+
+            .edu-item {
+                page-break-before: auto;
+            }
+
+            .cv-container {
+                display: flex;
+                width: 100%;
+                height: auto;
+            }
+
+            .sidebar {
+                height: auto;
+                min-height: 100vh;
+                position: relative;
+                background-color: #1a1a1a !important;
+                -webkit-print-color-adjust: exact !important;
+            }
+
+            .experience-block {
+                page-break-inside: avoid;
+                margin-bottom: 15px;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            .main-content {
+                flex: 1;
+                padding: 40px 45px 40px 40px;
+                text-align: justify;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <div class="sidebar">
+        <div class="photo-area">
+            <div class="photo-box">
+                <img src="avatar.jpg" alt="Viktor Ralchenko">
+            </div>
+        </div>
+        <div class="sidebar-padding">
+            <ul class="contact-list">
+                <li class="contact-row"><span>👤</span> +41-79-534-96-62</li>
+                <li class="contact-row"><span>✉️</span> <a href="mailto:vralchenko@gmail.com">vralchenko@gmail.com</a>
+                </li>
+                <li class="contact-row"><span>📍</span> 8304 Wallisellen, Switzerland</li>
+                <li class="contact-row"><span>🌐</span> <a href="https://vralchenko-portfolio.vercel.app"
+                                                          target="_blank">https://vralchenko-portfolio.vercel.app</a>
+                </li>
+                <li class="contact-row"><span>🔗</span> <a href="https://linkedin.com/in/victoralchenko" target="_blank">https://linkedin.com/in/victoralchenko</a>
+                </li>
+                <li class="contact-row"><span>🐙</span> <a href="https://github.com/vralchenko" target="_blank">https://github.com/vralchenko</a>
+                </li>
+                <li class="contact-row"><span>🗓</span> 21.10.1978</li>
+                <li class="contact-row"><span>🪪</span> Work Permit S (valid till 2027)</li>
+            </ul>
+
+            <h2 class="sidebar-h2">Skills</h2>
+            <ul class="sidebar-list">
+                <li><b>Programming Languages:</b> C#, TypeScript, Python, Node.js</li>
+                <li><b>Frameworks:</b> .NET (6-8), ASP.NET Core, Web API, WebForms</li>
+                <li><b>Frontend Development:</b> React.js, Angular, Vue.js, TypeScript, JavaScript, Material-UI</li>
+                <li><b>Architecture:</b> Microservices, Clean Architecture, Domain-Driven Design, SRP</li>
+                <li><b>Databases:</b> SQL Server, PostgreSQL, Oracle, SQLite, LINQ, ADO.NET, EF Core</li>
+                <li><b>Cloud & DevOps:</b> Azure, AWS, Vercel, Render, Cloudinary, Docker, CI/CD, GitHub Actions</li>
+                <li><b>Testing:</b> Playwright, xUnit, MSTest, Moq, Test Automation</li>
+                <li><b>Tools:</b> Git, TFS, SVN, Jira, Confluence, VS Code, Rider</li>
+            </ul>
+
+            <h2 class="sidebar-h2">Education</h2>
+            <div class="edu-item">
+                <div class="edu-title">MASTER'S DEGREE IN COMPUTER SYSTEMS AND NETWORKS (DIPLOMA WITH HONOR)</div>
+                National State Polytechnic University (1996 - 2002)
+            </div>
+            <div class="edu-item">
+                <div class="edu-title">SECONDARY SCHOOL DIPLOMA</div>
+                Secondary School No. 29, Chernihiv (1986 - 1996)
+            </div>
+
+            <h2 class="sidebar-h2">Language</h2>
+            <ul class="sidebar-list">
+                <li>English: C1 (Professional Working Proficiency)</li>
+                <li>German: B1 (Limited Working Proficiency)</li>
+                <li>Ukrainian: C2 (Native) / Russian: C2 (Fluent)</li>
+            </ul>
+
+            <h2 class="sidebar-h2">Hobbies</h2>
+            <ul class="sidebar-list">
+                <li>Table tennis, Mini-golf, Hiking</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>VIKTOR RALCHENKO</h1>
+            <div class="job-title-main">Senior Software Developer</div>
+        </header>
+
+        <div class="summary-section">
+            <p>Senior Software Developer with <b>20 years</b> of hands-on experience delivering reliable, scalable, and
+                business-critical solutions. I specialize in <b>backend architecture</b>, <b>microservices</b>, and
+                high-performance data platforms using <b>C#</b>, <b>.NET (Core & Framework)</b>, <b>MS SQL</b>, and <b>Oracle</b>.
+                My work has directly improved system stability, reduced production defects, and accelerated release
+                cycles across multiple domains — from industrial automation to <b>CMS platforms</b>.</p>
+            <p>I’ve led the development of robust <b>APIs</b>, engineered custom test utilities, and authored over <b>700
+                automated tests</b> using <b>Playwright</b>, achieving <b>80%+ code coverage</b> and cutting regression
+                time by <b>60%</b>. My contributions span legacy modernization (<b>VB.NET, WinForms</b>), cloud-native
+                services (<b>AWS, Azure</b>), and frontend development with <b>React, Angular, and Vue.js</b>.</p>
+            <p>My workflow is grounded in <b>DevOps</b> best practices (<b>CI/CD, Git, Docker, Jenkins</b>) and enhanced
+                by <b>AI-assisted development</b> and quality assurance. I thrive in agile environments, support team
+                collaboration, and consistently deliver high-quality software that meets business goals and user
+                expectations.</p>
+        </div>
+
+        <h2 class="section-header">Experience</h2>
+
+        <div class="experience-block">
+            <div class="exp-row-1"><span>Senior Quality Assurance Automation Engineer</span><span>February 2025 - Present</span>
+            </div>
+            <div class="exp-row-2"><span>Self-employed</span><span>Wallisellen, Switzerland</span></div>
+            <ul class="main-list">
+                <li>Ensured system reliability by performing comprehensive <b>end-to-end black-box testing</b> across a
+                    complex <b>microservices architecture</b>, proactively identifying integration issues before
+                    production.
+                </li>
+                <li>Designed and implemented a <b>scalable test automation framework</b> using <b>Node.js</b> and <b>Playwright</b>,
+                    achieving over <b>80% code coverage</b> and reducing regression testing time by <b>60%</b>.
+                </li>
+                <li>Authored and maintained more than <b>700 automated tests</b>, covering critical business flows and
+                    edge cases, which significantly reduced production defects and improved release confidence.
+                </li>
+                <li>Streamlined the QA lifecycle by managing test planning, execution, and reporting in <b>Qase</b>,
+                    improving transparency and traceability across sprints.
+                </li>
+                <li>Accelerated bug resolution through tight collaboration with developers via <b>Jira</b> and real-time
+                    coordination in <b>Slack</b>.
+                </li>
+                <li>Enhanced CI/CD reliability by engineering <b>custom test utilities</b> for complex validation
+                    scenarios, strengthening the quality gates in automated pipelines.
+                </li>
+            </ul>
+            <div class="stack-line">Tech Stack used: Node.js, Playwright, Qase, Jira, Rider, Slack, TypeScript.</div>
+        </div>
+
+        <div class="experience-block">
+            <div class="exp-row-1"><span>Senior Software Engineer</span><span>October 2023 - February 2025</span></div>
+            <div class="exp-row-2"><span>Bystronic Group</span><span>Niederönz, Switzerland</span></div>
+            <ul class="main-list">
+                <li>Enabled seamless integration of <b>industrial hardware</b> by developing robust connectors and
+                    adapters for <b>laser cutting and bending machines</b>, directly supporting the company’s <b>Data
+                        Platform</b> and improving operational efficiency.
+                </li>
+                <li>Delivered reliable backend services by designing and implementing <b>ASP.NET Web APIs</b>,
+                    thoroughly tested with <b>Postman</b> to ensure functional accuracy and system stability.
+                </li>
+                <li>Accelerated release cycles by setting up <b>CI/CD pipelines</b> in <b>Azure DevOps</b>, automating
+                    deployments and reducing manual overhead across environments.
+                </li>
+                <li>Improved sprint planning and execution through active participation in <b>agile refinements</b>,
+                    contributing to precise story breakdowns, estimations, and smoother development workflows.
+                </li>
+                <li>Maintained production stability by proactively debugging and resolving live issues, minimizing
+                    downtime and ensuring consistent performance.
+                </li>
+                <li>Strengthened code quality and test reliability by applying <b>unit testing</b> with <b>XUnit</b>,
+                    leveraging <b>Moq</b>, <b>Fixture</b>, and <b>FluentAssertions</b> to achieve extensive coverage.
+                </li>
+                <li>Worked across a diverse tech stack, including <b>.NET Core/.NET 6–8</b>, <b>Python</b>,
+                    <b>Vue.js</b>, <b>Node.js</b>, <b>TypeScript</b>, <b>SQL Server</b>, <b>LiteDB</b>, <b>Azure</b>,
+                    <b>Docker</b>, and <b>Unix-based systems</b>.
+                </li>
+            </ul>
+            <div class="stack-line">Tech Stack used: VS2022, Visual Studio Code, C#, .NET Core & .NET (versions 6-8),
+                Python, VueJs, Node.js, TypeScript, SQL Server, LiteDB, Azure, Postman, Ubuntu (Unix) and Docker.
+            </div>
+        </div>
+
+        <div class="experience-block">
+            <div class="exp-row-1"><span>Senior Fullstack Software Engineer</span><span>April 2021 - July 2023</span>
+            </div>
+            <div class="exp-row-2"><span>UUUSoftware.com</span><span>Canada (Remote)</span></div>
+            <ul class="main-list">
+                <li>Led backend development for a <b>CMS system</b> using <b>C#</b>, <b>.NET Framework</b>, <b>.NET
+                    Core</b>, <b>AWS</b>, <b>Jenkins</b>, <b>Oracle</b>, and <b>Angular</b>.
+                </li>
+                <li>Enhanced existing .NET applications by adding new functionality to improve their capabilities and
+                    user experience.
+                </li>
+                <li>Provided key development support for <b>microservice-based projects</b>.</li>
+                <li>Contributed to increasing unit test code coverage to improve overall code quality.</li>
+                <li>Identified and resolved <b>performance bottlenecks</b> in ASP.NET applications.</li>
+                <li>Implemented comprehensive unit tests using <b>xUnit</b>, <b>Moq</b>, and <b>FluentAssertions</b> to
+                    ensure backend reliability.
+                </li>
+            </ul>
+            <div class="stack-line">Tech Stack used: C#, .NET Core & Framework, Microservices, AWS, Jenkins, Oracle,
+                Angular, xUnit.
+            </div>
+        </div>
+
+        <div class="experience-block">
+            <div class="exp-row-1"><span>Software Engineer</span><span>January 2018 - March 2021</span></div>
+            <div class="exp-row-2"><span>Axxos</span><span>Sweden</span></div>
+            <ul class="main-list">
+                <li>Implemented complex filtering, sorting, and paging functionalities in an <b>ASP.NET Core</b> web
+                    application.
+                </li>
+                <li>Created <b>Windows services</b> to process and transfer data from <b>XML files</b> into a database,
+                    implementing custom validation and business logic.
+                </li>
+                <li>Maintained and enhanced a legacy <b>ASP.NET WinForms</b> application in <b>VB.NET</b>, adding new
+                    features and fixing bugs.
+                </li>
+                <li>Conducted <b>performance tuning</b> of <b>SQL Server</b>, optimizing complex queries and stored
+                    procedures.
+                </li>
+                <li>Developed frontend features using <b>React.js</b>.</li>
+                <li>Assisted the team lead with task assignment, quality assurance, and fostering team collaboration.
+                </li>
+            </ul>
+            <div class="stack-line">Tech Stack used: ASP.NET Core, C#, VB, SQL Server, React.js, VB.NET, WinForms,
+                XML.
+            </div>
+        </div>
+
+        <div class="experience-block">
+            <div class="exp-row-1"><span>Web Software Engineer (Part-Time)</span><span>Apr 2016 - Apr 2020</span></div>
+            <div class="exp-row-2"><span>Vocabnetwork</span><span>USA</span></div>
+            <ul class="main-list">
+                <li>Responsible for implementing new features for the web platform.</li>
+                <li>Diagnosed, resolved, and tracked software defects and production issues to ensure application
+                    stability.
+                </li>
+                <li>Managed application deployments and release cycles.</li>
+            </ul>
+            <div class="stack-line">Tech Stack used: ASP.NET, ASP.NET MVC, Microsoft SQL Server, React.js, HTML, CSS.
+            </div>
+        </div>
+
+        <div class="experience-block">
+            <div class="exp-row-1"><span>Web Developer</span><span>Aug 2013 - Dec 2017</span></div>
+            <div class="exp-row-2"><span>Svitla Systems</span><span>USA</span></div>
+            <ul class="main-list">
+                <li>Led design and programming tasks for projects utilizing <b>ASP.NET MVC</b>, <b>Web API</b>, and <b>Angular</b>.
+                </li>
+                <li>Responsible for the development of project architecture.</li>
+                <li>Designed and implemented database schemas and stored procedures using <b>T-SQL</b> on <b>MS SQL
+                    Server 2012</b>.
+                </li>
+                <li>Contributed to the full project lifecycle within an <b>Agile/Scrum</b> methodology.</li>
+                <li>Performed bug fixing and troubleshooting to ensure application stability.</li>
+            </ul>
+        </div>
+
+        <div class="experience-block">
+            <div class="exp-row-1"><span>Senior C# and SQL Developer</span><span>Feb 2010 - Jul 2013</span></div>
+            <div class="exp-row-2"><span>Volia Software</span><span>USA</span></div>
+            <ul class="main-list">
+                <li>Responsible for implementing new features for the web platform.</li>
+                <li>Diagnosed, resolved, and tracked software defects and production issues to ensure application
+                    stability.
+                </li>
+                <li>Managed application deployments and release cycles.</li>
+            </ul>
+            <div class="stack-line">Tech Stack used: ASP.NET, ASP.NET MVC, Microsoft SQL Server, React.js, HTML, CSS.
+            </div>
+        </div>
+
+        <h2 class="section-header">Projects & Achievements</h2>
+
+        <div class="experience-block">
+            <div class="exp-row-1"><span>Item Flow – Full-Stack TypeScript Application</span><span>Oct 2025</span></div>
+            <div class="exp-row-2"><span>Wallisellen</span><span><a href="https://item-flow-rho.vercel.app"
+                                                                    target="_blank">Live Demo</a> | <a
+                    href="https://github.com/vralchenko/ItemFlow" target="_blank">GitHub Repo</a></span></div>
+            <ul class="main-list">
+                <li>A comprehensive <b>full-stack project</b> demonstrating modern development practices from conception
+                    to deployment.
+                </li>
+                <li>Implemented a <b>responsive design</b> using <b>Material-UI's sx prop</b>, ensuring a seamless user
+                    experience across devices.
+                </li>
+                <li>Integrated <b>Cloudinary</b> for cloud-based image storage, moving to a scalable, production-ready
+                    solution.
+                </li>
+                <li>App deployed via modern <b>CI/CD</b>: frontend on <b>Vercel</b>, backend on <b>Render</b>, automated
+                    with <b>GitHub Actions</b>.
+                </li>
+            </ul>
+            <div class="stack-line">Tech Stack: Node.js, React.js, Playwright, REST APIs, TypeScript, Cloudinary,
+                Vercel, Render, GitHub Actions, Material-UI.
+            </div>
+        </div>
+
+        <div class="experience-block">
+            <div class="exp-row-1"><span>NASA Space Apps Challenge Participant</span><span>Oct 2025</span></div>
+            <div class="exp-row-2"><span>Zurich</span><span></span></div>
+            <ul class="main-list">
+                <li>Collaborated in an international team during a 48-hour hackathon to solve a real-world NASA
+                    challenge.
+                </li>
+                <li>Contributed to the development of a meaningful project prototype by blending technology, science,
+                    and space-related data.
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -24,8 +24,8 @@ import { LuGraduationCap } from "react-icons/lu";
 
 export default function Home() {
     return (
-        <main className="px-4 md:px-8 h-[calc(100vh-64px)] flex flex-col overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-6 gap-3 flex-grow overflow-hidden py-2">
+        <main className="px-4 md:px-8 flex-grow flex flex-col md:h-[calc(100vh-112px)] md:overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-6 gap-3 flex-grow md:overflow-hidden py-2">
 
                 <Card className="md:col-span-4">
                     <CardHeader className="pb-0 pt-3">
@@ -43,11 +43,11 @@ export default function Home() {
                     </CardContent>
                 </Card>
 
-                <Card className="md:col-span-2 md:row-span-4 flex flex-col min-h-0">
+                <Card className="md:col-span-2 md:row-span-4 flex flex-col md:min-h-0">
                     <CardHeader className="pb-0 pt-3">
                         <CardTitle className="text-3xl">Experience</CardTitle>
                     </CardHeader>
-                    <CardContent className="overflow-y-auto pt-1 flex-grow space-y-3 pr-2 scrollbar-thin">
+                    <CardContent className="md:overflow-y-auto pt-1 flex-grow space-y-3 pr-2 scrollbar-thin">
                         <div>
                             <h3 className="font-semibold text-lg leading-tight uppercase">SENIOR QA AUTOMATION ENGINEER</h3>
                             <p className="text-base text-muted-foreground">Self-employed (Feb 2025 - Present)</p>
@@ -87,8 +87,8 @@ export default function Home() {
                     </CardContent>
                 </Card>
 
-                <div className="md:col-span-2 md:row-span-3 grid grid-rows-[1fr_56px] gap-3">
-                    <Card className="overflow-hidden flex flex-col">
+                <div className="md:col-span-2 md:row-span-3 flex flex-col md:grid md:grid-rows-[1fr_56px] gap-3">
+                    <Card className="md:overflow-hidden flex flex-col">
                         <CardHeader className="py-2">
                             <CardTitle className="text-3xl">My Tech Stack</CardTitle>
                         </CardHeader>
@@ -164,8 +164,8 @@ export default function Home() {
                     </Card>
                 </div>
 
-                <div className="md:col-span-2 md:row-span-3 grid grid-rows-[1fr_56px] gap-3">
-                    <Card className="flex flex-col items-center justify-center overflow-hidden">
+                <div className="md:col-span-2 md:row-span-3 flex flex-col md:grid md:grid-rows-[1fr_56px] gap-3">
+                    <Card className="flex flex-col items-center justify-center md:overflow-hidden">
                         <CardContent className="p-4 flex flex-col items-center justify-center flex-grow">
                             <div className="relative w-40 h-40 mb-4">
                                 <Image
@@ -189,9 +189,7 @@ export default function Home() {
                 </div>
 
             </div>
-            <footer className="py-1 text-center text-[10px] text-muted-foreground mt-auto">
-                © 2025-2026 Viktor Ralchenko. All rights reserved.
-            </footer>
+
         </main>
     )
 }
