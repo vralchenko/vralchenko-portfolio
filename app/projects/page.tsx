@@ -7,6 +7,19 @@ export default function ProjectsPage() {
                 <ProjectCard
                     title={
                         <div className="flex justify-between items-center w-full">
+                            <span className="text-2xl font-bold tracking-tight">Foreteller – Cosmic Wisdom</span>
+                            <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">Jan 2026</span>
+                        </div>
+                    }
+                    description="A mystical web application dedicated to cosmic wisdom available in 6 languages. Features include Universal Wisdom (Zodiac, Chinese Horoscope), interactive Pythagoras Square, and AI-powered character analysis using Llama-4 via Groq API. Users can generate high-quality PDF reports and enjoy a responsive 'Cosmic Glass' design."
+                    technologies={["React", "TypeScript", "Vite", "Material UI", "Node.js", "Express", "Groq API", "jsPDF"]}
+                    githubLink="https://github.com/vralchenko/Foreteller"
+                    liveLink="https://foreteller.vercel.app/"
+                    imageSrc="/foreteller.jpg"
+                />
+                <ProjectCard
+                    title={
+                        <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">BizLingo AI – Browser-Based Language Learning</span>
                             <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">Jan 2026</span>
                         </div>
