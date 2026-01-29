@@ -167,9 +167,9 @@ export default function Home() {
                 <div className="md:col-span-2 md:row-span-3 flex flex-col md:grid md:grid-rows-[1fr_56px] gap-3">
                     <Card className="flex flex-col items-center justify-center md:overflow-hidden">
                         <CardContent className="p-4 flex flex-col items-center justify-center flex-grow">
-                            <div className="relative w-40 h-40 mb-4">
+                            <div className="relative w-64 h-64 mb-4">
                                 <Image
-                                    src="/avatar.jpg"
+                                    src="/avatar.png"
                                     alt="Viktor Ralchenko"
                                     fill
                                     className="rounded-full shadow-xl border-4 border-muted object-cover"
