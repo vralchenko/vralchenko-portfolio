@@ -39,9 +39,9 @@ export default function ProjectsPage() {
                         </div>
                     }
                     description="An AI-powered tool for deep resume-to-job matching analysis. It leverages local LLMs via Ollama to generate critical reports and interview preparation roadmaps using CLS, TRS, and HGLS methodologies."
-                    technologies={["Next.js", "Ollama", "Puppeteer", "TypeScript", "Tailwind CSS", "PDF-Parse", "Node.js", "Render"]}
+                    technologies={["Next.js", "Ollama", "Puppeteer", "TypeScript", "Tailwind CSS", "PDF-Parse", "Node.js", "Railway"]}
                     githubLink="https://github.com/vralchenko/ai-career-coach"
-                    liveLink="https://ai-career-coach-qv8h.onrender.com"
+                    liveLink="https://ai-career-coach-production-f43f.up.railway.app/"
                     imageSrc="/ai-career-coach.png"
                 />
 
