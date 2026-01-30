@@ -14,13 +14,13 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({
-                                title,
-                                description,
-                                technologies,
-                                githubLink,
-                                liveLink,
-                                imageSrc
-                            }: ProjectCardProps) {
+    title,
+    description,
+    technologies,
+    githubLink,
+    liveLink,
+    imageSrc
+}: ProjectCardProps) {
     return (
         <Card className="mb-6 overflow-hidden">
             <CardHeader className="pb-2 pt-6">
@@ -31,14 +31,26 @@ export function ProjectCard({
             <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-10 gap-6 items-start">
                     {imageSrc && (
-                        <div className="md:col-span-4 relative w-full aspect-video rounded-md overflow-hidden border bg-muted/10">
-                            <Image
-                                src={imageSrc}
-                                alt="Project preview"
-                                fill
-                                className="object-contain"
-                                priority
-                            />
+                        <div className="md:col-span-4 relative w-full aspect-video rounded-md overflow-hidden border bg-muted/10 group cursor-pointer">
+                            {liveLink ? (
+                                <a href={liveLink} target="_blank" rel="noopener noreferrer">
+                                    <Image
+                                        src={imageSrc}
+                                        alt="Project preview"
+                                        fill
+                                        className="object-contain transition-transform duration-500 group-hover:scale-110"
+                                        priority
+                                    />
+                                </a>
+                            ) : (
+                                <Image
+                                    src={imageSrc}
+                                    alt="Project preview"
+                                    fill
+                                    className="object-contain"
+                                    priority
+                                />
+                            )}
                         </div>
                     )}
                     {/* Если картинки нет, занимаем все 10 колонок (всю длину) */}
