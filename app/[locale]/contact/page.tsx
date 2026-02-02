@@ -13,8 +13,10 @@ import { Mail, Linkedin } from "lucide-react"
 import { sendEmail } from "../_actions"
 import { useState, useRef } from "react"
 import { toast } from "sonner"
+import { useTranslations } from "next-intl"
 
 export default function ContactPage() {
+    const t = useTranslations('Contact')
     const [isSending, setIsSending] = useState(false)
     const formRef = useRef<HTMLFormElement>(null)
 
@@ -26,10 +28,10 @@ export default function ContactPage() {
         const result = await sendEmail(formData)
 
         if (result.success) {
-            toast.success("Message sent successfully! I will get back to you shortly.")
+            toast.success(t('form.success'))
             formRef.current?.reset()
         } else {
-            toast.error("Failed to send message. Please try again or use the email link.")
+            toast.error(t('form.error'))
         }
 
         setIsSending(false)
@@ -61,30 +63,30 @@ export default function ContactPage() {
                     </Link>
                 </div>
 
-                <h2 className="text-3xl font-bold mb-4">Contact with me</h2>
+                <h2 className="text-3xl font-bold mb-4">{t('title')}</h2>
                 <p className="text-muted-foreground mb-6">
-                    You can also get in touch with me through this form below.
+                    {t('subtitle')}
                 </p>
 
                 <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-2">
-                        <Label htmlFor="name">Name</Label>
-                        <Input id="name" name="name" placeholder="John Doe" required />
+                        <Label htmlFor="name">{t('form.name')}</Label>
+                        <Input id="name" name="name" placeholder={t('form.namePlaceholder')} required />
                     </div>
 
                     <div className="space-y-2">
-                        <Label htmlFor="email">Email</Label>
-                        <Input id="email" name="email" type="email" placeholder="john.doe@example.com" required />
+                        <Label htmlFor="email">{t('form.email')}</Label>
+                        <Input id="email" name="email" type="email" placeholder={t('form.emailPlaceholder')} required />
                     </div>
 
                     <div className="space-y-2">
-                        <Label htmlFor="message">Message</Label>
-                        <Textarea id="message" name="message" placeholder="Enter your message here" className="min-h-[150px]" required />
+                        <Label htmlFor="message">{t('form.message')}</Label>
+                        <Textarea id="message" name="message" placeholder={t('form.messagePlaceholder')} className="min-h-[150px]" required />
                     </div>
 
                     <div className="flex items-center gap-4">
                         <Button type="submit" variant="secondary" className="w-full" disabled={isSending}>
-                            {isSending ? "Sending..." : "Send Message"}
+                            {isSending ? t('form.sending') : t('form.submit')}
                         </Button>
                     </div>
                 </form>

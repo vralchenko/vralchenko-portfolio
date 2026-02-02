@@ -21,68 +21,68 @@ import {
     SiNatsdotio, SiKubernetes, SiHtml5, SiCss3, SiGitlab, SiFlutter,
 } from "react-icons/si"
 import { LuGraduationCap } from "react-icons/lu";
+import { useTranslations } from "next-intl"
 
 export default function Home() {
+    const t = useTranslations('Home');
+
     return (
         <main className="px-4 md:px-8 flex-grow flex flex-col md:h-[calc(100vh-112px)] md:overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-6 gap-3 flex-grow md:overflow-hidden py-2">
 
                 <Card className="md:col-span-4">
                     <CardHeader className="pb-0 pt-3">
-                        <CardTitle className="text-3xl">Who am I?</CardTitle>
+                        <CardTitle className="text-3xl">{t('whoAmI')}</CardTitle>
                     </CardHeader>
                     <CardContent className="pt-1">
                         <p className="text-lg text-muted-foreground leading-snug">
-                            Senior Software Developer with 20 years of hands-on experience
-                            delivering reliable, scalable, and business-critical solutions.
-                            I specialize in <strong>microservices and backend architecture</strong> using
-                            <strong> C#, .NET, Node.js, SQL, and Message Brokers (Kafka, RabbitMQ)</strong>,
-                            with deep expertise in <strong>TypeScript</strong> and <strong>React</strong>.
-                            Currently <strong>integrating AI (WebLLM, Ollama)</strong> into my projects using <strong>Flutter</strong>.
+                            {t.rich('whoAmIContent', {
+                                strong: (chunks) => <strong>{chunks}</strong>
+                            })}
                         </p>
                     </CardContent>
                 </Card>
 
                 <Card className="md:col-span-2 md:row-span-4 flex flex-col md:min-h-0">
                     <CardHeader className="pb-0 pt-3">
-                        <CardTitle className="text-3xl">Experience</CardTitle>
+                        <CardTitle className="text-3xl">{t('experience')}</CardTitle>
                     </CardHeader>
                     <CardContent className="md:overflow-y-auto pt-1 flex-grow space-y-3 pr-2 scrollbar-thin">
                         <div>
-                            <h3 className="font-semibold text-lg leading-tight uppercase">SENIOR QA AUTOMATION ENGINEER</h3>
-                            <p className="text-base text-muted-foreground">Self-employed (Feb 2025 - Present)</p>
+                            <h3 className="font-semibold text-lg leading-tight uppercase">{t('exp.senQA')}</h3>
+                            <p className="text-base text-muted-foreground">{t('exp.selfEmployed')}</p>
                         </div>
                         <div>
-                            <h3 className="font-semibold text-lg leading-tight uppercase">SENIOR SOFTWARE ENGINEER</h3>
-                            <p className="text-base text-muted-foreground">Bystronic Group (Oct 2023 - Feb 2025)</p>
+                            <h3 className="font-semibold text-lg leading-tight uppercase">{t('exp.senSoftware')}</h3>
+                            <p className="text-base text-muted-foreground">{t('exp.bystronic')}</p>
                         </div>
                         <div>
-                            <h3 className="font-semibold text-lg leading-tight uppercase">SENIOR FULLSTACK SOFTWARE ENGINEER</h3>
-                            <p className="text-base text-muted-foreground">UUUSoftware.com (Apr 2021 - Jul 2023)</p>
+                            <h3 className="font-semibold text-lg leading-tight uppercase">{t('exp.senFullstack')}</h3>
+                            <p className="text-base text-muted-foreground">{t('exp.uuu')}</p>
                         </div>
                         <div>
-                            <h3 className="font-semibold text-lg leading-tight uppercase">SOFTWARE ENGINEER</h3>
-                            <p className="text-base text-muted-foreground">Axxos (Jan 2018 - Mar 2021)</p>
+                            <h3 className="font-semibold text-lg leading-tight uppercase">{t('exp.software')}</h3>
+                            <p className="text-base text-muted-foreground">{t('exp.axxos')}</p>
                         </div>
                         <div>
-                            <h3 className="font-semibold text-lg leading-tight uppercase">WEB SOFTWARE ENGINEER</h3>
-                            <p className="text-base text-muted-foreground">Vocabnetwork (Apr 2016 - Apr 2020)</p>
+                            <h3 className="font-semibold text-lg leading-tight uppercase">{t('exp.webSoftware')}</h3>
+                            <p className="text-base text-muted-foreground">{t('exp.vocab')}</p>
                         </div>
                         <div>
-                            <h3 className="font-semibold text-lg leading-tight uppercase">WEB DEVELOPER</h3>
-                            <p className="text-base text-muted-foreground">Svitla Systems (Aug 2013 - Dec 2017)</p>
+                            <h3 className="font-semibold text-lg leading-tight uppercase">{t('exp.webDev')}</h3>
+                            <p className="text-base text-muted-foreground">{t('exp.svitla')}</p>
                         </div>
                         <div>
-                            <h3 className="font-semibold text-lg leading-tight uppercase">SENIOR C# AND SQL DEVELOPER</h3>
-                            <p className="text-base text-muted-foreground">Volia Software (Feb 2010 - Jul 2013)</p>
+                            <h3 className="font-semibold text-lg leading-tight uppercase">{t('exp.senCSharp')}</h3>
+                            <p className="text-base text-muted-foreground">{t('exp.volia')}</p>
                         </div>
                         <div>
-                            <h3 className="font-semibold text-lg leading-tight uppercase">JUNIOR/MIDDLE .NET DEVELOPER</h3>
-                            <p className="text-base text-muted-foreground">Infopulse (May 2006 - Jan 2010)</p>
+                            <h3 className="font-semibold text-lg leading-tight uppercase">{t('exp.midDotNet')}</h3>
+                            <p className="text-base text-muted-foreground">{t('exp.infopulse')}</p>
                         </div>
                         <div>
-                            <h3 className="font-semibold text-lg leading-tight uppercase">1C PROGRAMMER</h3>
-                            <p className="text-base text-muted-foreground">ATL-TradeLine (Feb 2002 - May 2006)</p>
+                            <h3 className="font-semibold text-lg leading-tight uppercase">{t('exp.oneC')}</h3>
+                            <p className="text-base text-muted-foreground">{t('exp.atl')}</p>
                         </div>
                     </CardContent>
                 </Card>
@@ -90,7 +90,7 @@ export default function Home() {
                 <div className="md:col-span-2 md:row-span-3 flex flex-col md:grid md:grid-rows-[1fr_56px] gap-3">
                     <Card className="md:overflow-hidden flex flex-col">
                         <CardHeader className="py-2">
-                            <CardTitle className="text-3xl">My Tech Stack</CardTitle>
+                            <CardTitle className="text-3xl">{t('myTechStack')}</CardTitle>
                         </CardHeader>
                         <CardContent className="pt-0 flex-grow">
                             <TooltipProvider>
@@ -150,14 +150,14 @@ export default function Home() {
                                             <p className="text-muted-foreground text-[10px] uppercase text-center">Master</p>
                                         </TooltipTrigger>
                                         <TooltipContent>
-                                            <p className="font-bold">Master's Degree (Diploma with Honor)</p>
-                                            <p>National State Polytechnic University</p>
+                                            <p className="font-bold">{t('masterDegree')}</p>
+                                            <p>{t('university')}</p>
                                         </TooltipContent>
                                     </Tooltip>
-                                    <Tooltip><TooltipTrigger><Flag code="GB" className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>English: C1</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger><Flag code="DE" className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>German: B1</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger><Flag code="UA" className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Ukrainian: C2</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger><Flag code="RU" className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Russian: C2</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger><Flag code="GB" className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>{t('languages.en')}</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger><Flag code="DE" className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>{t('languages.de')}</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger><Flag code="UA" className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>{t('languages.uk')}</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger><Flag code="RU" className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>{t('languages.ru')}</p></TooltipContent></Tooltip>
                                 </div>
                             </TooltipProvider>
                         </CardContent>
@@ -183,7 +183,7 @@ export default function Home() {
 
                     <Card className="flex items-center justify-center h-full p-2">
                         <CardTitle className="text-xl text-center uppercase tracking-tighter leading-tight">
-                            BACKEND / FRONTEND / AI / QA
+                            {t('role')}
                         </CardTitle>
                     </Card>
                 </div>

@@ -1,0 +1,87 @@
+{
+    "Navbar": {
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "Home": {
+        "whoAmI": "¿Quién soy?",
+        "whoAmIContent": "Desarrollador de Software Senior con 20 años de experiencia práctica entregando soluciones confiables, escalables y críticas para el negocio. Me especializo en <strong>microservicios y arquitectura backend</strong> utilizando <strong>C#, .NET, Node.js, SQL y Message Brokers (Kafka, RabbitMQ)</strong>, con profunda experiencia en <strong>TypeScript</strong> y <strong>React</strong>. Actualmente estoy <strong>integrando IA (WebLLM, Ollama)</strong> en mis proyectos utilizando <strong>Flutter</strong>.",
+        "experience": "Experiencia",
+        "myTechStack": "Mi Stack Tecnológico",
+        "role": "BACKEND / FRONTEND / AI / QA",
+        "masterDegree": "Maestría (Diploma con Honor)",
+        "university": "Universidad Politécnica Nacional del Estado",
+        "languages": {
+            "en": "Inglés: C1",
+            "de": "Alemán: B1",
+            "uk": "Ucraniano: C2",
+            "ru": "Ruso: C2"
+        },
+        "exp": {
+            "senQA": "SENIOR QA AUTOMATION ENGINEER",
+            "selfEmployed": "Autónomo (Feb 2025 - Presente)",
+            "senSoftware": "SENIOR SOFTWARE ENGINEER",
+            "bystronic": "Bystronic Group (Oct 2023 - Feb 2025)",
+            "senFullstack": "SENIOR FULLSTACK SOFTWARE ENGINEER",
+            "uuu": "UUUSoftware.com (Abr 2021 - Jul 2023)",
+            "software": "SOFTWARE ENGINEER",
+            "axxos": "Axxos (Ene 2018 - Mar 2021)",
+            "webSoftware": "WEB SOFTWARE ENGINEER",
+            "vocab": "Vocabnetwork (Abr 2016 - Abr 2020)",
+            "webDev": "WEB DEVELOPER",
+            "svitla": "Svitla Systems (Ago 2013 - Dic 2017)",
+            "senCSharp": "SENIOR C# AND SQL DEVELOPER",
+            "volia": "Volia Software (Feb 2010 - Jul 2013)",
+            "midDotNet": "JUNIOR/MIDDLE .NET DEVELOPER",
+            "infopulse": "Infopulse (May 2006 - Ene 2010)",
+            "oneC": "1C PROGRAMMER",
+            "atl": "ATL-TradeLine (Feb 2002 - May 2006)"
+        }
+    },
+    "Contact": {
+        "title": "Contacta conmigo",
+        "subtitle": "También puedes ponerte en contacto conmigo a través del siguiente formulario.",
+        "form": {
+            "name": "Nombre",
+            "namePlaceholder": "John Doe",
+            "email": "Correo electrónico",
+            "emailPlaceholder": "john.doe@example.com",
+            "message": "Mensaje",
+            "messagePlaceholder": "Escribe tu mensaje aquí",
+            "submit": "Enviar mensaje",
+            "sending": "Enviando...",
+            "success": "¡Mensaje enviado con éxito! Me pondré en contacto contigo en breve.",
+            "error": "Error al enviar el mensaje. Por favor inténtalo de nuevo o usa el enlace de correo."
+        }
+    },
+    "Projects": {
+        "liveDemo": "Demo en vivo",
+        "github": "GitHub",
+        "foreteller": {
+            "title": "Foreteller – Sabiduría Cósmica",
+            "date": "Ene 2026",
+            "desc": "Una mística aplicación web dedicada a la sabiduría cósmica disponible en 6 idiomas. Las características incluyen Sabiduría Universal (Zodíaco, Horóscopo Chino), Cuadrado de Pitágoras interactivo y análisis de personajes impulsado por IA usando Llama-4 a través de la API de Groq. Los usuarios pueden generar informes PDF de alta calidad y disfrutar de un diseño receptivo 'Cosmic Glass'."
+        },
+        "bizLingo": {
+            "title": "BizLingo AI – Aprendizaje de idiomas basado en el navegador",
+            "date": "Ene 2026",
+            "desc": "Una aplicación web interactiva para dominar el inglés y el alemán de negocios. Utiliza WebLLM para ejecutar modelos de IA directamente en tu navegador, proporcionando retroalimentación inteligente sobre las traducciones sin enviar ningún dato a un servidor, garantizando la total privacidad."
+        },
+        "careerCoach": {
+            "title": "AI Career Coach – Analizador inteligente de currículums y empleos",
+            "date": "Dic 2025",
+            "desc": "Una herramienta impulsada por IA para un análisis profundo del ajuste entre currículum y puesto de trabajo. Aprovecha los LLM locales a través de Ollama para generar informes críticos y hojas de ruta para la preparación de entrevistas utilizando metodologías CLS, TRS y HGLS."
+        },
+        "itemFlow": {
+            "title": "Item Flow – Aplicación Full-Stack TypeScript",
+            "date": "Oct 2025",
+            "desc": "Un proyecto full-stack integral que demuestra prácticas modernas de desarrollo desde la concepción hasta el despliegue. Incluye una migración completa de la base de código de JavaScript a TypeScript, diseño receptivo usando la prop sx de Material-UI e integración con Cloudinary para almacenamiento escalable de imágenes."
+        },
+        "nasa": {
+            "title": "Participante del NASA Space Apps Challenge",
+            "date": "Oct 2025",
+            "desc": "Colaboré en un equipo internacional durante un hackathon de 48 horas para resolver un desafío del mundo real presentado por la NASA. Contribuí al desarrollo de un prototipo de proyecto significativo combinando tecnología, ciencia y datos relacionados con el espacio."
+        }
+    }
+}

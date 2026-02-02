@@ -2,7 +2,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Github, ExternalLink } from "lucide-react"
 import Image from "next/image"
-import React from "react"
+import { useTranslations } from "next-intl"
 
 interface ProjectCardProps {
     title: React.ReactNode;
@@ -21,6 +21,7 @@ export function ProjectCard({
     liveLink,
     imageSrc
 }: ProjectCardProps) {
+    const t = useTranslations('Projects')
     return (
         <Card className="mb-6 overflow-hidden">
             <CardHeader className="pb-2 pt-6">
@@ -71,12 +72,12 @@ export function ProjectCard({
                             <div className="flex gap-6 mt-auto">
                                 {liveLink && (
                                     <a href={liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-base font-medium hover:underline text-primary">
-                                        <ExternalLink size={18} /> Live Demo
+                                        <ExternalLink size={18} /> {t('liveDemo')}
                                     </a>
                                 )}
                                 {githubLink && (
                                     <a href={githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-base font-medium hover:underline text-primary">
-                                        <Github size={18} /> GitHub
+                                        <Github size={18} /> {t('github')}
                                     </a>
                                 )}
                             </div>

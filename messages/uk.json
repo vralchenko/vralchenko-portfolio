@@ -1,0 +1,87 @@
+{
+    "Navbar": {
+        "home": "Головна",
+        "projects": "Проєкти",
+        "contact": "Контакти"
+    },
+    "Home": {
+        "whoAmI": "Хто я?",
+        "whoAmIContent": "Senior Software Developer з 20-річним досвідом створення надійних, масштабованих та критично важливих рішень. Спеціалізуюся на <strong>архітектурі мікросервісів та бекенду</strong> використовуючи <strong>C#, .NET, Node.js, SQL та Message Brokers (Kafka, RabbitMQ)</strong>, з глибокими знаннями в <strong>TypeScript</strong> та <strong>React</strong>. Зараз <strong>інтегрую AI (WebLLM, Ollama)</strong> в проєкти використовуючи <strong>Flutter</strong>.",
+        "experience": "Досвід роботи",
+        "myTechStack": "Мій стек технологій",
+        "role": "BACKEND / FRONTEND / AI / QA",
+        "masterDegree": "Диплом магістра (з відзнакою)",
+        "university": "Національний державний політехнічний університет",
+        "languages": {
+            "en": "Англійська: C1",
+            "de": "Німецька: B1",
+            "uk": "Українська: C2",
+            "ru": "Російська: C2"
+        },
+        "exp": {
+            "senQA": "SENIOR QA AUTOMATION ENGINEER",
+            "selfEmployed": "Приватна практика (Лют 2025 - Нині)",
+            "senSoftware": "SENIOR SOFTWARE ENGINEER",
+            "bystronic": "Bystronic Group (Жовт 2023 - Лют 2025)",
+            "senFullstack": "SENIOR FULLSTACK SOFTWARE ENGINEER",
+            "uuu": "UUUSoftware.com (Квіт 2021 - Лип 2023)",
+            "software": "SOFTWARE ENGINEER",
+            "axxos": "Axxos (Січ 2018 - Бер 2021)",
+            "webSoftware": "WEB SOFTWARE ENGINEER",
+            "vocab": "Vocabnetwork (Квіт 2016 - Квіт 2020)",
+            "webDev": "WEB DEVELOPER",
+            "svitla": "Svitla Systems (Серп 2013 - Груд 2017)",
+            "senCSharp": "SENIOR C# AND SQL DEVELOPER",
+            "volia": "Volia Software (Лют 2010 - Лип 2013)",
+            "midDotNet": "JUNIOR/MIDDLE .NET DEVELOPER",
+            "infopulse": "Infopulse (Трав 2006 - Січ 2010)",
+            "oneC": "1C PROGRAMMER",
+            "atl": "ATL-TradeLine (Лют 2002 - Трав 2006)"
+        }
+    },
+    "Contact": {
+        "title": "Зв'язатися зі мною",
+        "subtitle": "Ви також можете зв'язатися зі мною через форму нижче.",
+        "form": {
+            "name": "Ім'я",
+            "namePlaceholder": "Іван Іваненко",
+            "email": "Email",
+            "emailPlaceholder": "ivan@example.com",
+            "message": "Повідомлення",
+            "messagePlaceholder": "Введіть ваше повідомлення тут",
+            "submit": "Надіслати повідомлення",
+            "sending": "Надсилання...",
+            "success": "Повідомлення успішно надіслано! Я скоро зв'яжуся з вами.",
+            "error": "Не вдалося надіслати повідомлення. Будь ласка, спробуйте ще раз або використовуйте email."
+        }
+    },
+    "Projects": {
+        "liveDemo": "Демо",
+        "github": "GitHub",
+        "foreteller": {
+            "title": "Foreteller – Космічна Мудрість",
+            "date": "Січ 2026",
+            "desc": "Містичний веб-додаток, присвячений космічній мудрості, доступний 6 мовами. Особливості включають Універсальну мудрість (зодіак, китайський гороскоп), інтерактивний Квадрат Піфагора та аналіз характеру на базі ШІ з використанням Llama-4 через Groq API. Користувачі можуть створювати високоякісні PDF-звіти та насолоджуватися адаптивним дизайном у стилі 'Cosmic Glass'."
+        },
+        "bizLingo": {
+            "title": "BizLingo AI – Вивчення мов у браузері",
+            "date": "Січ 2026",
+            "desc": "Інтерактивний веб-додаток для освоєння ділової англійської та німецької мов. Він використовує WebLLM для запуску моделей ШІ прямо в браузері, забезпечуючи інтелектуальний зворотний зв'язок щодо перекладів без відправки даних на сервер, що гарантує повну конфіденційність."
+        },
+        "careerCoach": {
+            "title": "AI Career Coach – Інтелектуальний аналізатор резюме та вакансій",
+            "date": "Груд 2025",
+            "desc": "Інструмент на базі ШІ для глибокого аналізу відповідності резюме вакансії. Він використовує локальні LLM через Ollama для створення аналітичних звітів та планів підготовки до інтерв'ю з використанням методологій CLS, TRS та HGLS."
+        },
+        "itemFlow": {
+            "title": "Item Flow – Full-Stack TypeScript додаток",
+            "date": "Жовт 2025",
+            "desc": "Комплексний full-stack проєкт, що демонструє сучасні методи розробки від концепції до розгортання. Включає повну міграцію кодової бази з JavaScript на TypeScript, адаптивний дизайн з використанням sx prop Material-UI та інтеграцію з Cloudinary для масштабованого зберігання зображень."
+        },
+        "nasa": {
+            "title": "Учасник NASA Space Apps Challenge",
+            "date": "Жовт 2025",
+            "desc": "Працював у міжнародній команді під час 48-годинного хакатону над вирішенням реального завдання, поставленого NASA. Вніс вклад у розробку прототипу значущого проєкту, об'єднавши технології, науку та дані, пов'язані з космосом."
+        }
+    }
+}

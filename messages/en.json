@@ -1,0 +1,87 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "Home": {
+        "whoAmI": "Who am I?",
+        "whoAmIContent": "Senior Software Developer with 20 years of hands-on experience delivering reliable, scalable, and business-critical solutions. I specialize in <strong>microservices and backend architecture</strong> using <strong>C#, .NET, Node.js, SQL, and Message Brokers (Kafka, RabbitMQ)</strong>, with deep expertise in <strong>TypeScript</strong> and <strong>React</strong>. Currently <strong>integrating AI (WebLLM, Ollama)</strong> into my projects using <strong>Flutter</strong>.",
+        "experience": "Experience",
+        "myTechStack": "My Tech Stack",
+        "role": "BACKEND / FRONTEND / AI / QA",
+        "masterDegree": "Master's Degree (Diploma with Honor)",
+        "university": "National State Polytechnic University",
+        "languages": {
+            "en": "English: C1",
+            "de": "German: B1",
+            "uk": "Ukrainian: C2",
+            "ru": "Russian: C2"
+        },
+        "exp": {
+            "senQA": "SENIOR QA AUTOMATION ENGINEER",
+            "selfEmployed": "Self-employed (Feb 2025 - Present)",
+            "senSoftware": "SENIOR SOFTWARE ENGINEER",
+            "bystronic": "Bystronic Group (Oct 2023 - Feb 2025)",
+            "senFullstack": "SENIOR FULLSTACK SOFTWARE ENGINEER",
+            "uuu": "UUUSoftware.com (Apr 2021 - Jul 2023)",
+            "software": "SOFTWARE ENGINEER",
+            "axxos": "Axxos (Jan 2018 - Mar 2021)",
+            "webSoftware": "WEB SOFTWARE ENGINEER",
+            "vocab": "Vocabnetwork (Apr 2016 - Apr 2020)",
+            "webDev": "WEB DEVELOPER",
+            "svitla": "Svitla Systems (Aug 2013 - Dec 2017)",
+            "senCSharp": "SENIOR C# AND SQL DEVELOPER",
+            "volia": "Volia Software (Feb 2010 - Jul 2013)",
+            "midDotNet": "JUNIOR/MIDDLE .NET DEVELOPER",
+            "infopulse": "Infopulse (May 2006 - Jan 2010)",
+            "oneC": "1C PROGRAMMER",
+            "atl": "ATL-TradeLine (Feb 2002 - May 2006)"
+        }
+    },
+    "Contact": {
+        "title": "Contact with me",
+        "subtitle": "You can also get in touch with me through this form below.",
+        "form": {
+            "name": "Name",
+            "namePlaceholder": "John Doe",
+            "email": "Email",
+            "emailPlaceholder": "john.doe@example.com",
+            "message": "Message",
+            "messagePlaceholder": "Enter your message here",
+            "submit": "Send Message",
+            "sending": "Sending...",
+            "success": "Message sent successfully! I will get back to you shortly.",
+            "error": "Failed to send message. Please try again or use the email link."
+        }
+    },
+    "Projects": {
+        "liveDemo": "Live Demo",
+        "github": "GitHub",
+        "foreteller": {
+            "title": "Foreteller – Cosmic Wisdom",
+            "date": "Jan 2026",
+            "desc": "A mystical web application dedicated to cosmic wisdom available in 6 languages. Features include Universal Wisdom (Zodiac, Chinese Horoscope), interactive Pythagoras Square, and AI-powered character analysis using Llama-4 via Groq API. Users can generate high-quality PDF reports and enjoy a responsive 'Cosmic Glass' design."
+        },
+        "bizLingo": {
+            "title": "BizLingo AI – Browser-Based Language Learning",
+            "date": "Jan 2026",
+            "desc": "An interactive web application for mastering Business English and German. It uses WebLLM to run AI models directly in your browser, providing intelligent feedback on translations without sending any data to a server, ensuring total privacy."
+        },
+        "careerCoach": {
+            "title": "AI Career Coach – Intelligent Resume & Job Analyzer",
+            "date": "Dec 2025",
+            "desc": "An AI-powered tool for deep resume-to-job matching analysis. It leverages local LLMs via Ollama to generate critical reports and interview preparation roadmaps using CLS, TRS, and HGLS methodologies."
+        },
+        "itemFlow": {
+            "title": "Item Flow – Full-Stack TypeScript Application",
+            "date": "Oct 2025",
+            "desc": "A comprehensive full-stack project demonstrating modern development practices from conception to deployment. Includes a complete codebase migration from JavaScript to TypeScript, responsive design using Material-UI's sx prop, and integration with Cloudinary for scalable image storage."
+        },
+        "nasa": {
+            "title": "NASA Space Apps Challenge Participant",
+            "date": "Oct 2025",
+            "desc": "Collaborated in an international team during a 48-hour hackathon to solve a real-world challenge presented by NASA. Contributed to the development of a meaningful project prototype by blending technology, science, and space-related data."
+        }
+    }
+}
