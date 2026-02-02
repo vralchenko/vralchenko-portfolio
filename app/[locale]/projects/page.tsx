@@ -5,8 +5,8 @@ export default function ProjectsPage() {
     const t = useTranslations('Projects');
 
     return (
-        <main className="flex flex-col flex-grow overflow-hidden">
-            <div className="px-4 pt-1 pb-4 md:px-8 md:pt-4 md:pb-8 max-w-6xl mx-auto w-full overflow-y-auto scrollbar-thin">
+        <main className="flex flex-col flex-grow">
+            <div className="px-4 pt-1 pb-4 md:px-8 md:pt-4 md:pb-8 max-w-6xl mx-auto w-full">
                 <ProjectCard
                     title={
                         <div className="flex justify-between items-center w-full">

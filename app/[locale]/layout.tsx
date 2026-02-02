@@ -33,7 +33,7 @@ export default async function RootLayout({
 
     return (
         <html lang={locale} className="dark">
-            <body className={`${inter.className} min-h-dvh md:h-dvh flex flex-col md:overflow-hidden`}>
+            <body className={`${inter.className} min-h-dvh flex flex-col`}>
                 <NextIntlClientProvider messages={messages}>
                     <Navbar />
                     {children}

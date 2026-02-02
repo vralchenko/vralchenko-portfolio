@@ -27,8 +27,8 @@ export default function Home() {
     const t = useTranslations('Home');
 
     return (
-        <main className="px-4 md:px-8 flex-grow flex flex-col md:h-[calc(100vh-112px)] md:overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-6 gap-3 flex-grow md:overflow-hidden py-2">
+        <main className="px-4 md:px-8 flex-grow flex flex-col">
+            <div className="grid grid-cols-1 md:grid-cols-6 gap-3 flex-grow py-2">
 
                 <Card className="md:col-span-4">
                     <CardHeader className="pb-0 pt-3">

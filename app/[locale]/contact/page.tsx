@@ -38,8 +38,8 @@ export default function ContactPage() {
     }
 
     return (
-        <main className="flex flex-col flex-grow overflow-hidden">
-            <div className="px-4 pb-4 md:px-8 md:pb-8 max-w-4xl mx-auto w-full overflow-y-auto scrollbar-thin">
+        <main className="flex flex-col flex-grow">
+            <div className="px-4 pb-4 md:px-8 md:pb-8 max-w-4xl mx-auto w-full">
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
 
