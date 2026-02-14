@@ -6,7 +6,7 @@
     },
     "Home": {
         "whoAmI": "Qui suis-je ?",
-        "whoAmIContent": "Développeur logiciel senior avec 20 ans d'expérience pratique dans la fourniture de solutions fiables, évolutives et critiques pour l'entreprise. Je me spécialise dans les <strong>microservices et l'architecture backend</strong> en utilisant <strong>C#, .NET, Node.js, SQL et les courtiers de messages (Kafka, RabbitMQ)</strong>, avec une expertise approfondie en <strong>TypeScript</strong> et <strong>React</strong>. Actuellement, j'intègre l'<strong>IA (WebLLM, Ollama)</strong> dans mes projets en utilisant <strong>Flutter</strong>.",
+        "whoAmIContent": "Développeur logiciel senior avec 20 ans d'expérience pratique dans la fourniture de solutions fiables, évolutives et critiques pour l'entreprise. Je me spécialise dans les <strong>microservices et l'architecture backend</strong> en utilisant <strong>C#, .NET, Node.js, SQL et les courtiers de messages (Kafka, RabbitMQ)</strong>, avec une expertise approfondie en <strong>TypeScript</strong> et <strong>React</strong>. Actuellement, j'intègre l'<strong>IA (Groq, Ollama)</strong> dans mes projets en utilisant <strong>Flutter</strong>.",
         "experience": "Expérience",
         "myTechStack": "Mon Stack Technique",
         "role": "BACKEND / FRONTEND / AI / QA",
@@ -64,9 +64,9 @@
             "desc": "Une application web mystique dédiée à la sagesse cosmique disponible en 6 langues. Les fonctionnalités incluent la Sagesse Universelle (Zodiaque, Horoscope Chinois), le Carré de Pythagore interactif et l'analyse de caractère alimentée par l'IA utilisant Llama-4 via l'API Groq. Les utilisateurs peuvent générer des rapports PDF de haute qualité et profiter d'un design réactif 'Cosmic Glass'."
         },
         "bizLingo": {
-            "title": "BizLingo AI – Apprentissage des langues dans le navigateur",
-            "date": "Jan 2026",
-            "desc": "Une application web interactive pour maîtriser l'anglais et l'allemand des affaires. Elle utilise WebLLM pour exécuter des modèles d'IA directement dans votre navigateur, fournissant un retour intelligent sur les traductions sans envoyer de données à un serveur, garantissant une confidentialité totale."
+            "title": "BizLingo AI – Apprentissage rapide des langues avec l'IA",
+            "date": "Fév 2026",
+            "desc": "Une application web interactive de haute performance pour maîtriser l'anglais et l'allemand des affaires. Elle utilise l'API Groq pour une validation des traductions quasi instantanée et un retour intelligent, offrant une expérience d'apprentissage fluide et réactive."
         },
         "careerCoach": {
             "title": "AI Career Coach – Analyseur intelligent de CV et d'emplois",

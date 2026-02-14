@@ -6,7 +6,7 @@
     },
     "Home": {
         "whoAmI": "Кто я?",
-        "whoAmIContent": "Senior Software Developer с 20-летним опытом создания надежных, масштабируемых и критически важных решений. Специализируюсь на <strong>архитектуре микросервисов и бэкенда</strong> используя <strong>C#, .NET, Node.js, SQL и Message Brokers (Kafka, RabbitMQ)</strong>, с глубокими знаниями в <strong>TypeScript</strong> и <strong>React</strong>. В настоящее время <strong>интегрирую AI (WebLLM, Ollama)</strong> в проекты используя <strong>Flutter</strong>.",
+        "whoAmIContent": "Senior Software Developer с 20-летним опытом создания надежных, масштабируемых и критически важных решений. Специализируюсь на <strong>архитектуре микросервисов и бэкенда</strong> используя <strong>C#, .NET, Node.js, SQL и Message Brokers (Kafka, RabbitMQ)</strong>, с глубокими знаниями в <strong>TypeScript</strong> и <strong>React</strong>. В настоящее время <strong>интегрирую AI (Groq, Ollama)</strong> в проекты используя <strong>Flutter</strong>.",
         "experience": "Опыт работы",
         "myTechStack": "Мой стек технологий",
         "role": "BACKEND / FRONTEND / AI / QA",

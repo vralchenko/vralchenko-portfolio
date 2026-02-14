@@ -6,7 +6,7 @@
     },
     "Home": {
         "whoAmI": "Хто я?",
-        "whoAmIContent": "Senior Software Developer з 20-річним досвідом створення надійних, масштабованих та критично важливих рішень. Спеціалізуюся на <strong>архітектурі мікросервісів та бекенду</strong> використовуючи <strong>C#, .NET, Node.js, SQL та Message Brokers (Kafka, RabbitMQ)</strong>, з глибокими знаннями в <strong>TypeScript</strong> та <strong>React</strong>. Зараз <strong>інтегрую AI (WebLLM, Ollama)</strong> в проєкти використовуючи <strong>Flutter</strong>.",
+        "whoAmIContent": "Senior Software Developer з 20-річним досвідом створення надійних, масштабованих та критично важливих рішень. Спеціалізуюся на <strong>архитектурі мікросервісів та бекенду</strong> використовуючи <strong>C#, .NET, Node.js, SQL та Message Brokers (Kafka, RabbitMQ)</strong>, з глибокими знаннями в <strong>TypeScript</strong> та <strong>React</strong>. Зараз <strong>інтегрую AI (Groq, Ollama)</strong> в проєкти використовуючи <strong>Flutter</strong>.",
         "experience": "Досвід роботи",
         "myTechStack": "Мій стек технологій",
         "role": "BACKEND / FRONTEND / AI / QA",
@@ -65,7 +65,7 @@
         },
         "bizLingo": {
             "title": "BizLingo AI – Швидке вивчення мов з ШІ",
-            "date": "Січ 2026",
+            "date": "Лют 2026",
             "desc": "Високопродуктивний інтерактивний веб-додаток для освоєння ділової англійської та німецької мов. Використовує Groq API для миттєвої перевірки перекладів та інтелектуального зворотного зв'язку, забезпечуючи плавний та чуйний процес навчання."
         },
         "careerCoach": {

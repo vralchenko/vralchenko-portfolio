@@ -6,7 +6,7 @@
     },
     "Home": {
         "whoAmI": "Who am I?",
-        "whoAmIContent": "Senior Software Developer with 20 years of hands-on experience delivering reliable, scalable, and business-critical solutions. I specialize in <strong>microservices and backend architecture</strong> using <strong>C#, .NET, Node.js, SQL, and Message Brokers (Kafka, RabbitMQ)</strong>, with deep expertise in <strong>TypeScript</strong> and <strong>React</strong>. Currently <strong>integrating AI (WebLLM, Ollama)</strong> into my projects using <strong>Flutter</strong>.",
+        "whoAmIContent": "Senior Software Developer with 20 years of hands-on experience delivering reliable, scalable, and business-critical solutions. I specialize in <strong>microservices and backend architecture</strong> using <strong>C#, .NET, Node.js, SQL, and Message Brokers (Kafka, RabbitMQ)</strong>, with deep expertise in <strong>TypeScript</strong> and <strong>React</strong>. Currently <strong>integrating AI (Groq, Ollama)</strong> into my projects using <strong>Flutter</strong>.",
         "experience": "Experience",
         "myTechStack": "My Tech Stack",
         "role": "BACKEND / FRONTEND / AI / QA",

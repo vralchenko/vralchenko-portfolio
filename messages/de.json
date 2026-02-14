@@ -6,7 +6,7 @@
     },
     "Home": {
         "whoAmI": "Wer bin ich?",
-        "whoAmIContent": "Senior Softwareentwickler mit 20 Jahren praktischer Erfahrung in der Bereitstellung zuverlässiger, skalierbarer und geschäftskritischer Lösungen. Ich spezialisiere mich auf <strong>Microservices- und Backend-Architektur</strong> unter Verwendung von <strong>C#, .NET, Node.js, SQL und Message Brokern (Kafka, RabbitMQ)</strong>, mit tiefgehender Expertise in <strong>TypeScript</strong> und <strong>React</strong>. Derzeit integriere ich <strong>KI (WebLLM, Ollama)</strong> in meine Projekte unter Verwendung von <strong>Flutter</strong>.",
+        "whoAmIContent": "Senior Softwareentwickler mit 20 Jahren praktischer Erfahrung in der Bereitstellung zuverlässiger, skalierbarer und geschäftskritischer Lösungen. Ich spezialisiere mich auf <strong>Microservices- und Backend-Architektur</strong> unter Verwendung von <strong>C#, .NET, Node.js, SQL und Message Brokern (Kafka, RabbitMQ)</strong>, mit tiefgehender Expertise in <strong>TypeScript</strong> und <strong>React</strong>. Derzeit integriere ich <strong>KI (Groq, Ollama)</strong> in meine Projekte unter Verwendung von <strong>Flutter</strong>.",
         "experience": "Erfahrung",
         "myTechStack": "Mein Tech Stack",
         "role": "BACKEND / FRONTEND / AI / QA",

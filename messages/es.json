@@ -6,7 +6,7 @@
     },
     "Home": {
         "whoAmI": "¿Quién soy?",
-        "whoAmIContent": "Desarrollador de Software Senior con 20 años de experiencia práctica entregando soluciones confiables, escalables y críticas para el negocio. Me especializo en <strong>microservicios y arquitectura backend</strong> utilizando <strong>C#, .NET, Node.js, SQL y Message Brokers (Kafka, RabbitMQ)</strong>, con profunda experiencia en <strong>TypeScript</strong> y <strong>React</strong>. Actualmente estoy <strong>integrando IA (WebLLM, Ollama)</strong> en mis proyectos utilizando <strong>Flutter</strong>.",
+        "whoAmIContent": "Desarrollador de Software Senior con 20 años de experiencia práctica entregando soluciones confiables, escalables y críticas para el negocio. Me especializo en <strong>microservicios y arquitectura backend</strong> utilizando <strong>C#, .NET, Node.js, SQL y Message Brokers (Kafka, RabbitMQ)</strong>, con profunda experiencia en <strong>TypeScript</strong> y <strong>React</strong>. Actualmente estoy <strong>integrando IA (Groq, Ollama)</strong> en mis proyectos utilizando <strong>Flutter</strong>.",
         "experience": "Experiencia",
         "myTechStack": "Mi Stack Tecnológico",
         "role": "BACKEND / FRONTEND / AI / QA",
@@ -64,9 +64,9 @@
             "desc": "Una mística aplicación web dedicada a la sabiduría cósmica disponible en 6 idiomas. Las características incluyen Sabiduría Universal (Zodíaco, Horóscopo Chino), Cuadrado de Pitágoras interactivo y análisis de personajes impulsado por IA usando Llama-4 a través de la API de Groq. Los usuarios pueden generar informes PDF de alta calidad y disfrutar de un diseño receptivo 'Cosmic Glass'."
         },
         "bizLingo": {
-            "title": "BizLingo AI – Aprendizaje de idiomas basado en el navegador",
-            "date": "Ene 2026",
-            "desc": "Una aplicación web interactiva para dominar el inglés y el alemán de negocios. Utiliza WebLLM para ejecutar modelos de IA directamente en tu navegador, proporcionando retroalimentación inteligente sobre las traducciones sin enviar ningún dato a un servidor, garantizando la total privacidad."
+            "title": "BizLingo AI – Aprendizaje rápido de idiomas con IA",
+            "date": "Feb 2026",
+            "desc": "Una aplicación web interactiva de alto rendimiento para dominar el inglés y el alemán de negocios. Utiliza la API de Groq para una validación de traducciones casi instantánea y retroalimentación inteligente, proporcionando una experiencia de aprendizaje fluida y receptiva."
         },
         "careerCoach": {
             "title": "AI Career Coach – Analizador inteligente de currículums y empleos",
