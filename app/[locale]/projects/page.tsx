@@ -42,7 +42,7 @@ export default function ProjectsPage() {
                         </div>
                     }
                     description={t('careerCoach.desc')}
-                    technologies={["Next.js", "Ollama", "Puppeteer", "TypeScript", "Tailwind CSS", "PDF-Parse", "Node.js", "Railway"]}
+                    technologies={["Next.js", "Groq API", "Puppeteer", "TypeScript", "Tailwind CSS", "PDF-Parse", "Node.js", "Railway"]}
                     githubLink="https://github.com/vralchenko/ai-career-coach"
                     liveLink="https://ai-career-coach-production-f43f.up.railway.app/"
                     imageSrc="/ai-career-coach.png"

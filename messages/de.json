@@ -6,7 +6,7 @@
     },
     "Home": {
         "whoAmI": "Wer bin ich?",
-        "whoAmIContent": "Senior Softwareentwickler mit 20 Jahren praktischer Erfahrung in der Bereitstellung zuverlässiger, skalierbarer und geschäftskritischer Lösungen. Ich spezialisiere mich auf <strong>Microservices- und Backend-Architektur</strong> unter Verwendung von <strong>C#, .NET, Node.js, SQL und Message Brokern (Kafka, RabbitMQ)</strong>, mit tiefgehender Expertise in <strong>TypeScript</strong> und <strong>React</strong>. Derzeit integriere ich <strong>KI (Groq, Ollama)</strong> in meine Projekte unter Verwendung von <strong>Flutter</strong>.",
+        "whoAmIContent": "Senior Softwareentwickler mit 20 Jahren praktischer Erfahrung in der Bereitstellung zuverlässiger, skalierbarer und geschäftskritischer Lösungen. Ich spezialisiere mich auf <strong>Microservices- und Backend-Architektur</strong> unter Verwendung von <strong>C#, .NET, Node.js, SQL und Message Brokern (Kafka, RabbitMQ)</strong>, mit tiefgehender Expertise in <strong>TypeScript</strong> und <strong>React</strong>. Derzeit integriere ich <strong>KI (Groq)</strong> in meine Projekte unter Verwendung von <strong>Flutter</strong>.",
         "experience": "Erfahrung",
         "myTechStack": "Mein Tech Stack",
         "role": "BACKEND / FRONTEND / AI / QA",
@@ -71,7 +71,7 @@
         "careerCoach": {
             "title": "AI Career Coach – Intelligenter Lebenslauf- und Job-Analyzer",
             "date": "Dez 2025",
-            "desc": "Ein KI-gestütztes Tool für die tiefgehende Analyse der Übereinstimmung von Lebenslauf und Stellenanzeige. Es nutzt lokale LLMs über Ollama, um kritische Berichte und Roadmaps für die Interviewvorbereitung unter Verwendung der Methoden CLS, TRS und HGLS zu erstellen."
+            "desc": "Ein KI-gestütztes Tool für die tiefgehende Analyse der Übereinstimmung von Lebenslauf und Stellenanzeige. Es nutzt KI-Modelle über die Groq-API, um kritische Berichte und Roadmaps für die Interviewvorbereitung unter Verwendung der Methoden CLS, TRS und HGLS zu erstellen."
         },
         "itemFlow": {
             "title": "Item Flow – Full-Stack TypeScript-Anwendung",

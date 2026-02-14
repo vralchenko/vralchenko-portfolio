@@ -6,7 +6,7 @@
     },
     "Home": {
         "whoAmI": "Qui suis-je ?",
-        "whoAmIContent": "Développeur logiciel senior avec 20 ans d'expérience pratique dans la fourniture de solutions fiables, évolutives et critiques pour l'entreprise. Je me spécialise dans les <strong>microservices et l'architecture backend</strong> en utilisant <strong>C#, .NET, Node.js, SQL et les courtiers de messages (Kafka, RabbitMQ)</strong>, avec une expertise approfondie en <strong>TypeScript</strong> et <strong>React</strong>. Actuellement, j'intègre l'<strong>IA (Groq, Ollama)</strong> dans mes projets en utilisant <strong>Flutter</strong>.",
+        "whoAmIContent": "Développeur logiciel senior avec 20 ans d'expérience pratique dans la fourniture de solutions fiables, évolutives et critiques pour l'entreprise. Je me spécialise dans les <strong>microservices et l'architecture backend</strong> en utilisant <strong>C#, .NET, Node.js, SQL et les courtiers de messages (Kafka, RabbitMQ)</strong>, avec une expertise approfondie en <strong>TypeScript</strong> et <strong>React</strong>. Actuellement, j'intègre l'<strong>IA (Groq)</strong> dans mes projets en utilisant <strong>Flutter</strong>.",
         "experience": "Expérience",
         "myTechStack": "Mon Stack Technique",
         "role": "BACKEND / FRONTEND / AI / QA",
@@ -71,7 +71,7 @@
         "careerCoach": {
             "title": "AI Career Coach – Analyseur intelligent de CV et d'emplois",
             "date": "Déc 2025",
-            "desc": "Un outil alimenté par l'IA pour une analyse approfondie de l'adéquation entre le CV et le poste. Il exploite les LLM locaux via Ollama pour générer des rapports critiques et des feuilles de route pour la préparation des entretiens en utilisant les méthodologies CLS, TRS et HGLS."
+            "desc": "Un outil alimenté par l'IA pour une analyse approfondie de l'adéquation entre le CV et le poste. Il exploite les modèles d'IA via l'API Groq pour générer des rapports critiques et des feuilles de route pour la préparation des entretiens en utilisant les méthodologies CLS, TRS et HGLS."
         },
         "itemFlow": {
             "title": "Item Flow – Application Full-Stack TypeScript",

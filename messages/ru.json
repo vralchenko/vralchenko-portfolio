@@ -6,7 +6,7 @@
     },
     "Home": {
         "whoAmI": "Кто я?",
-        "whoAmIContent": "Senior Software Developer с 20-летним опытом создания надежных, масштабируемых и критически важных решений. Специализируюсь на <strong>архитектуре микросервисов и бэкенда</strong> используя <strong>C#, .NET, Node.js, SQL и Message Brokers (Kafka, RabbitMQ)</strong>, с глубокими знаниями в <strong>TypeScript</strong> и <strong>React</strong>. В настоящее время <strong>интегрирую AI (Groq, Ollama)</strong> в проекты используя <strong>Flutter</strong>.",
+        "whoAmIContent": "Senior Software Developer с 20-летним опытом создания надежных, масштабируемых и критически важных решений. Специализируюсь на <strong>архитектуре микросервисов и бэкенда</strong> используя <strong>C#, .NET, Node.js, SQL и Message Brokers (Kafka, RabbitMQ)</strong>, с глубокими знаниями в <strong>TypeScript</strong> и <strong>React</strong>. В настоящее время <strong>интегрирую AI (Groq)</strong> в проекты используя <strong>Flutter</strong>.",
         "experience": "Опыт работы",
         "myTechStack": "Мой стек технологий",
         "role": "BACKEND / FRONTEND / AI / QA",
@@ -71,7 +71,7 @@
         "careerCoach": {
             "title": "AI Career Coach – Интеллектуальный анализатор резюме и вакансий",
             "date": "Дек 2025",
-            "desc": "Инструмент на базе ИИ для глубокого анализа соответствия резюме вакансии. Он использует локальные LLM через Ollama для создания аналитических отчетов и планов подготовки к интервью с использованием методологий CLS, TRS и HGLS."
+            "desc": "Инструмент на базе ИИ для глубокого анализа соответствия резюме вакансии. Он использует модели ИИ через Groq API для создания аналитических отчетов и планов подготовки к интервью с использованием методологий CLS, TRS и HGLS."
         },
         "itemFlow": {
             "title": "Item Flow – Full-Stack TypeScript приложение",

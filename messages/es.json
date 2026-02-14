@@ -6,7 +6,7 @@
     },
     "Home": {
         "whoAmI": "¿Quién soy?",
-        "whoAmIContent": "Desarrollador de Software Senior con 20 años de experiencia práctica entregando soluciones confiables, escalables y críticas para el negocio. Me especializo en <strong>microservicios y arquitectura backend</strong> utilizando <strong>C#, .NET, Node.js, SQL y Message Brokers (Kafka, RabbitMQ)</strong>, con profunda experiencia en <strong>TypeScript</strong> y <strong>React</strong>. Actualmente estoy <strong>integrando IA (Groq, Ollama)</strong> en mis proyectos utilizando <strong>Flutter</strong>.",
+        "whoAmIContent": "Desarrollador de Software Senior con 20 años de experiencia práctica entregando soluciones confiables, escalables y críticas para el negocio. Me especializo en <strong>microservicios y arquitectura backend</strong> utilizando <strong>C#, .NET, Node.js, SQL y Message Brokers (Kafka, RabbitMQ)</strong>, con profunda experiencia en <strong>TypeScript</strong> y <strong>React</strong>. Actualmente estoy <strong>integrando IA (Groq)</strong> en mis proyectos utilizando <strong>Flutter</strong>.",
         "experience": "Experiencia",
         "myTechStack": "Mi Stack Tecnológico",
         "role": "BACKEND / FRONTEND / AI / QA",
@@ -71,7 +71,7 @@
         "careerCoach": {
             "title": "AI Career Coach – Analizador inteligente de currículums y empleos",
             "date": "Dic 2025",
-            "desc": "Una herramienta impulsada por IA para un análisis profundo del ajuste entre currículum y puesto de trabajo. Aprovecha los LLM locales a través de Ollama para generar informes críticos y hojas de ruta para la preparación de entrevistas utilizando metodologías CLS, TRS y HGLS."
+            "desc": "Una herramienta impulsada por IA para un análisis profundo del ajuste entre currículum y puesto de trabajo. Aprovecha los modelos de IA a través de la API de Groq para generar informes críticos y hojas de ruta para la preparación de entrevistas utilizando metodologías CLS, TRS y HGLS."
         },
         "itemFlow": {
             "title": "Item Flow – Aplicación Full-Stack TypeScript",
