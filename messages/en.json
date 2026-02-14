@@ -64,9 +64,9 @@
             "desc": "A mystical web application dedicated to cosmic wisdom available in 6 languages. Features include Universal Wisdom (Zodiac, Chinese Horoscope), interactive Pythagoras Square, and AI-powered character analysis using Llama-4 via Groq API. Users can generate high-quality PDF reports and enjoy a responsive 'Cosmic Glass' design."
         },
         "bizLingo": {
-            "title": "BizLingo AI – Browser-Based Language Learning",
-            "date": "Jan 2026",
-            "desc": "An interactive web application for mastering Business English and German. It uses WebLLM to run AI models directly in your browser, providing intelligent feedback on translations without sending any data to a server, ensuring total privacy."
+            "title": "BizLingo AI – Fast AI-Powered Language Learning",
+            "date": "Feb 2026",
+            "desc": "A high-performance interactive web application for mastering Business English and German. It leverages Groq API for near-instant translation validation and intelligent feedback, providing a smooth and responsive learning experience."
         },
         "careerCoach": {
             "title": "AI Career Coach – Intelligent Resume & Job Analyzer",

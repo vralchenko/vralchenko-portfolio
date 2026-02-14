@@ -64,9 +64,9 @@
             "desc": "Eine mystische Webanwendung, die der kosmischen Weisheit gewidmet ist und in 6 Sprachen verfügbar ist. Zu den Funktionen gehören universelle Weisheit (Tierkreis, chinesisches Horoskop), das interaktive Pythagoras-Quadrat und KI-gestützte Charakteranalyse mit Llama-4 über die Groq-API. Benutzer können hochwertige PDF-Berichte erstellen und ein ansprechendes 'Cosmic Glass'-Design genießen."
         },
         "bizLingo": {
-            "title": "BizLingo AI – Browserbasiertes Sprachenlernen",
-            "date": "Jan 2026",
-            "desc": "Eine interaktive Webanwendung zur Beherrschung von Business-Englisch und -Deutsch. Sie verwendet WebLLM, um KI-Modelle direkt in Ihrem Browser auszuführen, und bietet intelligentes Feedback zu Übersetzungen, ohne Daten an einen Server zu senden, wodurch absolute Privatsphäre gewährleistet wird."
+            "title": "BizLingo AI – Schnelles KI-gestütztes Sprachenlernen",
+            "date": "Feb 2026",
+            "desc": "Eine hochperformante interaktive Webanwendung zur Beherrschung von Business-Englisch und -Deutsch. Sie nutzt die Groq-API für eine nahezu verzögerungsfreie Validierung von Übersetzungen und intelligentes Feedback, was eine flüssige und reaktionsschnelle Lernerfahrung ermöglicht."
         },
         "careerCoach": {
             "title": "AI Career Coach – Intelligenter Lebenslauf- und Job-Analyzer",

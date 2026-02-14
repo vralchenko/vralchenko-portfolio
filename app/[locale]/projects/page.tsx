@@ -28,9 +28,9 @@ export default function ProjectsPage() {
                         </div>
                     }
                     description={t('bizLingo.desc')}
-                    technologies={["Flutter", "WebLLM", "Dart", "In-Browser AI", "LLM", "GitHub Pages"]}
+                    technologies={["Flutter", "Groq API", "Dart", "Cloud AI", "LLM", "Vercel"]}
                     githubLink="https://github.com/vralchenko/BizLingo"
-                    liveLink="https://vralchenko.github.io/BizLingo/"
+                    liveLink="https://biz-lingo-chi.vercel.app/"
                     imageSrc="/biz-lingo-ai.png"
                 />
 
