@@ -44,7 +44,7 @@ export default function ProjectsPage() {
                     description={t('careerCoach.desc')}
                     technologies={["Next.js", "Groq API", "Puppeteer", "TypeScript", "Tailwind CSS", "PDF-Parse", "Node.js", "Railway"]}
                     githubLink="https://github.com/vralchenko/ai-career-coach"
-                    liveLink="https://huggingface.co/spaces/vralchenko/AiCareerCoach"
+                    liveLink="https://vralchenko-aicareercoach.hf.space/"
                     imageSrc="/ai-career-coach.png"
                 />
 
@@ -58,7 +58,7 @@ export default function ProjectsPage() {
                     description={t('itemFlow.desc')}
                     technologies={["Node.js", "TypeScript", "React.js", "Material-UI", "Cloudinary", "Vercel", "Render", "GitHub Actions"]}
                     githubLink="https://github.com/vralchenko/ItemFlow"
-                    liveLink="https://huggingface.co/spaces/vralchenko/ItemFlow"
+                    liveLink="https://vralchenko-itemflow.hf.space/"
                     imageSrc="/item-flow.jpg"
                 />
 
