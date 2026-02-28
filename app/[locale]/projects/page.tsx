@@ -58,7 +58,7 @@ export default function ProjectsPage() {
                     description={t('itemFlow.desc')}
                     technologies={["Node.js", "TypeScript", "React.js", "Material-UI", "Cloudinary", "Vercel", "Render", "GitHub Actions"]}
                     githubLink="https://github.com/vralchenko/ItemFlow"
-                    liveLink="https://item-flow-rho.vercel.app"
+                    liveLink="https://huggingface.co/spaces/vralchenko/ItemFlow"
                     imageSrc="/item-flow.jpg"
                 />
 
