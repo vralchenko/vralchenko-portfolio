@@ -58,6 +58,11 @@
     "Projects": {
         "liveDemo": "Live Demo",
         "github": "GitHub",
+        "jobHunter": {
+            "title": "JobHunter – Smart Job Aggregator",
+            "date": "Mar 2026",
+            "desc": "A multi-source job aggregator that scrapes LinkedIn, jobs.ch, and SwissDevJobs in real time. Features AI-powered relevance scoring (title + location + description analysis), background job enrichment, PDF export with clickable links, and a 6-language UI. Built as a Vercel serverless app with Cheerio-based scraping and client-side scoring."
+        },
         "foreteller": {
             "title": "Foreteller – Cosmic Wisdom",
             "date": "Jan 2026",

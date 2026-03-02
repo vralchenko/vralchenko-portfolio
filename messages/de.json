@@ -58,6 +58,11 @@
     "Projects": {
         "liveDemo": "Live-Demo",
         "github": "GitHub",
+        "jobHunter": {
+            "title": "JobHunter – Intelligenter Job-Aggregator",
+            "date": "Mär 2026",
+            "desc": "Ein Multi-Source-Job-Aggregator, der LinkedIn, jobs.ch und SwissDevJobs in Echtzeit durchsucht. Funktionen umfassen KI-gestütztes Relevanz-Scoring (Titel- + Standort- + Beschreibungsanalyse), Hintergrund-Datenanreicherung, PDF-Export mit anklickbaren Links und eine Benutzeroberfläche in 6 Sprachen. Erstellt als Vercel-Serverless-Anwendung mit Cheerio-basiertem Scraping und clientseitigem Scoring."
+        },
         "foreteller": {
             "title": "Foreteller – Kosmische Weisheit",
             "date": "Jan 2026",

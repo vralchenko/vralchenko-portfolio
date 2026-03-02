@@ -10,6 +10,19 @@ export default function ProjectsPage() {
                 <ProjectCard
                     title={
                         <div className="flex justify-between items-center w-full">
+                            <span className="text-2xl font-bold tracking-tight">{t('jobHunter.title')}</span>
+                            <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('jobHunter.date')}</span>
+                        </div>
+                    }
+                    description={t('jobHunter.desc')}
+                    technologies={["React", "TypeScript", "Vite", "Vercel Serverless", "Cheerio", "jsPDF", "i18n"]}
+                    githubLink="https://github.com/vralchenko/JobHunter"
+                    liveLink="https://myjobhunter.vercel.app"
+                    imageSrc="/jobhunter.png"
+                />
+                <ProjectCard
+                    title={
+                        <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('foreteller.title')}</span>
                             <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('foreteller.date')}</span>
                         </div>
