@@ -59,7 +59,7 @@
         "liveDemo": "Démo en direct",
         "github": "GitHub",
         "jobHunter": {
-            "title": "JobHunter – Agrégateur d'emploi intelligent",
+            "title": "SwissJobHunter – Agrégateur d'emploi intelligent",
             "date": "Mar 2026",
             "desc": "Un agrégateur d'emplois multi-sources qui scrape LinkedIn, jobs.ch et SwissDevJobs en temps réel. Comprend un scoring de pertinence par IA (analyse du titre + lieu + description), un enrichissement des données en arrière-plan, une exportation PDF avec liens cliquables et une interface en 6 langues. Construit comme une application serverless Vercel avec scraping Cheerio et scoring côté client."
         },

@@ -16,7 +16,7 @@ export default function ProjectsPage() {
                     }
                     description={t('jobHunter.desc')}
                     technologies={["React", "TypeScript", "Vite", "Vercel Serverless", "Cheerio", "jsPDF", "i18n"]}
-                    githubLink="https://github.com/vralchenko/JobHunter"
+                    githubLink="https://github.com/vralchenko/SwissJobHunter"
                     liveLink="https://myjobhunter.vercel.app"
                     imageSrc="/jobhunter.png"
                 />
