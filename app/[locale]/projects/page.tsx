@@ -10,6 +10,18 @@ export default function ProjectsPage() {
                 <ProjectCard
                     title={
                         <div className="flex justify-between items-center w-full">
+                            <span className="text-2xl font-bold tracking-tight">{t('germanTutor.title')}</span>
+                            <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('germanTutor.date')}</span>
+                        </div>
+                    }
+                    description={t('germanTutor.desc')}
+                    technologies={["Kotlin", "Jetpack Compose", "Material 3", "Room", "Hilt", "Ktor", "Groq API", "FSRS v5"]}
+                    githubLink="https://github.com/vralchenko/GermanTutor"
+                    downloadLink="/DeutschLernen-release.apk"
+                />
+                <ProjectCard
+                    title={
+                        <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('jobHunter.title')}</span>
                             <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('jobHunter.date')}</span>
                         </div>

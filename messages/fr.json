@@ -57,7 +57,13 @@
     },
     "Projects": {
         "liveDemo": "Démo en direct",
+        "downloadApk": "Télécharger APK",
         "github": "GitHub",
+        "germanTutor": {
+            "title": "Deutsch Lernen – Application d'apprentissage de l'allemand",
+            "date": "Mar 2026",
+            "desc": "Une application Android pour apprendre l'allemand avec la répétition espacée (FSRS v5), 500+ mots de vocabulaire par niveau CECRL, 50 règles de grammaire, 390+ exercices et un tuteur IA via Groq/Llama. Avec suivi de progrès, interface multilingue (EN/RU/UK), mode sombre et synthèse vocale."
+        },
         "jobHunter": {
             "title": "SwissJobHunter – Agrégateur d'emploi intelligent",
             "date": "Mar 2026",

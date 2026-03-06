@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Github, ExternalLink } from "lucide-react"
+import { Github, ExternalLink, Download } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 
@@ -10,6 +10,7 @@ interface ProjectCardProps {
     technologies: string[];
     githubLink?: string;
     liveLink?: string;
+    downloadLink?: string;
     imageSrc?: string;
 }
 
@@ -19,6 +20,7 @@ export function ProjectCard({
     technologies,
     githubLink,
     liveLink,
+    downloadLink,
     imageSrc
 }: ProjectCardProps) {
     const t = useTranslations('Projects')
@@ -68,11 +70,16 @@ export function ProjectCard({
                                 ))}
                             </div>
                         </div>
-                        {(liveLink || githubLink) && (
+                        {(liveLink || githubLink || downloadLink) && (
                             <div className="flex gap-6 mt-auto">
                                 {liveLink && (
                                     <a href={liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-base font-medium hover:underline text-primary">
                                         <ExternalLink size={18} /> {t('liveDemo')}
+                                    </a>
+                                )}
+                                {downloadLink && (
+                                    <a href={downloadLink} download className="flex items-center gap-2 text-base font-medium hover:underline text-primary">
+                                        <Download size={18} /> {t('downloadApk')}
                                     </a>
                                 )}
                                 {githubLink && (

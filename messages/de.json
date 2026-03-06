@@ -57,7 +57,13 @@
     },
     "Projects": {
         "liveDemo": "Live-Demo",
+        "downloadApk": "APK herunterladen",
         "github": "GitHub",
+        "germanTutor": {
+            "title": "Deutsch Lernen – App zum Deutschlernen",
+            "date": "Mär 2026",
+            "desc": "Eine Android-App zum Deutschlernen mit Spaced Repetition (FSRS v5), 500+ Vokabeln nach GER-Niveau, 50 Grammatikregeln, 390+ Übungen und einem KI-Chat-Tutor auf Basis von Groq/Llama. Mit Fortschrittsverfolgung, mehrsprachiger Oberfläche (EN/RU/UK), Dunkelmodus und Text-to-Speech."
+        },
         "jobHunter": {
             "title": "SwissJobHunter – Intelligenter Job-Aggregator",
             "date": "Mär 2026",
