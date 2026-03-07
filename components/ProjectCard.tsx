@@ -26,6 +26,7 @@ export function ProjectCard({
     imageSrcs
 }: ProjectCardProps) {
     const images = imageSrcs || (imageSrc ? [imageSrc] : []);
+    const imageLink = liveLink || downloadLink;
     const t = useTranslations('Projects')
     return (
         <Card className="mb-6 overflow-hidden">
@@ -40,8 +41,8 @@ export function ProjectCard({
                         <div className={`${images.length === 1 ? 'md:col-span-4' : 'md:col-span-5'} flex gap-2`}>
                             {images.map((src, i) => (
                                 <div key={src} className={`relative ${images.length === 1 ? 'w-full aspect-video' : 'flex-1 aspect-[9/16]'} rounded-md overflow-hidden border bg-muted/10 group cursor-pointer`}>
-                                    {liveLink ? (
-                                        <a href={liveLink} target="_blank" rel="noopener noreferrer">
+                                    {imageLink ? (
+                                        <a href={imageLink} {...(downloadLink && !liveLink ? { download: true } : { target: "_blank", rel: "noopener noreferrer" })}>
                                             <Image
                                                 src={src}
                                                 alt={`Project preview ${i + 1}`}
