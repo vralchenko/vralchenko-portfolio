@@ -18,7 +18,7 @@ export default function ProjectsPage() {
                     technologies={["Kotlin", "Jetpack Compose", "Material 3", "Room", "Hilt", "Ktor", "Groq API", "FSRS v5"]}
                     githubLink="https://github.com/vralchenko/GermanTutor"
                     downloadLink="/DeutschLernen-1.1.6-release.apk"
-                    imageSrc="/deutschlernen.jpg"
+                    imageSrcs={["/germantutor1.jpg", "/germantutor2.jpg", "/germantutor4.jpg"]}
                 />
                 <ProjectCard
                     title={

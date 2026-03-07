@@ -12,6 +12,7 @@ interface ProjectCardProps {
     liveLink?: string;
     downloadLink?: string;
     imageSrc?: string;
+    imageSrcs?: string[];
 }
 
 export function ProjectCard({
@@ -21,8 +22,10 @@ export function ProjectCard({
     githubLink,
     liveLink,
     downloadLink,
-    imageSrc
+    imageSrc,
+    imageSrcs
 }: ProjectCardProps) {
+    const images = imageSrcs || (imageSrc ? [imageSrc] : []);
     const t = useTranslations('Projects')
     return (
         <Card className="mb-6 overflow-hidden">
@@ -33,31 +36,34 @@ export function ProjectCard({
             </CardHeader>
             <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-10 gap-6 items-start">
-                    {imageSrc && (
-                        <div className="md:col-span-4 relative w-full aspect-video rounded-md overflow-hidden border bg-muted/10 group cursor-pointer">
-                            {liveLink ? (
-                                <a href={liveLink} target="_blank" rel="noopener noreferrer">
-                                    <Image
-                                        src={imageSrc}
-                                        alt="Project preview"
-                                        fill
-                                        className="object-contain transition-transform duration-500 group-hover:scale-110"
-                                        priority
-                                    />
-                                </a>
-                            ) : (
-                                <Image
-                                    src={imageSrc}
-                                    alt="Project preview"
-                                    fill
-                                    className="object-contain"
-                                    priority
-                                />
-                            )}
+                    {images.length > 0 && (
+                        <div className={`${images.length === 1 ? 'md:col-span-4' : 'md:col-span-5'} flex gap-2`}>
+                            {images.map((src, i) => (
+                                <div key={src} className={`relative ${images.length === 1 ? 'w-full aspect-video' : 'flex-1 aspect-[9/16]'} rounded-md overflow-hidden border bg-muted/10 group cursor-pointer`}>
+                                    {liveLink ? (
+                                        <a href={liveLink} target="_blank" rel="noopener noreferrer">
+                                            <Image
+                                                src={src}
+                                                alt={`Project preview ${i + 1}`}
+                                                fill
+                                                className="object-contain transition-transform duration-500 group-hover:scale-110"
+                                                priority
+                                            />
+                                        </a>
+                                    ) : (
+                                        <Image
+                                            src={src}
+                                            alt={`Project preview ${i + 1}`}
+                                            fill
+                                            className="object-contain"
+                                            priority
+                                        />
+                                    )}
+                                </div>
+                            ))}
                         </div>
                     )}
-                    {/* Если картинки нет, занимаем все 10 колонок (всю длину) */}
-                    <div className={`flex flex-col h-full ${imageSrc ? 'md:col-span-6' : 'md:col-span-10'}`}>
+                    <div className={`flex flex-col h-full ${images.length === 0 ? 'md:col-span-10' : images.length === 1 ? 'md:col-span-6' : 'md:col-span-5'}`}>
                         <div className="flex-grow">
                             <p className="text-muted-foreground mb-4 text-lg leading-relaxed">
                                 {description}
