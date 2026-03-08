@@ -59,6 +59,11 @@
         "liveDemo": "Демо",
         "downloadApk": "Завантажити APK",
         "github": "GitHub",
+        "aiMobileAssistant": {
+            "title": "AI Mobile Assistant – Розумний AI-чат",
+            "date": "Бер 2026",
+            "desc": "Android AI-чат-асистент на базі Groq API з моделлю Llama 4 Scout з підтримкою зору. Текстовий чат з повним контекстом, аналіз зображень (до 5 фото), голосовий ввід 3 мовами (EN/RU/DE), історія чатів з пошуком, статистика використання та темна тема Material 3."
+        },
         "germanTutor": {
             "title": "Deutsch Lernen – Додаток для вивчення німецької",
             "date": "Бер 2026",

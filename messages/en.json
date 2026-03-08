@@ -59,6 +59,11 @@
         "liveDemo": "Live Demo",
         "downloadApk": "Download APK",
         "github": "GitHub",
+        "aiMobileAssistant": {
+            "title": "AI Mobile Assistant – Smart AI Chat",
+            "date": "Mar 2026",
+            "desc": "An Android AI chat assistant powered by Groq API with Llama 4 Scout vision model. Features text chat with full context, image analysis (up to 5 photos), voice input in 3 languages (EN/RU/DE), chat history with search, usage statistics, and Material 3 dark theme."
+        },
         "germanTutor": {
             "title": "Deutsch Lernen – German Learning App",
             "date": "Mar 2026",

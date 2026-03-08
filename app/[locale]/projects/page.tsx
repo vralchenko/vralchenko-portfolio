@@ -10,6 +10,17 @@ export default function ProjectsPage() {
                 <ProjectCard
                     title={
                         <div className="flex justify-between items-center w-full">
+                            <span className="text-2xl font-bold tracking-tight">{t('aiMobileAssistant.title')}</span>
+                            <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('aiMobileAssistant.date')}</span>
+                        </div>
+                    }
+                    description={t('aiMobileAssistant.desc')}
+                    technologies={["Kotlin", "Jetpack Compose", "Material 3", "Retrofit", "Groq API", "Llama 4 Scout", "Coil", "SpeechRecognizer"]}
+                    githubLink="https://github.com/vralchenko/AIMobileAssistant"
+                />
+                <ProjectCard
+                    title={
+                        <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('germanTutor.title')}</span>
                             <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('germanTutor.date')}</span>
                         </div>
