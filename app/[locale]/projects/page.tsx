@@ -16,7 +16,7 @@ export default function ProjectsPage() {
                     }
                     description={t('aiMobileAssistant.desc')}
                     technologies={["Kotlin", "Jetpack Compose", "Material 3", "Retrofit", "Groq API", "Llama 4 Scout", "Coil", "SpeechRecognizer"]}
-                    githubLink="https://github.com/vralchenko/AIMobileAssistant"
+                    downloadLink="/AIMobileAssistant-1.2-release.apk"
                     imageSrcs={["/ai1.jpg", "/ai2.jpg", "/ai3.jpg"]}
                 />
                 <ProjectCard
