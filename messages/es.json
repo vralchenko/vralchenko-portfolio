@@ -71,7 +71,7 @@
         },
         "jobHunter": {
             "title": "SwissJobHunter – Agregador inteligente de empleo",
-            "date": "Mar 2026",
+            "date": "Feb 2026",
             "desc": "Un agregador de empleo multi-fuente que rastrea LinkedIn, jobs.ch y SwissDevJobs en tiempo real. Incluye puntuación de relevancia con IA (análisis de título + ubicación + descripción), enriquecimiento de datos en segundo plano, exportación a PDF con enlaces clicables e interfaz en 6 idiomas. Construido como aplicación serverless de Vercel con scraping basado en Cheerio y puntuación del lado del cliente."
         },
         "foreteller": {
@@ -81,7 +81,7 @@
         },
         "bizLingo": {
             "title": "BizLingo AI – Aprendizaje rápido de idiomas con IA",
-            "date": "Feb 2026",
+            "date": "Dic 2025",
             "desc": "Una aplicación web interactiva de alto rendimiento para dominar el inglés y el alemán de negocios. Utiliza la API de Groq para una validación de traducciones casi instantánea y retroalimentación inteligente, proporcionando una experiencia de aprendizaje fluida y receptiva."
         },
         "careerCoach": {

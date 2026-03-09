@@ -71,7 +71,7 @@
         },
         "jobHunter": {
             "title": "SwissJobHunter – Smart Job Aggregator",
-            "date": "Mar 2026",
+            "date": "Feb 2026",
             "desc": "A multi-source job aggregator that scrapes LinkedIn, jobs.ch, and SwissDevJobs in real time. Features AI-powered relevance scoring (title + location + description analysis), background job enrichment, PDF export with clickable links, and a 6-language UI. Built as a Vercel serverless app with Cheerio-based scraping and client-side scoring."
         },
         "foreteller": {
@@ -81,7 +81,7 @@
         },
         "bizLingo": {
             "title": "BizLingo AI – Fast AI-Powered Language Learning",
-            "date": "Feb 2026",
+            "date": "Dec 2025",
             "desc": "A high-performance interactive web application for mastering Business English and German. It leverages Groq API for near-instant translation validation and intelligent feedback, providing a smooth and responsive learning experience."
         },
         "careerCoach": {
