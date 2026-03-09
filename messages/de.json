@@ -96,7 +96,7 @@
         },
         "interviewQuizzes": {
             "title": "Interview Quizzes",
-            "date": "Mär 2026",
+            "date": "Feb 2026",
             "desc": "Eine Sammlung von 500 Selbstbewertungsfragen zur Vorbereitung auf technische Vorstellungsgespräche. Umfasst C#, .NET, SOLID, Clean Architecture, Design Patterns, SQL, JavaScript, TypeScript, React, Behavioral & Agile und AI & Agents. Unterstützt 4 Sprachen."
         },
         "nasa": {

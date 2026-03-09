@@ -96,7 +96,7 @@
         },
         "interviewQuizzes": {
             "title": "Interview Quizzes",
-            "date": "Mar 2026",
+            "date": "Feb 2026",
             "desc": "A collection of 500 self-assessment questions for technical interview preparation. Covers C#, .NET, SOLID, Clean Architecture, Design Patterns, SQL, JavaScript, TypeScript, React, Behavioral & Agile, and AI & Agents. Supports 4 languages."
         },
         "nasa": {

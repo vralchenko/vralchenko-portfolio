@@ -96,7 +96,7 @@
         },
         "interviewQuizzes": {
             "title": "Interview Quizzes",
-            "date": "Бер 2026",
+            "date": "Лют 2026",
             "desc": "Колекція з 500 запитань для самоперевірки при підготовці до технічних співбесід. Охоплює C#, .NET, SOLID, Clean Architecture, Design Patterns, SQL, JavaScript, TypeScript, React, Behavioral & Agile та AI & Agents. Підтримує 4 мови."
         },
         "nasa": {

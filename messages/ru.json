@@ -96,7 +96,7 @@
         },
         "interviewQuizzes": {
             "title": "Interview Quizzes",
-            "date": "Мар 2026",
+            "date": "Фев 2026",
             "desc": "Коллекция из 500 вопросов для самопроверки при подготовке к техническим собеседованиям. Охватывает C#, .NET, SOLID, Clean Architecture, Design Patterns, SQL, JavaScript, TypeScript, React, Behavioral & Agile и AI & Agents. Поддерживает 4 языка."
         },
         "nasa": {
