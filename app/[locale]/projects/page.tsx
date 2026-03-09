@@ -72,20 +72,6 @@ export default function ProjectsPage() {
                 <ProjectCard
                     title={
                         <div className="flex justify-between items-center w-full">
-                            <span className="text-2xl font-bold tracking-tight">{t('bizLingo.title')}</span>
-                            <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('bizLingo.date')}</span>
-                        </div>
-                    }
-                    description={t('bizLingo.desc')}
-                    technologies={["Flutter", "Groq API", "Dart", "Cloud AI", "LLM", "Vercel"]}
-                    githubLink="https://github.com/vralchenko/BizLingo"
-                    liveLink="https://biz-lingo-chi.vercel.app/"
-                    imageSrc="/biz-lingo-ai.png"
-                />
-
-                <ProjectCard
-                    title={
-                        <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('careerCoach.title')}</span>
                             <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('careerCoach.date')}</span>
                         </div>
@@ -95,6 +81,20 @@ export default function ProjectsPage() {
                     githubLink="https://github.com/vralchenko/ai-career-coach"
                     liveLink="https://vralchenko-aicareercoach.hf.space/"
                     imageSrc="/ai-career-coach.png"
+                />
+
+                <ProjectCard
+                    title={
+                        <div className="flex justify-between items-center w-full">
+                            <span className="text-2xl font-bold tracking-tight">{t('bizLingo.title')}</span>
+                            <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('bizLingo.date')}</span>
+                        </div>
+                    }
+                    description={t('bizLingo.desc')}
+                    technologies={["Flutter", "Groq API", "Dart", "Cloud AI", "LLM", "Vercel"]}
+                    githubLink="https://github.com/vralchenko/BizLingo"
+                    liveLink="https://biz-lingo-chi.vercel.app/"
+                    imageSrc="/biz-lingo-ai.png"
                 />
 
                 <ProjectCard
