@@ -94,6 +94,11 @@
             "date": "Oct 2025",
             "desc": "Un projet full-stack complet démontrant les pratiques de développement modernes, de la conception au déploiement. Comprend une migration complète de la base de code de JavaScript vers TypeScript, un design réactif utilisant la prop sx de Material-UI et l'intégration avec Cloudinary pour un stockage d'images évolutif."
         },
+        "interviewQuizzes": {
+            "title": "Interview Quizzes",
+            "date": "Mar 2026",
+            "desc": "Une collection de 500 questions d'auto-évaluation pour la préparation aux entretiens techniques. Couvre C#, .NET, SOLID, Clean Architecture, Design Patterns, SQL, JavaScript, TypeScript, React, Behavioral & Agile et AI & Agents. Prend en charge 4 langues."
+        },
         "nasa": {
             "title": "Participant au NASA Space Apps Challenge",
             "date": "Oct 2025",

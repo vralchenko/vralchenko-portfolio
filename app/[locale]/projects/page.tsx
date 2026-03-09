@@ -28,8 +28,21 @@ export default function ProjectsPage() {
                     }
                     description={t('germanTutor.desc')}
                     technologies={["Kotlin", "Jetpack Compose", "Material 3", "Room", "Hilt", "Ktor", "Groq API", "FSRS v5"]}
-                    downloadLink="/DeutschLernen-1.5.0-release.apk"
+                    downloadLink="/DeutschLernen-1.6.0-release.apk"
                     imageSrcs={["/germantutor1.jpg", "/germantutor2.jpg", "/germantutor4.jpg"]}
+                />
+                <ProjectCard
+                    title={
+                        <div className="flex justify-between items-center w-full">
+                            <span className="text-2xl font-bold tracking-tight">{t('interviewQuizzes.title')}</span>
+                            <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('interviewQuizzes.date')}</span>
+                        </div>
+                    }
+                    description={t('interviewQuizzes.desc')}
+                    technologies={["JavaScript", "HTML", "CSS", "GitHub Pages", "i18n"]}
+                    githubLink="https://github.com/vralchenko/interview-quizzes"
+                    liveLink="https://vralchenko.github.io/interview-quizzes/"
+                    imageSrc="/interview-quiz.png"
                 />
                 <ProjectCard
                     title={
