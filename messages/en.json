@@ -42,6 +42,10 @@
     "Contact": {
         "title": "Contact with me",
         "subtitle": "You can also get in touch with me through this form below.",
+        "documents": "Documents",
+        "cv": "CV / Resume",
+        "coverLetter": "Cover Letter",
+        "scanToDownload": "Scan to download",
         "form": {
             "name": "Name",
             "namePlaceholder": "John Doe",

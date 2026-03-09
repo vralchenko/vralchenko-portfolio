@@ -42,6 +42,10 @@
     "Contact": {
         "title": "Contacta conmigo",
         "subtitle": "También puedes ponerte en contacto conmigo a través del siguiente formulario.",
+        "documents": "Documentos",
+        "cv": "CV / Currículum",
+        "coverLetter": "Carta de presentación",
+        "scanToDownload": "Escanea para descargar",
         "form": {
             "name": "Nombre",
             "namePlaceholder": "John Doe",

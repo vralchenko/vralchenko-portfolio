@@ -42,6 +42,10 @@
     "Contact": {
         "title": "Kontaktieren Sie mich",
         "subtitle": "Sie können mich auch über das folgende Formular erreichen.",
+        "documents": "Dokumente",
+        "cv": "Lebenslauf / CV",
+        "coverLetter": "Bewerbungsschreiben",
+        "scanToDownload": "Scannen zum Herunterladen",
         "form": {
             "name": "Name",
             "namePlaceholder": "John Doe",

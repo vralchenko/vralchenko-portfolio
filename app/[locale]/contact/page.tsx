@@ -9,16 +9,32 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
-import { Mail, Linkedin } from "lucide-react"
+import { Mail, Linkedin, FileText } from "lucide-react"
 import { sendEmail } from "../_actions"
 import { useState, useRef } from "react"
 import { toast } from "sonner"
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
+import { QRCodeSVG } from "qrcode.react"
+
+const BASE_URL = "https://vralchenko-portfolio.vercel.app"
+
+const docs = {
+    de: {
+        cv: "/ViktorRalchenko_CV_SeniorDotNetEntwickler_DE.pdf",
+        coverLetter: "/ViktorRalchenko_Bewerbungsschreiben_SeniorDotNetEntwickler_DE.pdf",
+    },
+    en: {
+        cv: "/ViktorRalchenko_CV_SeniorDotNetDeveloper.pdf",
+        coverLetter: "/ViktorRalchenko_CoverLetter_SeniorDotNetDeveloper.pdf",
+    },
+} as const
 
 export default function ContactPage() {
     const t = useTranslations('Contact')
+    const locale = useLocale()
     const [isSending, setIsSending] = useState(false)
     const formRef = useRef<HTMLFormElement>(null)
+    const currentDocs = locale === "de" ? docs.de : docs.en
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
@@ -61,6 +77,29 @@ export default function ContactPage() {
                             <Linkedin className="w-8 h-8" />
                         </Card>
                     </Link>
+                </div>
+
+                <h2 className="text-xl font-bold mb-4">{t('documents')}</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    {([
+                        { label: t('cv'), path: currentDocs.cv },
+                        { label: t('coverLetter'), path: currentDocs.coverLetter },
+                    ] as const).map(({ label, path }) => (
+                        <a key={path} href={path} download className="block">
+                            <Card className="hover:bg-accent transition-colors">
+                                <CardContent className="p-4 flex flex-col items-center gap-3">
+                                    <div className="flex items-center gap-2">
+                                        <FileText className="w-5 h-5" />
+                                        <span className="font-medium">{label}</span>
+                                    </div>
+                                    <div className="bg-white p-2 rounded-lg">
+                                        <QRCodeSVG value={`${BASE_URL}${path}`} size={160} />
+                                    </div>
+                                    <span className="text-xs text-muted-foreground">{t('scanToDownload')}</span>
+                                </CardContent>
+                            </Card>
+                        </a>
+                    ))}
                 </div>
 
                 <h2 className="text-3xl font-bold mb-4">{t('title')}</h2>

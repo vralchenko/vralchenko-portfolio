@@ -42,6 +42,10 @@
     "Contact": {
         "title": "Contactez-moi",
         "subtitle": "Vous pouvez également me contacter via ce formulaire ci-dessous.",
+        "documents": "Documents",
+        "cv": "CV / Curriculum Vitae",
+        "coverLetter": "Lettre de motivation",
+        "scanToDownload": "Scannez pour télécharger",
         "form": {
             "name": "Nom",
             "namePlaceholder": "Jean Dupont",
