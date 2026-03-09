@@ -102,32 +102,31 @@ export default function ContactPage() {
                     ))}
                 </div>
 
-                <h2 className="text-3xl font-bold mb-4">{t('title')}</h2>
-                <p className="text-muted-foreground mb-6">
+                <h2 className="text-xl font-bold mb-2">{t('title')}</h2>
+                <p className="text-muted-foreground text-sm mb-3">
                     {t('subtitle')}
                 </p>
 
-                <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
-                    <div className="space-y-2">
-                        <Label htmlFor="name">{t('form.name')}</Label>
-                        <Input id="name" name="name" placeholder={t('form.namePlaceholder')} required />
+                <form ref={formRef} onSubmit={handleSubmit} className="space-y-2">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <div className="space-y-1">
+                            <Label htmlFor="name">{t('form.name')}</Label>
+                            <Input id="name" name="name" placeholder={t('form.namePlaceholder')} required />
+                        </div>
+                        <div className="space-y-1">
+                            <Label htmlFor="email">{t('form.email')}</Label>
+                            <Input id="email" name="email" type="email" placeholder={t('form.emailPlaceholder')} required />
+                        </div>
                     </div>
 
-                    <div className="space-y-2">
-                        <Label htmlFor="email">{t('form.email')}</Label>
-                        <Input id="email" name="email" type="email" placeholder={t('form.emailPlaceholder')} required />
-                    </div>
-
-                    <div className="space-y-2">
+                    <div className="space-y-1">
                         <Label htmlFor="message">{t('form.message')}</Label>
-                        <Textarea id="message" name="message" placeholder={t('form.messagePlaceholder')} className="min-h-[150px]" required />
+                        <Textarea id="message" name="message" placeholder={t('form.messagePlaceholder')} className="min-h-[80px]" required />
                     </div>
 
-                    <div className="flex items-center gap-4">
-                        <Button type="submit" variant="secondary" className="w-full" disabled={isSending}>
-                            {isSending ? t('form.sending') : t('form.submit')}
-                        </Button>
-                    </div>
+                    <Button type="submit" variant="secondary" className="w-full" disabled={isSending}>
+                        {isSending ? t('form.sending') : t('form.submit')}
+                    </Button>
                 </form>
             </div>
 
