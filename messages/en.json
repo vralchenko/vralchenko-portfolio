@@ -71,7 +71,7 @@
         "germanTutor": {
             "title": "Deutsch Lernen – German Learning App",
             "date": "Mar 2026",
-            "desc": "An Android app for learning German with spaced repetition (FSRS v5), 500+ vocabulary words by CEFR level, 50 grammar rules, 390+ exercises, and an AI chat tutor powered by Groq/Llama. Features progress tracking with streaks, multi-language UI (EN/RU/UK), dark mode, and text-to-speech."
+            "desc": "An Android app for learning German with spaced repetition (FSRS v5), 500+ vocabulary words by CEFR level, 50 grammar rules, 390+ exercises, and an AI chat tutor powered by Groq/Llama. Features speaking practice with voice input (speech-to-text), progress tracking with streaks, multi-language UI (EN/DE/RU/UK), dark mode, and text-to-speech."
         },
         "jobHunter": {
             "title": "SwissJobHunter – Smart Job Aggregator",

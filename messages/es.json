@@ -71,7 +71,7 @@
         "germanTutor": {
             "title": "Deutsch Lernen – App para aprender alemán",
             "date": "Mar 2026",
-            "desc": "Una aplicación Android para aprender alemán con repetición espaciada (FSRS v5), 500+ palabras por nivel MCER, 50 reglas gramaticales, 390+ ejercicios y un tutor IA con Groq/Llama. Incluye seguimiento de progreso con rachas, interfaz multilingüe (EN/RU/UK), modo oscuro y texto a voz."
+            "desc": "Una aplicación Android para aprender alemán con repetición espaciada (FSRS v5), 500+ palabras por nivel MCER, 50 reglas gramaticales, 390+ ejercicios y un tutor IA con Groq/Llama. Incluye práctica oral con entrada de voz (speech-to-text), seguimiento de progreso con rachas, interfaz multilingüe (EN/DE/RU/UK), modo oscuro y texto a voz."
         },
         "jobHunter": {
             "title": "SwissJobHunter – Agregador inteligente de empleo",
