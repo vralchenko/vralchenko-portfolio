@@ -10,6 +10,19 @@ export default function ProjectsPage() {
                 <ProjectCard
                     title={
                         <div className="flex justify-between items-center w-full">
+                            <span className="text-2xl font-bold tracking-tight">{t('fuehrerschein.title')}</span>
+                            <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('fuehrerschein.date')}</span>
+                        </div>
+                    }
+                    description={t('fuehrerschein.desc')}
+                    technologies={["React", "Vite", "JavaScript", "CSS", "Python", "i18n"]}
+                    githubLink="https://github.com/vralchenko/fuehrerschein-schweiz"
+                    liveLink="https://fuehrerschein-schweiz.vercel.app/"
+                    imageSrcs={["/fuehrerschein1.png", "/fuehrerschein2.png", "/fuehrerschein3.png"]}
+                />
+                <ProjectCard
+                    title={
+                        <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('aiMobileAssistant.title')}</span>
                             <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('aiMobileAssistant.date')}</span>
                         </div>
@@ -30,19 +43,6 @@ export default function ProjectsPage() {
                     technologies={["Kotlin", "Jetpack Compose", "Material 3", "Room", "Hilt", "Ktor", "Groq API", "FSRS v5"]}
                     downloadLink="/DeutschLernen-1.7.0-release.apk"
                     imageSrcs={["/germantutor1.jpg", "/germantutor2.jpg", "/germantutor4.jpg"]}
-                />
-                <ProjectCard
-                    title={
-                        <div className="flex justify-between items-center w-full">
-                            <span className="text-2xl font-bold tracking-tight">{t('fuehrerschein.title')}</span>
-                            <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('fuehrerschein.date')}</span>
-                        </div>
-                    }
-                    description={t('fuehrerschein.desc')}
-                    technologies={["React", "Vite", "JavaScript", "CSS", "Python", "i18n"]}
-                    githubLink="https://github.com/vralchenko/fuehrerschein-schweiz"
-                    liveLink="https://fuehrerschein-schweiz.vercel.app/"
-                    imageSrcs={["/fuehrerschein1.png", "/fuehrerschein2.png", "/fuehrerschein3.png"]}
                 />
                 <ProjectCard
                     title={
