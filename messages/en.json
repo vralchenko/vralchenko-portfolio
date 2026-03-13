@@ -98,6 +98,11 @@
             "date": "Oct 2025",
             "desc": "A comprehensive full-stack project demonstrating modern development practices from conception to deployment. Includes a complete codebase migration from JavaScript to TypeScript, responsive design using Material-UI's sx prop, and integration with Cloudinary for scalable image storage."
         },
+        "fuehrerschein": {
+            "title": "Führerschein Schweiz – Driving Theory Exam Prep",
+            "date": "Mar 2026",
+            "desc": "A web app for preparing for the Swiss driving license theory exam (Category B). Features 100 questions per language across 10 topic categories (speed limits, right-of-way, traffic signs, parking, motorway rules, and more). Includes explanations with references to Swiss traffic law articles (SVG/VRV), question shuffling, mid-test language switching, and a 90% pass threshold. Supports 5 languages: German, English, Russian, Ukrainian, and Spanish."
+        },
         "interviewQuizzes": {
             "title": "Interview Quizzes",
             "date": "Feb 2026",

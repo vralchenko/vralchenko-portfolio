@@ -98,6 +98,11 @@
             "date": "Okt 2025",
             "desc": "Ein umfassendes Full-Stack-Projekt, das moderne Entwicklungspraktiken von der Konzeption bis zur Bereitstellung demonstriert. Es umfasst eine vollständige Migration der Codebasis von JavaScript zu TypeScript, responsives Design mit der sx-Prop von Material-UI und die Integration von Cloudinary für skalierbaren Bildspeicher."
         },
+        "fuehrerschein": {
+            "title": "Führerschein Schweiz – Theorieprüfung Vorbereitung",
+            "date": "Mär 2026",
+            "desc": "Eine Webanwendung zur Vorbereitung auf die Schweizer Führerschein-Theorieprüfung (Kategorie B). 100 Fragen pro Sprache in 10 Themenkategorien (Geschwindigkeitsbegrenzungen, Vortrittsregeln, Verkehrszeichen, Parkieren, Autobahnregeln u.v.m.). Mit Erklärungen und Verweisen auf Schweizer Verkehrsgesetzartikel (SVG/VRV), Fragenmischung, Sprachwechsel während des Tests und einer Bestehensgrenze von 90%. Unterstützt 5 Sprachen: Deutsch, Englisch, Russisch, Ukrainisch und Spanisch."
+        },
         "interviewQuizzes": {
             "title": "Interview Quizzes",
             "date": "Feb 2026",

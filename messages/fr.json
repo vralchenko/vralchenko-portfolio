@@ -98,6 +98,11 @@
             "date": "Oct 2025",
             "desc": "Un projet full-stack complet démontrant les pratiques de développement modernes, de la conception au déploiement. Comprend une migration complète de la base de code de JavaScript vers TypeScript, un design réactif utilisant la prop sx de Material-UI et l'intégration avec Cloudinary pour un stockage d'images évolutif."
         },
+        "fuehrerschein": {
+            "title": "Führerschein Schweiz – Préparation à l'examen théorique",
+            "date": "Mar 2026",
+            "desc": "Une application web pour préparer l'examen théorique du permis de conduire suisse (catégorie B). 100 questions par langue réparties en 10 catégories thématiques (limites de vitesse, priorité de passage, panneaux de signalisation, stationnement, règles d'autoroute, etc.). Comprend des explications avec références aux articles de la loi suisse sur la circulation (LCR/OCR), mélange des questions, changement de langue en cours de test et un seuil de réussite de 90%. Supporte 5 langues : allemand, anglais, russe, ukrainien et espagnol."
+        },
         "interviewQuizzes": {
             "title": "Interview Quizzes",
             "date": "Fév 2026",
