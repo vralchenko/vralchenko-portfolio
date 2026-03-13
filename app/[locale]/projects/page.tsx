@@ -41,7 +41,7 @@ export default function ProjectsPage() {
                     }
                     description={t('germanTutor.desc')}
                     technologies={["Kotlin", "Jetpack Compose", "Material 3", "Room", "Hilt", "Ktor", "Groq API", "FSRS v5"]}
-                    downloadLink="/DeutschLernen-1.7.0-release.apk"
+                    downloadLink="/DeutschLernen-1.6.2-release.apk"
                     imageSrcs={["/germantutor1.jpg", "/germantutor2.jpg", "/germantutor4.jpg"]}
                 />
                 <ProjectCard
