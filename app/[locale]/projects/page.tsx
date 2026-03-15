@@ -1,5 +1,17 @@
 import { ProjectCard } from "@/components/ProjectCard"
 import { useTranslations } from "next-intl"
+const projects = [
+    { id: "fuehrerschein", key: "fuehrerschein" },
+    { id: "ai-mobile-assistant", key: "aiMobileAssistant" },
+    { id: "deutsch-lernen", key: "germanTutor" },
+    { id: "interview-quizzes", key: "interviewQuizzes" },
+    { id: "jobhunter", key: "jobHunter" },
+    { id: "foreteller", key: "foreteller" },
+    { id: "career-coach", key: "careerCoach" },
+    { id: "bizlingo", key: "bizLingo" },
+    { id: "itemflow", key: "itemFlow" },
+    { id: "nasa", key: "nasa" },
+] as const;
 
 export default function ProjectsPage() {
     const t = useTranslations('Projects');
@@ -7,6 +19,17 @@ export default function ProjectsPage() {
     return (
         <main className="flex flex-col flex-grow">
             <div className="px-4 pt-1 pb-4 md:px-8 md:pt-4 md:pb-8 max-w-6xl mx-auto w-full">
+                <nav className="flex flex-wrap gap-2 mb-6">
+                    {projects.map(({ id, key }) => (
+                        <a
+                            key={id}
+                            href={`#${id}`}
+                            className="px-3 py-1.5 text-sm font-medium rounded-full border border-border bg-muted/50 hover:bg-primary hover:text-primary-foreground transition-colors"
+                        >
+                            {t(`${key}.title`).split('–')[0].split('—')[0].trim()}
+                        </a>
+                    ))}
+                </nav>
                 <ProjectCard
                     id="fuehrerschein"
                     title={
