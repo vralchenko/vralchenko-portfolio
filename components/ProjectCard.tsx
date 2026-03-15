@@ -1,27 +1,31 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Github, ExternalLink, Download } from "lucide-react"
+import { Github, ExternalLink, Download, Presentation } from "lucide-react"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 
 interface ProjectCardProps {
+    id?: string;
     title: React.ReactNode;
     description: string;
     technologies: string[];
     githubLink?: string;
     liveLink?: string;
     downloadLink?: string;
+    presentationLink?: string;
     imageSrc?: string;
     imageSrcs?: string[];
 }
 
 export function ProjectCard({
+    id,
     title,
     description,
     technologies,
     githubLink,
     liveLink,
     downloadLink,
+    presentationLink,
     imageSrc,
     imageSrcs
 }: ProjectCardProps) {
@@ -29,7 +33,7 @@ export function ProjectCard({
     const imageLink = liveLink || downloadLink;
     const t = useTranslations('Projects')
     return (
-        <Card className="mb-6 overflow-hidden">
+        <Card id={id} className="mb-6 overflow-hidden scroll-mt-4">
             <CardHeader className="pb-2 pt-6">
                 <CardTitle className="w-full font-normal">
                     {title}
@@ -77,8 +81,8 @@ export function ProjectCard({
                                 ))}
                             </div>
                         </div>
-                        {(liveLink || githubLink || downloadLink) && (
-                            <div className="flex gap-6 mt-auto">
+                        {(liveLink || githubLink || downloadLink || presentationLink) && (
+                            <div className="flex flex-wrap gap-6 mt-auto">
                                 {liveLink && (
                                     <a href={liveLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-base font-medium hover:underline text-primary">
                                         <ExternalLink size={18} /> {t('liveDemo')}
@@ -87,6 +91,11 @@ export function ProjectCard({
                                 {downloadLink && (
                                     <a href={downloadLink} download className="flex items-center gap-2 text-base font-medium hover:underline text-primary">
                                         <Download size={18} /> {t('downloadApk')}
+                                    </a>
+                                )}
+                                {presentationLink && (
+                                    <a href={presentationLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-base font-medium hover:underline text-primary">
+                                        <Presentation size={18} /> {t('presentation')}
                                     </a>
                                 )}
                                 {githubLink && (

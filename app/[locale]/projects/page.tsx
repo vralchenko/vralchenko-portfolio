@@ -8,6 +8,7 @@ export default function ProjectsPage() {
         <main className="flex flex-col flex-grow">
             <div className="px-4 pt-1 pb-4 md:px-8 md:pt-4 md:pb-8 max-w-6xl mx-auto w-full">
                 <ProjectCard
+                    id="fuehrerschein"
                     title={
                         <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('fuehrerschein.title')}</span>
@@ -21,6 +22,7 @@ export default function ProjectsPage() {
                     imageSrcs={["/fuehrerschein1.png", "/fuehrerschein2.png", "/fuehrerschein3.png"]}
                 />
                 <ProjectCard
+                    id="ai-mobile-assistant"
                     title={
                         <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('aiMobileAssistant.title')}</span>
@@ -33,6 +35,7 @@ export default function ProjectsPage() {
                     imageSrcs={["/ai1.jpg", "/ai2.jpg", "/ai3.jpg"]}
                 />
                 <ProjectCard
+                    id="deutsch-lernen"
                     title={
                         <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('germanTutor.title')}</span>
@@ -45,6 +48,7 @@ export default function ProjectsPage() {
                     imageSrcs={["/germantutor1.jpg", "/germantutor2.jpg", "/germantutor4.jpg"]}
                 />
                 <ProjectCard
+                    id="interview-quizzes"
                     title={
                         <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('interviewQuizzes.title')}</span>
@@ -58,6 +62,7 @@ export default function ProjectsPage() {
                     imageSrc="/interview-quiz.png"
                 />
                 <ProjectCard
+                    id="jobhunter"
                     title={
                         <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('jobHunter.title')}</span>
@@ -70,6 +75,7 @@ export default function ProjectsPage() {
                     imageSrc="/jobhunter.png"
                 />
                 <ProjectCard
+                    id="foreteller"
                     title={
                         <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('foreteller.title')}</span>
@@ -80,9 +86,11 @@ export default function ProjectsPage() {
                     technologies={["React", "TypeScript", "Vite", "Material UI", "Node.js", "Express", "Groq API", "jsPDF"]}
                     githubLink="https://github.com/vralchenko/Foreteller"
                     liveLink="https://foreteller.vercel.app/"
+                    presentationLink="https://myportfoliopresentation.vercel.app/#foreteller"
                     imageSrc="/foreteller.jpg"
                 />
                 <ProjectCard
+                    id="career-coach"
                     title={
                         <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('careerCoach.title')}</span>
@@ -93,10 +101,12 @@ export default function ProjectsPage() {
                     technologies={["Next.js", "Groq API", "Puppeteer", "TypeScript", "Tailwind CSS", "PDF-Parse", "Node.js", "Railway"]}
                     githubLink="https://github.com/vralchenko/ai-career-coach"
                     liveLink="https://vralchenko-aicareercoach.hf.space/"
+                    presentationLink="https://myportfoliopresentation.vercel.app/#career"
                     imageSrc="/ai-career-coach.png"
                 />
 
                 <ProjectCard
+                    id="bizlingo"
                     title={
                         <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('bizLingo.title')}</span>
@@ -107,10 +117,12 @@ export default function ProjectsPage() {
                     technologies={["Flutter", "Groq API", "Dart", "Cloud AI", "LLM", "Vercel"]}
                     githubLink="https://github.com/vralchenko/BizLingo"
                     liveLink="https://biz-lingo-chi.vercel.app/"
+                    presentationLink="https://myportfoliopresentation.vercel.app/#bizlingo"
                     imageSrc="/biz-lingo-ai.png"
                 />
 
                 <ProjectCard
+                    id="itemflow"
                     title={
                         <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('itemFlow.title')}</span>
@@ -125,6 +137,7 @@ export default function ProjectsPage() {
                 />
 
                 <ProjectCard
+                    id="nasa"
                     title={
                         <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('nasa.title')}</span>

@@ -62,6 +62,7 @@
     "Projects": {
         "liveDemo": "Live Demo",
         "downloadApk": "Download APK",
+        "presentation": "Presentation",
         "github": "GitHub",
         "aiMobileAssistant": {
             "title": "AI Mobile Assistant – Smart AI Chat",

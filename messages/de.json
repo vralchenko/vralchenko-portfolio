@@ -62,6 +62,7 @@
     "Projects": {
         "liveDemo": "Live-Demo",
         "downloadApk": "APK herunterladen",
+        "presentation": "Präsentation",
         "github": "GitHub",
         "aiMobileAssistant": {
             "title": "AI Mobile Assistant – Intelligenter KI-Chat",
