@@ -169,7 +169,7 @@ export default function Home() {
                         <CardContent className="p-4 flex flex-col items-center justify-start flex-grow pt-8">
                             <div className="relative w-48 h-48 mb-4">
                                 <Image
-                                    src="/avatar.png"
+                                    src="/avatar.jpg"
                                     alt="Viktor Ralchenko"
                                     fill
                                     className="rounded-full shadow-xl border-4 border-muted object-cover"
