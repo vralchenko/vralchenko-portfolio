@@ -62,6 +62,7 @@
     "Projects": {
         "liveDemo": "Démo en direct",
         "downloadApk": "Télécharger APK",
+        "googlePlay": "Google Play",
         "presentation": "Présentation",
         "github": "GitHub",
         "aiMobileAssistant": {
@@ -72,7 +73,7 @@
         "germanTutor": {
             "title": "Deutsch Lernen – Application d'apprentissage de l'allemand",
             "date": "Mar 2026",
-            "desc": "Une application Android pour apprendre l'allemand avec la répétition espacée (FSRS v5), 500+ mots de vocabulaire par niveau CECRL, 50 règles de grammaire, 390+ exercices et un tuteur IA via Groq/Llama. Avec pratique orale avec saisie vocale (speech-to-text), suivi de progrès, interface multilingue (EN/DE/RU/UK), mode sombre et synthèse vocale."
+            "desc": "Une application Android complète pour apprendre l'allemand, conçue pour les migrants en Suisse. Comprend 10 000+ mots (A1–C2), 1 000+ phrases, 180 règles de grammaire avec 1 400+ exercices, 120 quiz, 120 dictées et 37 exercices d'écoute. Tuteur IA (Groq/Gemini/OpenAI), pratique orale avec saisie vocale, cartes mémoire avec répétition espacée FSRS v5, suivi de progrès avec séries, interface en 10 langues, mode sombre et synthèse vocale."
         },
         "jobHunter": {
             "title": "SwissJobHunter – Agrégateur d'emploi intelligent",

@@ -62,6 +62,7 @@
     "Projects": {
         "liveDemo": "Live-Demo",
         "downloadApk": "APK herunterladen",
+        "googlePlay": "Google Play",
         "presentation": "Präsentation",
         "github": "GitHub",
         "aiMobileAssistant": {
@@ -72,7 +73,7 @@
         "germanTutor": {
             "title": "Deutsch Lernen – App zum Deutschlernen",
             "date": "Mär 2026",
-            "desc": "Eine Android-App zum Deutschlernen mit Spaced Repetition (FSRS v5), 500+ Vokabeln nach GER-Niveau, 50 Grammatikregeln, 390+ Übungen und einem KI-Chat-Tutor auf Basis von Groq/Llama. Mit Sprechübungen mit Spracheingabe (Speech-to-Text), Fortschrittsverfolgung, mehrsprachiger Oberfläche (EN/DE/RU/UK), Dunkelmodus und Text-to-Speech."
+            "desc": "Eine umfassende Android-App zum Deutschlernen, entwickelt für Migranten in der Schweiz. Enthält 10.000+ Vokabeln (A1–C2), 1.000+ Redewendungen, 180 Grammatikregeln mit 1.400+ Übungen, 120 Tests, 120 Diktate und 37 Hörübungen. KI-Chat-Tutor (Groq/Gemini/OpenAI), Sprechübungen mit Spracheingabe, Karteikarten mit FSRS v5, Fortschrittsverfolgung mit Streaks, Oberfläche in 10 Sprachen, Dunkelmodus und Text-to-Speech."
         },
         "jobHunter": {
             "title": "SwissJobHunter – Intelligenter Job-Aggregator",
