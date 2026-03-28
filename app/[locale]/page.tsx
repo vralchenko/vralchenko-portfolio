@@ -12,6 +12,7 @@ import {
     TooltipTrigger,
 } from "@/components/ui/tooltip"
 import Flag from "react-world-flags"
+import LinkedInQR from "@/components/LinkedInQR"
 import {
     SiSharp, SiDotnet, SiTypescript, SiReact, SiAngular, SiVuedotjs, SiNodedotjs,
     SiPython, SiPostgresql, SiAmazon, SiGit, SiDocker, SiOracle, SiJira, SiVsco,
@@ -167,15 +168,18 @@ export default function Home() {
                 <div className="md:col-span-2 md:row-span-3 flex flex-col md:grid md:grid-rows-[1fr_56px] gap-3">
                     <Card className="flex flex-col items-center justify-center md:overflow-hidden">
                         <CardContent className="p-4 flex flex-col items-center justify-start flex-grow pt-8">
-                            <div className="relative w-48 h-48 mb-4">
-                                <Image
-                                    src="/avatar.jpg"
-                                    alt="Viktor Ralchenko"
-                                    fill
-                                    className="rounded-full shadow-xl border-4 border-muted object-cover"
-                                />
+                            <div className="flex items-center gap-6">
+                                <div className="relative w-48 h-48 shrink-0">
+                                    <Image
+                                        src="/avatar.jpg"
+                                        alt="Viktor Ralchenko"
+                                        fill
+                                        className="rounded-full shadow-xl border-4 border-muted object-cover"
+                                    />
+                                </div>
+                                <LinkedInQR size={100} />
                             </div>
-                            <CardTitle className="text-center text-4xl uppercase tracking-tight">
+                            <CardTitle className="text-center text-4xl uppercase tracking-tight mt-4">
                                 Viktor Ralchenko
                             </CardTitle>
                         </CardContent>

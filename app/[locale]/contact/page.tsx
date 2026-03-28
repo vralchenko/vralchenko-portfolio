@@ -73,8 +73,16 @@ export default function ContactPage() {
                     </Link>
 
                     <Link href="https://linkedin.com/in/victoralchenko" target="_blank">
-                        <Card className="hover:bg-accent transition-colors h-full flex items-center justify-center p-2">
-                            <Linkedin className="w-8 h-8" />
+                        <Card className="hover:bg-accent transition-colors h-full flex flex-col items-center justify-center gap-2 p-2">
+                            <div className="flex items-center gap-2">
+                                <div className="bg-secondary p-1 rounded-lg">
+                                    <Linkedin className="w-4 h-4" />
+                                </div>
+                                <span className="font-medium text-sm">LinkedIn</span>
+                            </div>
+                            <div className="bg-white p-2 rounded-lg">
+                                <QRCodeSVG value="https://linkedin.com/in/victoralchenko" size={120} />
+                            </div>
                         </Card>
                     </Link>
                 </div>
