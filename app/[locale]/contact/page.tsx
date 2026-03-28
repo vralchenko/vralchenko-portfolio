@@ -57,51 +57,47 @@ export default function ContactPage() {
         <main className="flex flex-col flex-grow">
             <div className="px-4 pb-4 md:px-8 md:pb-8 max-w-4xl mx-auto w-full">
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <Link href="mailto:vralchenko@gmail.com" className="mb-4 block">
+                    <Card className="hover:bg-accent transition-colors">
+                        <CardContent className="p-2 flex items-center justify-center gap-2">
+                            <div className="bg-secondary p-1 rounded-lg">
+                                <Mail className="w-4 h-4" />
+                            </div>
+                            <span className="font-medium text-sm">
+                                vralchenko@gmail.com
+                            </span>
+                        </CardContent>
+                    </Card>
+                </Link>
 
-                    <Link href="mailto:vralchenko@gmail.com">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                    <Link href="https://linkedin.com/in/victoralchenko" target="_blank">
                         <Card className="hover:bg-accent transition-colors h-full">
-                            <CardContent className="p-2 flex items-center justify-center gap-2">
-                                <div className="bg-secondary p-1 rounded-lg">
-                                    <Mail className="w-4 h-4" />
+                            <CardContent className="p-4 flex flex-col items-center gap-3">
+                                <div className="flex items-center gap-2">
+                                    <Linkedin className="w-5 h-5" />
+                                    <span className="font-medium">LinkedIn</span>
                                 </div>
-                                <span className="font-medium text-sm">
-                                    vralchenko@gmail.com
-                                </span>
+                                <div className="bg-white p-2 rounded-lg">
+                                    <QRCodeSVG value="https://linkedin.com/in/victoralchenko" size={140} />
+                                </div>
                             </CardContent>
                         </Card>
                     </Link>
 
-                    <Link href="https://linkedin.com/in/victoralchenko" target="_blank">
-                        <Card className="hover:bg-accent transition-colors h-full flex flex-col items-center justify-center gap-2 p-2">
-                            <div className="flex items-center gap-2">
-                                <div className="bg-secondary p-1 rounded-lg">
-                                    <Linkedin className="w-4 h-4" />
-                                </div>
-                                <span className="font-medium text-sm">LinkedIn</span>
-                            </div>
-                            <div className="bg-white p-2 rounded-lg">
-                                <QRCodeSVG value="https://linkedin.com/in/victoralchenko" size={120} />
-                            </div>
-                        </Card>
-                    </Link>
-                </div>
-
-                <h2 className="text-xl font-bold mb-4">{t('documents')}</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     {([
                         { label: t('cv'), path: currentDocs.cv },
                         { label: t('coverLetter'), path: currentDocs.coverLetter },
                     ] as const).map(({ label, path }) => (
                         <a key={path} href={path} download className="block">
-                            <Card className="hover:bg-accent transition-colors">
+                            <Card className="hover:bg-accent transition-colors h-full">
                                 <CardContent className="p-4 flex flex-col items-center gap-3">
                                     <div className="flex items-center gap-2">
                                         <FileText className="w-5 h-5" />
                                         <span className="font-medium">{label}</span>
                                     </div>
                                     <div className="bg-white p-2 rounded-lg">
-                                        <QRCodeSVG value={`${BASE_URL}${path}`} size={160} />
+                                        <QRCodeSVG value={`${BASE_URL}${path}`} size={140} />
                                     </div>
                                     <span className="text-xs text-muted-foreground">{t('scanToDownload')}</span>
                                 </CardContent>
