@@ -5,7 +5,7 @@ const projects = [
     { id: "ai-mobile-assistant", key: "aiMobileAssistant" },
     { id: "deutsch-lernen", key: "germanTutor" },
     { id: "interview-quizzes", key: "interviewQuizzes" },
-    { id: "jobhunter", key: "jobHunter" },
+    { id: "jobich", key: "jobHunter" },
     { id: "foreteller", key: "foreteller" },
     { id: "career-coach", key: "careerCoach" },
     { id: "bizlingo", key: "bizLingo" },
@@ -87,7 +87,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                     imageSrc="/interview-quiz.png"
                 />
                 <ProjectCard
-                    id="jobhunter"
+                    id="jobich"
                     title={
                         <div className="flex justify-between items-center w-full">
                             <span className="text-2xl font-bold tracking-tight">{t('jobHunter.title')}</span>
@@ -95,7 +95,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                         </div>
                     }
                     description={t('jobHunter.desc')}
-                    technologies={["React", "TypeScript", "Vite", "Vercel Serverless", "Cheerio", "jsPDF", "i18n"]}
+                    technologies={["React", "TypeScript", "Vite", "Vercel Serverless", "Python", "Neon PostgreSQL", "i18n"]}
                     liveLink="https://jobich.ch/"
                     imageSrc="/jobhunter.png"
                 />

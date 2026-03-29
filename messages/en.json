@@ -76,9 +76,9 @@
             "desc": "A comprehensive Android app for learning German, built for migrants in Switzerland. Features 10,000+ vocabulary words (A1–C2), 1,000+ phrases, 180 grammar rules with 1,400+ exercises, 120 quizzes, 120 dictation texts, and 37 listening exercises. Includes AI chat tutor (Groq/Gemini/OpenAI), speaking practice with voice input, flashcards with FSRS v5 spaced repetition, progress tracking with streaks, 10-language UI, dark mode, and text-to-speech."
         },
         "jobHunter": {
-            "title": "SwissJobHunter – Smart Job Aggregator",
+            "title": "Jobich – Smart Job Aggregator",
             "date": "Feb 2026",
-            "desc": "A multi-source job aggregator that scrapes LinkedIn, jobs.ch, and SwissDevJobs in real time. Features AI-powered relevance scoring (title + location + description analysis), background job enrichment, PDF export with clickable links, and a 6-language UI. Built as a Vercel serverless app with Cheerio-based scraping and client-side scoring."
+            "desc": "One search across 30+ job boards in Switzerland. 12,000+ active vacancies updated every 2 hours via a Python parser, covering all 16 industry domains. Features an interactive SVG canton map, AI-powered relevance scoring, PDF export with clickable links, and a 7-language UI. Built with React + Vite frontend and Vercel Serverless backend, powered by Neon PostgreSQL."
         },
         "foreteller": {
             "title": "Foreteller – Cosmic Wisdom",

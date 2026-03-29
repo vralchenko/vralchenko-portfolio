@@ -76,9 +76,9 @@
             "desc": "Una aplicación Android completa para aprender alemán, diseñada para migrantes en Suiza. Incluye 10.000+ palabras (A1–C2), 1.000+ frases, 180 reglas gramaticales con 1.400+ ejercicios, 120 tests, 120 dictados y 37 ejercicios de escucha. Tutor IA (Groq/Gemini/OpenAI), práctica oral con entrada de voz, tarjetas con repetición espaciada FSRS v5, seguimiento de progreso con rachas, interfaz en 10 idiomas, modo oscuro y texto a voz."
         },
         "jobHunter": {
-            "title": "SwissJobHunter – Agregador inteligente de empleo",
+            "title": "Jobich – Agregador inteligente de empleo",
             "date": "Feb 2026",
-            "desc": "Un agregador de empleo multi-fuente que rastrea LinkedIn, jobs.ch y SwissDevJobs en tiempo real. Incluye puntuación de relevancia con IA (análisis de título + ubicación + descripción), enriquecimiento de datos en segundo plano, exportación a PDF con enlaces clicables e interfaz en 6 idiomas. Construido como aplicación serverless de Vercel con scraping basado en Cheerio y puntuación del lado del cliente."
+            "desc": "Una búsqueda en más de 30 portales de empleo en Suiza. 12.000+ vacantes activas actualizadas cada 2 horas mediante un parser Python, cubriendo los 16 sectores industriales. Incluye un mapa SVG interactivo de cantones, puntuación de relevancia con IA, exportación a PDF con enlaces clicables e interfaz en 7 idiomas. Construido con frontend React + Vite y backend Vercel Serverless, con base de datos Neon PostgreSQL."
         },
         "foreteller": {
             "title": "Foreteller – Sabiduría Cósmica",
