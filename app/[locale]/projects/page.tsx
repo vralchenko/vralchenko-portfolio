@@ -125,7 +125,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                     description={t('careerCoach.desc')}
                     technologies={["Next.js", "Groq API", "Puppeteer", "TypeScript", "Tailwind CSS", "PDF-Parse", "Node.js", "Railway"]}
                     githubLink="https://github.com/vralchenko/ai-career-coach"
-                    liveLink="https://vralchenko-aicareercoach.hf.space/"
+                    liveLink="https://ai-career-coach.vralchenko.workers.dev/"
 
                     imageSrc="/ai-career-coach.png"
                 />
