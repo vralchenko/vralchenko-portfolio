@@ -8,7 +8,7 @@ The design is inspired by the modern, card-based aesthetic of Jan Prysowecki's p
 
 ## 🚀 LIVE DEMO
 
-[View Live Demo Here](https://viktor-portfolio.vercel.app/) (Replace with your Vercel URL)
+[View Live Demo Here](https://vralchenko-portfolio.pages.dev/)
 
 ---
 

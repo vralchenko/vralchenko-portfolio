@@ -142,7 +142,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                     description={t('bizLingo.desc')}
                     technologies={["Flutter", "Groq API", "Dart", "Cloud AI", "LLM", "Vercel"]}
                     githubLink="https://github.com/vralchenko/BizLingo"
-                    liveLink="https://biz-lingo-chi.vercel.app/"
+                    liveLink="https://biz-lingo.pages.dev/"
 
                     imageSrc="/biz-lingo-ai.png"
                 />
