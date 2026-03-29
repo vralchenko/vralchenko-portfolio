@@ -43,7 +43,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                     description={t('fuehrerschein.desc')}
                     technologies={["React", "Vite", "JavaScript", "CSS", "Python", "i18n"]}
                     githubLink="https://github.com/vralchenko/fuehrerschein-schweiz"
-                    liveLink="https://fuehrerschein-schweiz.vercel.app/"
+                    liveLink="https://fuehrerschein-schweiz.pages.dev/"
                     imageSrcs={["/fuehrerschein1.png", "/fuehrerschein2.png", "/fuehrerschein3.png"]}
                 />
                 <ProjectCard
@@ -110,7 +110,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                     description={t('foreteller.desc')}
                     technologies={["React", "TypeScript", "Vite", "Material UI", "Node.js", "Express", "Groq API", "jsPDF"]}
                     githubLink="https://github.com/vralchenko/Foreteller"
-                    liveLink="https://foreteller.vercel.app/"
+                    liveLink="https://foreteller.pages.dev/"
                     presentationLink="https://myportfoliopresentation.vercel.app/#foreteller"
                     imageSrc="/foreteller.jpg"
                 />
