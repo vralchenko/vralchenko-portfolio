@@ -111,7 +111,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                     technologies={["React", "TypeScript", "Vite", "Material UI", "Node.js", "Express", "Groq API", "jsPDF"]}
                     githubLink="https://github.com/vralchenko/Foreteller"
                     liveLink="https://foreteller.pages.dev/"
-                    presentationLink="https://myportfoliopresentation.vercel.app/#foreteller"
+
                     imageSrc="/foreteller.jpg"
                 />
                 <ProjectCard
@@ -126,7 +126,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                     technologies={["Next.js", "Groq API", "Puppeteer", "TypeScript", "Tailwind CSS", "PDF-Parse", "Node.js", "Railway"]}
                     githubLink="https://github.com/vralchenko/ai-career-coach"
                     liveLink="https://vralchenko-aicareercoach.hf.space/"
-                    presentationLink="https://myportfoliopresentation.vercel.app/#career"
+
                     imageSrc="/ai-career-coach.png"
                 />
 
@@ -142,7 +142,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                     technologies={["Flutter", "Groq API", "Dart", "Cloud AI", "LLM", "Vercel"]}
                     githubLink="https://github.com/vralchenko/BizLingo"
                     liveLink="https://biz-lingo-chi.vercel.app/"
-                    presentationLink="https://myportfoliopresentation.vercel.app/#bizlingo"
+
                     imageSrc="/biz-lingo-ai.png"
                 />
 
