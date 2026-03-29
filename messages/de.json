@@ -78,7 +78,7 @@
         "jobHunter": {
             "title": "Jobich – Intelligenter Job-Aggregator",
             "date": "Feb 2026",
-            "desc": "Eine Suche über 30+ Jobbörsen in der Schweiz. 12.000+ aktive Stellenangebote, alle 2 Stunden aktualisiert über einen Python-Parser, abdeckend alle 16 Branchen. Bietet eine interaktive SVG-Kantonskarte, KI-gestütztes Relevanz-Scoring, PDF-Export mit anklickbaren Links und eine Benutzeroberfläche in 7 Sprachen. Erstellt mit React + Vite Frontend und Vercel Serverless Backend, betrieben durch Neon PostgreSQL."
+            "desc": "Eine Suche über 30+ Jobbörsen in der Schweiz. 12.000+ aktive Stellenangebote, alle 2 Stunden aktualisiert über einen eigenständigen Python-Parser (LinkedIn, jobs.ch, Indeed, Jobup, Workday und mehr), abdeckend alle 16 Branchen in jedem Kanton. Bietet eine interaktive SVG-Kantonskarte, intelligente Filter nach Beschäftigungsart, Arbeitsmodell und Sprache, E-Mail-Abo für tägliche Benachrichtigungen, KI-gestütztes Relevanz-Scoring, PDF-Export mit anklickbaren Links und eine Benutzeroberfläche in 7 Sprachen (EN, DE, FR, IT, ES, RU, UA). Erstellt mit React + Vite Frontend, Vercel Serverless Functions Backend und Neon PostgreSQL Datenbank. Entwickelt als Teamprojekt mit Produkt-/QA- und Rechts-/Compliance-Rollen."
         },
         "foreteller": {
             "title": "Foreteller – Kosmische Weisheit",
