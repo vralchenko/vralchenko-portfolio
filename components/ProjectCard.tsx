@@ -16,6 +16,7 @@ interface ProjectCardProps {
     presentationLink?: string;
     imageSrc?: string;
     imageSrcs?: string[];
+    imageLayout?: "horizontal" | "vertical";
 }
 
 export function ProjectCard({
@@ -29,7 +30,8 @@ export function ProjectCard({
     playStoreLink,
     presentationLink,
     imageSrc,
-    imageSrcs
+    imageSrcs,
+    imageLayout = "horizontal"
 }: ProjectCardProps) {
     const images = imageSrcs || (imageSrc ? [imageSrc] : []);
     const imageLink = liveLink || playStoreLink || downloadLink;
@@ -44,9 +46,9 @@ export function ProjectCard({
             <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-10 gap-6 items-start">
                     {images.length > 0 && (
-                        <div className={`${images.length === 1 ? 'md:col-span-4' : images.length > 3 ? 'md:col-span-6' : 'md:col-span-5'} ${images.length > 3 ? 'grid grid-cols-3 gap-2' : 'flex gap-2'}`}>
+                        <div className={`${images.length === 1 || imageLayout === 'vertical' ? 'md:col-span-4' : images.length > 3 ? 'md:col-span-6' : 'md:col-span-5'} ${imageLayout === 'vertical' ? 'flex flex-col gap-2' : images.length > 3 ? 'grid grid-cols-3 gap-2' : 'flex gap-2'}`}>
                             {images.map((src, i) => (
-                                <div key={src} className={`relative ${images.length === 1 ? 'w-full aspect-video' : images.length > 3 ? 'aspect-[9/16]' : 'flex-1 aspect-[9/16]'} rounded-md overflow-hidden border bg-muted/10 group cursor-pointer`}>
+                                <div key={src} className={`relative ${images.length === 1 || imageLayout === 'vertical' ? 'w-full aspect-video' : images.length > 3 ? 'aspect-[9/16]' : 'flex-1 aspect-[9/16]'} rounded-md overflow-hidden border bg-muted/10 group cursor-pointer`}>
                                     {imageLink ? (
                                         <a href={imageLink} {...(downloadLink && !liveLink && !playStoreLink ? { download: true } : { target: "_blank", rel: "noopener noreferrer" })}>
                                             <Image
@@ -70,7 +72,7 @@ export function ProjectCard({
                             ))}
                         </div>
                     )}
-                    <div className={`flex flex-col h-full ${images.length === 0 ? 'md:col-span-10' : images.length === 1 ? 'md:col-span-6' : images.length > 3 ? 'md:col-span-4' : 'md:col-span-5'}`}>
+                    <div className={`flex flex-col h-full ${images.length === 0 ? 'md:col-span-10' : images.length === 1 || imageLayout === 'vertical' ? 'md:col-span-6' : images.length > 3 ? 'md:col-span-4' : 'md:col-span-5'}`}>
                         <div className="flex-grow">
                             <p className="text-muted-foreground mb-4 text-lg leading-relaxed">
                                 {description}
