@@ -94,7 +94,7 @@ export default function ProjectsPage() {
                     }
                     description={t('jobHunter.desc')}
                     technologies={["React", "TypeScript", "Vite", "Vercel Serverless", "Cheerio", "jsPDF", "i18n"]}
-                    liveLink="https://myjobhunter.vercel.app"
+                    liveLink="https://jobich.ch/"
                     imageSrc="/jobhunter.png"
                 />
                 <ProjectCard
