@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "../globals.css"
 import { Navbar } from "@/components/Navbar"
+import { ThemeProvider } from "@/components/ThemeProvider"
 import { Footer } from "@/components/Footer"
 import { Toaster } from "sonner"
 import { NextIntlClientProvider } from 'next-intl';
@@ -38,14 +39,16 @@ export default async function RootLayout({
     const messages = await getMessages();
 
     return (
-        <html lang={locale} className="dark">
+        <html lang={locale} suppressHydrationWarning>
             <body className={`${inter.className} min-h-dvh flex flex-col`}>
-                <NextIntlClientProvider messages={messages}>
-                    <Navbar />
-                    {children}
-                    <Footer />
-                    <Toaster theme="dark" position="bottom-center" />
-                </NextIntlClientProvider>
+                <ThemeProvider>
+                    <NextIntlClientProvider messages={messages}>
+                        <Navbar />
+                        {children}
+                        <Footer />
+                        <Toaster position="bottom-center" />
+                    </NextIntlClientProvider>
+                </ThemeProvider>
             </body>
         </html>
     )

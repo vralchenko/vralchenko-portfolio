@@ -3,6 +3,7 @@
 import { Link, usePathname } from "@/i18n/routing"
 import { Button } from "@/components/ui/button"
 import { LanguageSwitcher } from "@/components/LanguageSwitcher"
+import { ThemeToggle } from "@/components/ThemeToggle"
 import { useTranslations } from "next-intl"
 
 export function Navbar() {
@@ -29,6 +30,7 @@ export function Navbar() {
                 </Link>
             </div>
             <LanguageSwitcher />
+            <ThemeToggle />
         </nav>
     )
 }
