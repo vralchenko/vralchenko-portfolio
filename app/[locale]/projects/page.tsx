@@ -97,7 +97,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                     description={t('jobHunter.desc')}
                     technologies={["React", "TypeScript", "Vite", "Vercel Serverless", "Python", "Neon PostgreSQL", "i18n"]}
                     liveLink="https://jobich.ch/"
-                    imageSrc="/jobhunter.png"
+                    imageSrcs={["/jobich1.png", "/jobich2.png"]}
                 />
                 <ProjectCard
                     id="foreteller"
