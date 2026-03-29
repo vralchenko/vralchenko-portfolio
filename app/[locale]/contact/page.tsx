@@ -10,13 +10,12 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Mail, Linkedin, FileText } from "lucide-react"
-import { sendEmail } from "../_actions"
 import { useState, useRef } from "react"
 import { toast } from "sonner"
 import { useTranslations, useLocale } from "next-intl"
 import { QRCodeSVG } from "qrcode.react"
 
-const BASE_URL = "https://vralchenko-portfolio.vercel.app"
+const BASE_URL = "https://vralchenko-portfolio.pages.dev"
 
 const docs = {
     de: {
@@ -41,7 +40,15 @@ export default function ContactPage() {
         setIsSending(true)
 
         const formData = new FormData(event.currentTarget)
-        const result = await sendEmail(formData)
+        const result = await fetch("/api/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                name: formData.get("name"),
+                email: formData.get("email"),
+                message: formData.get("message"),
+            }),
+        }).then(res => res.json())
 
         if (result.success) {
             toast.success(t('form.success'))

@@ -5,11 +5,15 @@ import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { Toaster } from "sonner"
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
 const inter = Inter({ subsets: ["latin"] })
+
+export function generateStaticParams() {
+    return routing.locales.map((locale) => ({ locale }));
+}
 
 export const metadata: Metadata = {
     title: "Viktor Ralchenko Portfolio",
@@ -28,6 +32,8 @@ export default async function RootLayout({
     if (!routing.locales.includes(locale as any)) {
         notFound();
     }
+
+    setRequestLocale(locale);
 
     const messages = await getMessages();
 

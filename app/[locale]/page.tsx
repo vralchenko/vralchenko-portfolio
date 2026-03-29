@@ -22,10 +22,12 @@ import {
     SiNatsdotio, SiKubernetes, SiHtml5, SiCss3, SiGitlab, SiFlutter,
 } from "react-icons/si"
 import { LuGraduationCap } from "react-icons/lu";
-import { useTranslations } from "next-intl"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 
-export default function Home() {
-    const t = useTranslations('Home');
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations('Home');
 
     return (
         <main className="px-4 md:px-8 flex-grow flex flex-col">

@@ -1,5 +1,5 @@
 import { ProjectCard } from "@/components/ProjectCard"
-import { useTranslations } from "next-intl"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 const projects = [
     { id: "fuehrerschein", key: "fuehrerschein" },
     { id: "ai-mobile-assistant", key: "aiMobileAssistant" },
@@ -13,8 +13,10 @@ const projects = [
     { id: "nasa", key: "nasa" },
 ] as const;
 
-export default function ProjectsPage() {
-    const t = useTranslations('Projects');
+export default async function ProjectsPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations('Projects');
 
     return (
         <main className="flex flex-col flex-grow">
