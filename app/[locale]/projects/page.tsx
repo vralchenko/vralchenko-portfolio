@@ -95,7 +95,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                         </div>
                     }
                     description={t('jobHunter.desc')}
-                    technologies={["React", "TypeScript", "Vite", "Vercel Serverless", "Python", "Neon PostgreSQL", "i18n"]}
+                    technologies={["React", "TypeScript", "Vite", "Serverless Functions", "Python", "Neon PostgreSQL", "i18n"]}
                     liveLink="https://jobich.ch/"
                     imageSrcs={["/jobich1.png", "/jobich2.png"]}
                     imageLayout="vertical"
@@ -140,7 +140,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                         </div>
                     }
                     description={t('bizLingo.desc')}
-                    technologies={["Flutter", "Groq API", "Dart", "Cloud AI", "LLM", "Vercel"]}
+                    technologies={["Flutter", "Groq API", "Dart", "Cloud AI", "LLM", "Cloudflare Pages"]}
                     githubLink="https://github.com/vralchenko/BizLingo"
                     liveLink="https://biz-lingo.pages.dev/"
 
@@ -156,7 +156,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                         </div>
                     }
                     description={t('itemFlow.desc')}
-                    technologies={["Node.js", "TypeScript", "React.js", "Material-UI", "Cloudinary", "Vercel", "Render", "GitHub Actions"]}
+                    technologies={["Node.js", "TypeScript", "React.js", "Material-UI", "Cloudinary", "HuggingFace", "Render", "GitHub Actions"]}
                     githubLink="https://github.com/vralchenko/ItemFlow"
                     liveLink="https://vralchenko-itemflow.hf.space/"
                     imageSrc="/item-flow.jpg"

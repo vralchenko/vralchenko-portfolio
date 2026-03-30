@@ -17,7 +17,7 @@ import {
     SiSharp, SiDotnet, SiTypescript, SiReact, SiAngular, SiVuedotjs, SiNodedotjs,
     SiPython, SiPostgresql, SiAmazon, SiGit, SiDocker, SiOracle, SiJira, SiVsco,
     SiRider, SiGithub, SiGithubactions, SiPostman, SiPowers, SiCloudinary,
-    SiVercel, SiMysql, SiIntellijidea, SiConfluence, SiSwagger, SiJavascript,
+    SiCloudflarepages, SiMysql, SiIntellijidea, SiConfluence, SiSwagger, SiJavascript,
     SiMui, SiRender, SiSlack, SiQase, SiJquery, SiApachekafka, SiRabbitmq,
     SiNatsdotio, SiKubernetes, SiHtml5, SiCss3, SiGitlab, SiFlutter,
 } from "react-icons/si"
@@ -113,7 +113,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                                     <Tooltip><TooltipTrigger aria-label="PostgreSQL"><SiPostgresql className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>PostgreSQL</p></TooltipContent></Tooltip>
                                     <Tooltip><TooltipTrigger aria-label="Oracle"><SiOracle className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Oracle</p></TooltipContent></Tooltip>
                                     <Tooltip><TooltipTrigger aria-label="AWS"><SiAmazon className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>AWS</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Vercel"><SiVercel className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Vercel</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Cloudflare Pages"><SiCloudflarepages className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Cloudflare Pages</p></TooltipContent></Tooltip>
                                     <Tooltip><TooltipTrigger aria-label="Render"><SiRender className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Render</p></TooltipContent></Tooltip>
                                     <Tooltip><TooltipTrigger aria-label="Cloudinary"><SiCloudinary className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Cloudinary</p></TooltipContent></Tooltip>
                                     <Tooltip><TooltipTrigger aria-label="Git"><SiGit className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Git</p></TooltipContent></Tooltip>

@@ -78,7 +78,7 @@
         "jobHunter": {
             "title": "Jobich – Smart Job Aggregator",
             "date": "Feb 2026",
-            "desc": "One search across 30+ job boards in Switzerland. 12,000+ active vacancies updated every 2 hours via a standalone Python parser (LinkedIn, jobs.ch, Indeed, Jobup, Workday and more), covering all 16 industry domains across every canton. Features an interactive SVG canton map, smart filters by employment type, work mode, and language, email subscription for daily alerts, AI-powered relevance scoring, PDF export with clickable links, and a 7-language UI (EN, DE, FR, IT, ES, RU, UA). Built with React + Vite frontend, Vercel Serverless Functions backend, and Neon PostgreSQL database. Developed as a team project with product/QA and legal/compliance roles."
+            "desc": "One search across 30+ job boards in Switzerland. 12,000+ active vacancies updated every 2 hours via a standalone Python parser (LinkedIn, jobs.ch, Indeed, Jobup, Workday and more), covering all 16 industry domains across every canton. Features an interactive SVG canton map, smart filters by employment type, work mode, and language, email subscription for daily alerts, AI-powered relevance scoring, PDF export with clickable links, and a 7-language UI (EN, DE, FR, IT, ES, RU, UA). Built with React + Vite frontend, Serverless Functions backend, and Neon PostgreSQL database. Developed as a team project with product/QA and legal/compliance roles."
         },
         "foreteller": {
             "title": "Foreteller – Cosmic Wisdom",

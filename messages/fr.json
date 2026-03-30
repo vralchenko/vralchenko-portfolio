@@ -78,7 +78,7 @@
         "jobHunter": {
             "title": "Jobich – Agrégateur d'emploi intelligent",
             "date": "Fév 2026",
-            "desc": "Une recherche sur plus de 30 sites d'emploi en Suisse. 12 000+ offres actives mises à jour toutes les 2 heures via un parser Python autonome (LinkedIn, jobs.ch, Indeed, Jobup, Workday et plus), couvrant les 16 secteurs d'activité dans chaque canton. Comprend une carte SVG interactive des cantons, des filtres intelligents par type d'emploi, mode de travail et langue, un abonnement email pour les alertes quotidiennes, un scoring de pertinence par IA, une exportation PDF avec liens cliquables et une interface en 7 langues (EN, DE, FR, IT, ES, RU, UA). Construit avec un frontend React + Vite, un backend Vercel Serverless Functions et une base de données Neon PostgreSQL. Développé en équipe avec des rôles produit/QA et juridique/conformité."
+            "desc": "Une recherche sur plus de 30 sites d'emploi en Suisse. 12 000+ offres actives mises à jour toutes les 2 heures via un parser Python autonome (LinkedIn, jobs.ch, Indeed, Jobup, Workday et plus), couvrant les 16 secteurs d'activité dans chaque canton. Comprend une carte SVG interactive des cantons, des filtres intelligents par type d'emploi, mode de travail et langue, un abonnement email pour les alertes quotidiennes, un scoring de pertinence par IA, une exportation PDF avec liens cliquables et une interface en 7 langues (EN, DE, FR, IT, ES, RU, UA). Construit avec un frontend React + Vite, un backend Serverless Functions et une base de données Neon PostgreSQL. Développé en équipe avec des rôles produit/QA et juridique/conformité."
         },
         "foreteller": {
             "title": "Foreteller – Sagesse Cosmique",
