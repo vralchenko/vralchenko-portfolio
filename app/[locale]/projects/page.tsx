@@ -69,7 +69,7 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                     }
                     description={t('germanTutor.desc')}
                     technologies={["Kotlin", "Jetpack Compose", "Material 3", "Room", "Hilt", "Ktor", "Groq API", "Gemini", "OpenAI", "FSRS v5", "ExoPlayer", "Google Play Billing"]}
-                    playStoreLink="https://play.google.com/apps/testing/com.germantutor"
+                    playStoreLink="https://play.google.com/store/apps/details?id=com.germantutor"
                     imageSrcs={["/deutsch1.jpg", "/deutsch2.jpg", "/deutsch3.jpg", "/deutsch4.jpg", "/deutsch5.jpg", "/deutsch6.jpg"]}
                 />
                 <ProjectCard
