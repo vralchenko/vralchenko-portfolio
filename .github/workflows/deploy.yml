@@ -1,0 +1,46 @@
+name: Deploy to Cloudflare Pages
+
+# The Pages project is configured as "Direct Upload" (ad_hoc) in Cloudflare,
+# so a plain git push does NOT auto-trigger a build. This workflow replaces
+# that: on every push to main we build the Next.js static export locally
+# and upload it to Pages via wrangler.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # allow manual "Run workflow" from the Actions tab
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (next export)
+        run: npm run build
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        env:
+          CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+        with:
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: >-
+            pages deploy out
+            --project-name=vralchenko-portfolio
+            --branch=main
+            --commit-hash=${{ github.sha }}
