@@ -33,9 +33,9 @@ export const metadata: Metadata = {
         siteName: "Viktor Ralchenko Portfolio",
         images: [
             {
-                url: "/avatar.png?v=2",
-                width: 620,
-                height: 590,
+                url: "/og-photo.png",
+                width: 1222,
+                height: 1186,
                 alt: "Viktor Ralchenko — Senior .NET Developer & AI Portfolio",
             },
         ],
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: OG_TITLE,
         description: OG_DESCRIPTION,
-        images: ["/avatar.png?v=2"],
+        images: ["/og-photo.png"],
     },
 }
 
