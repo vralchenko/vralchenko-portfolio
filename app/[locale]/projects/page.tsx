@@ -58,7 +58,6 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                     }
                     description={t('personalAnalysis.desc')}
                     technologies={["JavaScript", "HTML", "CSS", "Cloudflare Pages Functions", "Groq API", "Llama 4 Scout", "SSE Streaming", "html2canvas", "jsPDF", "Playwright"]}
-                    githubLink="https://github.com/vralchenko/PersonalAnalysis"
                     liveLink="https://personal-analysis.pages.dev/"
                     imageSrcs={["/personal-analysis1.png", "/personal-analysis2.png", "/personal-analysis3.png"]}
                 />
