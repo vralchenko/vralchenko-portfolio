@@ -1,6 +1,8 @@
 import { ProjectCard } from "@/components/ProjectCard"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 const projects = [
+    { id: "natalchart", key: "natalChart" },
+    { id: "personal-analysis", key: "personalAnalysis" },
     { id: "fuehrerschein", key: "fuehrerschein" },
     { id: "ai-mobile-assistant", key: "aiMobileAssistant" },
     { id: "deutsch-lernen", key: "germanTutor" },
@@ -32,6 +34,34 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                         </a>
                     ))}
                 </nav>
+                <ProjectCard
+                    id="natalchart"
+                    title={
+                        <div className="flex justify-between items-center w-full">
+                            <span className="text-2xl font-bold tracking-tight">{t('natalChart.title')}</span>
+                            <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('natalChart.date')}</span>
+                        </div>
+                    }
+                    description={t('natalChart.desc')}
+                    technologies={[".NET 8", "C#", "SwissEphNet", "React", "TypeScript", "Vite", "Material UI", "NodaTime", "Fly.io", "Cloudflare Pages"]}
+                    githubLink="https://github.com/vralchenko/NatalChart"
+                    liveLink="https://natal-chart.pages.dev/"
+                    imageSrc="/natalchart.png"
+                />
+                <ProjectCard
+                    id="personal-analysis"
+                    title={
+                        <div className="flex justify-between items-center w-full">
+                            <span className="text-2xl font-bold tracking-tight">{t('personalAnalysis.title')}</span>
+                            <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('personalAnalysis.date')}</span>
+                        </div>
+                    }
+                    description={t('personalAnalysis.desc')}
+                    technologies={["JavaScript", "HTML", "CSS", "Cloudflare Pages Functions", "Groq API", "Llama 4 Scout", "SSE Streaming", "html2canvas", "jsPDF", "Playwright"]}
+                    githubLink="https://github.com/vralchenko/PersonalAnalysis"
+                    liveLink="https://personal-analysis.pages.dev/"
+                    imageSrcs={["/personal-analysis1.png", "/personal-analysis2.png", "/personal-analysis3.png"]}
+                />
                 <ProjectCard
                     id="fuehrerschein"
                     title={

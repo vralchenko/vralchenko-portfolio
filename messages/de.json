@@ -100,6 +100,16 @@
             "date": "Okt 2025",
             "desc": "Ein umfassendes Full-Stack-Projekt, das moderne Entwicklungspraktiken von der Konzeption bis zur Bereitstellung demonstriert. Es umfasst eine vollständige Migration der Codebasis von JavaScript zu TypeScript, responsives Design mit der sx-Prop von Material-UI und die Integration von Cloudinary für skalierbaren Bildspeicher."
         },
+        "natalChart": {
+            "title": "NatalChart — Astrologie-Webanwendung",
+            "date": "Apr 2026",
+            "desc": "Vollständiger Natalhoroskop-Rechner mit SVG-Tierkreisrad, Synastrie, Transiten und 366 zweisprachigen Interpretationen. Backend mit .NET 8 API (SwissEphNet für astronomische Berechnungen), React/TypeScript-Frontend mit Material UI. Automatische Zeitzonenerkennung, Stadt-Geokodierung und vollständige RU/EN-Lokalisierung."
+        },
+        "personalAnalysis": {
+            "title": "Personal Analysis – KI-Persönlichkeits- & Kompatibilitätsanalyse",
+            "date": "Mai 2026",
+            "desc": "KI-gestütztes Persönlichkeitsanalyse- und Kompatibilitätstool basierend auf Generationspsychologie, Entwicklungsmodellen und vedischer Astrologie. Bietet ein 7-Abschnitte-Psychologieprofil mit optionaler Geburtszeit für vedische Integration (Rashi, Nakshatra, Dasha), 6-dimensionale Kompatibilitätsanalyse mit Ashtakoot-Matching, Konfliktlösung mit Datei-Uploads, interaktiven Folge-Chat, Schnelltests (Liebessprache, Beziehungsstil, Kompatibilitäts-Check) mit teilbaren Ergebniskarten, Streaming-KI-Antworten, PDF-Export und zweisprachige EN/RU-Unterstützung."
+        },
         "fuehrerschein": {
             "title": "Führerschein Schweiz – Theorieprüfung Vorbereitung",
             "date": "Mär 2026",
