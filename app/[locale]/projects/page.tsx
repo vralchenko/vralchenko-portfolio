@@ -1,8 +1,8 @@
 import { ProjectCard } from "@/components/ProjectCard"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 const projects = [
-    { id: "natalchart", key: "natalChart" },
     { id: "personal-analysis", key: "personalAnalysis" },
+    { id: "natalchart", key: "natalChart" },
     { id: "fuehrerschein", key: "fuehrerschein" },
     { id: "ai-mobile-assistant", key: "aiMobileAssistant" },
     { id: "deutsch-lernen", key: "germanTutor" },
@@ -35,6 +35,19 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                     ))}
                 </nav>
                 <ProjectCard
+                    id="personal-analysis"
+                    title={
+                        <div className="flex justify-between items-center w-full">
+                            <span className="text-2xl font-bold tracking-tight">{t('personalAnalysis.title')}</span>
+                            <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('personalAnalysis.date')}</span>
+                        </div>
+                    }
+                    description={t('personalAnalysis.desc')}
+                    technologies={["JavaScript", "HTML", "CSS", "Cloudflare Pages Functions", "Groq API", "Llama 4 Scout", "SSE Streaming", "html2canvas", "jsPDF", "Playwright"]}
+                    liveLink="https://personal-analysis.pages.dev/"
+                    imageSrcs={["/personal-analysis1.png", "/personal-analysis2.png", "/personal-analysis3.png"]}
+                />
+                <ProjectCard
                     id="natalchart"
                     title={
                         <div className="flex justify-between items-center w-full">
@@ -47,19 +60,6 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                     githubLink="https://github.com/vralchenko/NatalChart"
                     liveLink="https://natal-chart.pages.dev/"
                     imageSrc="/natalchart.png"
-                />
-                <ProjectCard
-                    id="personal-analysis"
-                    title={
-                        <div className="flex justify-between items-center w-full">
-                            <span className="text-2xl font-bold tracking-tight">{t('personalAnalysis.title')}</span>
-                            <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('personalAnalysis.date')}</span>
-                        </div>
-                    }
-                    description={t('personalAnalysis.desc')}
-                    technologies={["JavaScript", "HTML", "CSS", "Cloudflare Pages Functions", "Groq API", "Llama 4 Scout", "SSE Streaming", "html2canvas", "jsPDF", "Playwright"]}
-                    liveLink="https://personal-analysis.pages.dev/"
-                    imageSrcs={["/personal-analysis1.png", "/personal-analysis2.png", "/personal-analysis3.png"]}
                 />
                 <ProjectCard
                     id="fuehrerschein"
