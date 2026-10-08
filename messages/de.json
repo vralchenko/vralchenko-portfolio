@@ -125,5 +125,34 @@
             "date": "Okt 2025",
             "desc": "Zusammenarbeit in einem internationalen Team während eines 48-stündigen Hackathons zur Lösung einer realen Herausforderung der NASA. Mitwirkung an der Entwicklung eines aussagekräftigen Projektprototyps durch die Kombination von Technologie, Wissenschaft und weltraumbezogenen Daten."
         }
+    },
+    "Impressum": {
+        "title": "Impressum",
+        "about": "Ralchenko Software ist ein Schweizer Einzelunternehmen von Viktor Ralchenko. Wir entwickeln und warten Software und bieten Beratung im Bereich der Informatik: .NET-Backends, Cloud- und KI-Produkte mit Claude und anderen LLMs.",
+        "productsTitle": "Produkte",
+        "company": "Firma",
+        "legalForm": "Rechtsform",
+        "legalFormValue": "Einzelunternehmen, eingetragen im Handelsregister des Kantons Zürich",
+        "owner": "Inhaber",
+        "address": "Adresse",
+        "uid": "UID",
+        "email": "E-Mail",
+        "disclaimerTitle": "Haftungsausschluss",
+        "disclaimer": "Die Inhalte dieser Website dienen nur zur Information. Für die Inhalte externer Links übernehmen wir keine Haftung; für den Inhalt der verlinkten Seiten sind ausschliesslich deren Betreiber verantwortlich.",
+        "products": {
+            "deutschLernen": {
+                "name": "Deutsch Lernen",
+                "desc": "Deutsch-Lern-App für Android (A1–C2)"
+            },
+            "jobich": {
+                "name": "Jobich.ch",
+                "desc": "KI-gestützter Schweizer Job-Aggregator mit über 43 Quellen"
+            },
+            "hirion": {
+                "name": "Hirion",
+                "desc": "Schweizer Stellen passend zu Ihrem Lebenslauf, per E-Mail"
+            }
+        },
+        "footerLink": "Impressum"
     }
 }

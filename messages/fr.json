@@ -125,5 +125,34 @@
             "date": "Oct 2025",
             "desc": "J'ai collaboré au sein d'une équipe internationale lors d'un hackathon de 48 heures pour résoudre un défi réel présenté par la NASA. J'ai contribué au développement d'un prototype de projet significatif en mélangeant technologie, science et données spatiales."
         }
+    },
+    "Impressum": {
+        "title": "Mentions légales (Impressum)",
+        "about": "Ralchenko Software est une entreprise individuelle suisse fondée par Viktor Ralchenko. Nous développons et maintenons des logiciels et proposons du conseil informatique : backends .NET, produits cloud et IA basés sur Claude et d'autres LLM.",
+        "productsTitle": "Produits",
+        "company": "Entreprise",
+        "legalForm": "Forme juridique",
+        "legalFormValue": "Entreprise individuelle, inscrite au registre du commerce du canton de Zurich",
+        "owner": "Titulaire",
+        "address": "Adresse",
+        "uid": "IDE",
+        "email": "E-mail",
+        "disclaimerTitle": "Clause de non-responsabilité",
+        "disclaimer": "Le contenu de ce site est fourni à titre informatif uniquement. Nous déclinons toute responsabilité quant au contenu des liens externes ; seuls leurs exploitants en sont responsables.",
+        "products": {
+            "deutschLernen": {
+                "name": "Deutsch Lernen",
+                "desc": "Application Android pour apprendre l'allemand (A1–C2)"
+            },
+            "jobich": {
+                "name": "Jobich.ch",
+                "desc": "Agrégateur d'offres d'emploi suisses basé sur l'IA, plus de 43 sources"
+            },
+            "hirion": {
+                "name": "Hirion",
+                "desc": "Offres d'emploi suisses adaptées à votre CV, envoyées par e-mail"
+            }
+        },
+        "footerLink": "Mentions légales"
     }
 }
