@@ -17,9 +17,9 @@ export function generateStaticParams() {
 }
 
 const SITE_URL = "https://vralchenko-portfolio.pages.dev";
-const OG_TITLE = "Viktor Ralchenko — Senior .NET Developer & AI Portfolio";
+const OG_TITLE = "Viktor Ralchenko — AI Engineer & Solution Architect";
 const OG_DESCRIPTION =
-    "11 AI-powered products shipped in 6 months — C#, .NET, React, TypeScript, Node.js, Python, Kotlin, Dart. LLM integrations, AI agents, serverless architecture. 20+ years Senior .NET Developer experience.";
+    "AI Engineer and Solution Architect with 20+ years in C# and .NET. AI agents with MCP, hybrid retrieval and evaluation, cloud backends on AWS and Azure. 11 products shipped in 18 months.";
 
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
                 url: "/og-photo.png",
                 width: 1222,
                 height: 1186,
-                alt: "Viktor Ralchenko — Senior .NET Developer & AI Portfolio",
+                alt: "Viktor Ralchenko — AI Engineer & Solution Architect",
             },
         ],
     },

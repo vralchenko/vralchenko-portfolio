@@ -14,13 +14,9 @@ import {
 import Flag from "react-world-flags"
 import LinkedInQR from "@/components/LinkedInQR"
 import {
-    SiSharp, SiDotnet, SiTypescript, SiReact, SiAngular, SiVuedotjs, SiNodedotjs,
-    SiPython, SiPostgresql, SiAmazon, SiGit, SiDocker, SiOracle, SiJira, SiVsco,
-    SiRider, SiGithub, SiGithubactions, SiPostman, SiPowers, SiCloudinary,
-    SiCloudflarepages, SiMysql, SiIntellijidea, SiConfluence, SiSwagger, SiJavascript,
-    SiMui, SiRender, SiSlack, SiQase, SiJquery, SiApachekafka, SiRabbitmq,
-    SiNatsdotio, SiKubernetes, SiHtml5, SiCss3, SiGitlab, SiFlutter,
+    SiAmazon, SiAngular, SiApachekafka, SiClaude, SiCloudflarepages, SiConfluence, SiDocker, SiDotnet, SiFlutter, SiGithub, SiGithubactions, SiGitlab, SiGooglegemini, SiJira, SiKotlin, SiKubernetes, SiMysql, SiNatsdotio, SiNextdotjs, SiNodedotjs, SiOpenai, SiOracle, SiPostgresql, SiPostman, SiPython, SiRabbitmq, SiReact, SiRider, SiSharp, SiSwagger, SiTerraform, SiTypescript, SiVuedotjs,
 } from "react-icons/si"
+import { VscAzure } from "react-icons/vsc"
 import { LuGraduationCap } from "react-icons/lu";
 import { getTranslations, setRequestLocale } from "next-intl/server"
 
@@ -97,47 +93,41 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                         </CardHeader>
                         <CardContent className="pt-0 flex-grow">
                             <TooltipProvider>
-                                <div className="grid grid-cols-8 gap-3">
+                                <div className="grid grid-cols-6 sm:grid-cols-8 gap-3">
+                                    <Tooltip><TooltipTrigger aria-label="Claude"><SiClaude className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Claude</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="OpenAI"><SiOpenai className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>OpenAI</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Gemini"><SiGooglegemini className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Gemini</p></TooltipContent></Tooltip>
                                     <Tooltip><TooltipTrigger aria-label="C#"><SiSharp className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>C#</p></TooltipContent></Tooltip>
                                     <Tooltip><TooltipTrigger aria-label=".NET"><SiDotnet className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>.NET</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="AWS"><SiAmazon className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>AWS</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Azure"><VscAzure className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Azure</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Terraform"><SiTerraform className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Terraform</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Docker"><SiDocker className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Docker</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Kubernetes"><SiKubernetes className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Kubernetes</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Apache Kafka"><SiApachekafka className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Kafka</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="RabbitMQ"><SiRabbitmq className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>RabbitMQ</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="NATS"><SiNatsdotio className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>NATS</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="PostgreSQL"><SiPostgresql className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>PostgreSQL</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="MySQL"><SiMysql className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>SQL (MS SQL)</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Oracle"><SiOracle className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Oracle</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Python"><SiPython className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Python</p></TooltipContent></Tooltip>
                                     <Tooltip><TooltipTrigger aria-label="TypeScript"><SiTypescript className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>TypeScript</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="JavaScript"><SiJavascript className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>JavaScript</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Node.js"><SiNodedotjs className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Node.js</p></TooltipContent></Tooltip>
                                     <Tooltip><TooltipTrigger aria-label="React"><SiReact className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>React</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Next.js"><SiNextdotjs className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Next.js</p></TooltipContent></Tooltip>
                                     <Tooltip><TooltipTrigger aria-label="Angular"><SiAngular className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Angular</p></TooltipContent></Tooltip>
                                     <Tooltip><TooltipTrigger aria-label="Vue.js"><SiVuedotjs className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Vue.js</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Node.js"><SiNodedotjs className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Node.js</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Material UI"><SiMui className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Material-UI</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Docker"><SiDocker className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Docker</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Python"><SiPython className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Python</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="MySQL"><SiMysql className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>SQL (MS SQL)</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="PostgreSQL"><SiPostgresql className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>PostgreSQL</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Oracle"><SiOracle className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Oracle</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="AWS"><SiAmazon className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>AWS</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Cloudflare Pages"><SiCloudflarepages className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Cloudflare Pages</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Render"><SiRender className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Render</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Cloudinary"><SiCloudinary className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Cloudinary</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Git"><SiGit className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Git</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="GitHub"><SiGithub className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>GitHub</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Kotlin"><SiKotlin className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Kotlin</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Flutter"><SiFlutter className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Flutter</p></TooltipContent></Tooltip>
                                     <Tooltip><TooltipTrigger aria-label="GitHub Actions"><SiGithubactions className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>GitHub Actions</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="GitLab"><SiGitlab className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>GitLab</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Qase"><SiQase className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Qase</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="GitLab"><SiGitlab className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>GitLab CI</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="GitHub"><SiGithub className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>GitHub</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Cloudflare Pages"><SiCloudflarepages className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Cloudflare</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Postman"><SiPostman className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Postman</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Swagger"><SiSwagger className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Swagger / OpenAPI</p></TooltipContent></Tooltip>
+                                    <Tooltip><TooltipTrigger aria-label="Rider"><SiRider className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Rider</p></TooltipContent></Tooltip>
                                     <Tooltip><TooltipTrigger aria-label="Jira"><SiJira className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Jira</p></TooltipContent></Tooltip>
                                     <Tooltip><TooltipTrigger aria-label="Confluence"><SiConfluence className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Confluence</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Slack"><SiSlack className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Slack</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="VS Code"><SiVsco className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>VS Code</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Rider"><SiRider className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Rider</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="IntelliJ IDEA"><SiIntellijidea className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>IDE</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Postman"><SiPostman className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Postman</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Swagger"><SiSwagger className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>Swagger</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="PowerShell"><SiPowers className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>PowerShell</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="jQuery"><SiJquery className="w-8 h-8" /></TooltipTrigger><TooltipContent><p>jQuery</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Kubernetes"><SiKubernetes className="w-7 h-7" /></TooltipTrigger><TooltipContent><p>Kubernetes</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Apache Kafka"><SiApachekafka className="w-7 h-7" /></TooltipTrigger><TooltipContent><p>Kafka</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="RabbitMQ"><SiRabbitmq className="w-7 h-7" /></TooltipTrigger><TooltipContent><p>RabbitMQ</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="NATS"><SiNatsdotio className="w-7 h-7" /></TooltipTrigger><TooltipContent><p>NATS</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="HTML5"><SiHtml5 className="w-7 h-7" /></TooltipTrigger><TooltipContent><p>HTML5</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="CSS3"><SiCss3 className="w-7 h-7" /></TooltipTrigger><TooltipContent><p>CSS3</p></TooltipContent></Tooltip>
-                                    <Tooltip><TooltipTrigger aria-label="Flutter"><SiFlutter className="w-7 h-7" /></TooltipTrigger><TooltipContent><p>Flutter</p></TooltipContent></Tooltip>
                                 </div>
                             </TooltipProvider>
                         </CardContent>
@@ -171,7 +161,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                     <Card className="flex flex-col items-center justify-center md:overflow-hidden">
                         <CardContent className="p-4 flex flex-col items-center justify-start flex-grow pt-8">
                             <div className="flex items-center gap-6">
-                                <div className="relative w-48 h-48 shrink-0">
+                                <div className="relative w-36 h-36 sm:w-48 sm:h-48 shrink-0">
                                     <Image
                                         src="/avatar.jpg"
                                         alt="Viktor Ralchenko"

@@ -6,10 +6,10 @@
     },
     "Home": {
         "whoAmI": "Wer bin ich?",
-        "whoAmIContent": "Senior Softwareentwickler mit 20 Jahren praktischer Erfahrung in der Bereitstellung zuverlässiger, skalierbarer und geschäftskritischer Lösungen. Ich spezialisiere mich auf <strong>Microservices- und Backend-Architektur</strong> unter Verwendung von <strong>C#, .NET, Node.js, SQL und Message Brokern (Kafka, RabbitMQ)</strong>, mit tiefgehender Expertise in <strong>TypeScript</strong> und <strong>React</strong>. Derzeit integriere ich <strong>KI (Groq)</strong> in meine Projekte unter Verwendung von <strong>Flutter</strong>.",
+        "whoAmIContent": "<strong>AI Engineer und Solution Architect</strong> mit <strong>über 20 Jahren Erfahrung in C# und .NET</strong>. Ich entwerfe und baue <strong>KI-Agenten</strong> und die Systeme drumherum: <strong>MCP</strong>-Tools über Unternehmens-APIs, hybride Suche, Evaluations-Pipelines und Cloud-Backends auf <strong>AWS und Azure</strong>. Aktuelle Ergebnisse: ein KI-Agent für eine internationale Retail-Technologiegruppe mit <strong>Recall@5 von 94 %</strong> auf 1’477 echten Kundenanfragen, API-Antwortzeiten bei Bystronic <strong>von über 10 s auf unter 1 s</strong> gesenkt und <strong>11 Produkte in 18 Monaten</strong> live gebracht, darunter Hirion, wo ich Mitgründer und CTO bin.",
         "experience": "Erfahrung",
         "myTechStack": "Mein Tech Stack",
-        "role": "BACKEND / FRONTEND / AI / QA",
+        "role": "AI ENGINEER / SOLUTION ARCHITECT / PRODUCT ENGINEER",
         "masterDegree": "Master-Abschluss (Diplom mit Auszeichnung)",
         "university": "Nationale Staatliche Polytechnische Universität",
         "languages": {
@@ -19,8 +19,8 @@
             "ru": "Russisch: C2"
         },
         "exp": {
-            "senQA": "SENIOR QA AUTOMATION ENGINEER",
-            "selfEmployed": "Selbstständig (Feb 2025 - Heute)",
+            "senQA": "AI ENGINEER & SOLUTION ARCHITECT",
+            "selfEmployed": "Ralchenko Software, eigene Firma (Feb 2025 - Heute)",
             "senSoftware": "SENIOR SOFTWARE ENGINEER",
             "bystronic": "Bystronic Group (Okt 2023 - Feb 2025)",
             "senFullstack": "SENIOR FULLSTACK SOFTWARE ENGINEER",
@@ -33,7 +33,7 @@
             "svitla": "Svitla Systems (Aug 2013 - Dez 2017)",
             "senCSharp": "SENIOR C# UND SQL DEVELOPER",
             "volia": "Volia Software (Feb 2010 - Jul 2013)",
-            "midDotNet": "JUNIOR/MIDDLE .NET DEVELOPER",
+            "midDotNet": ".NET-ENTWICKLER",
             "infopulse": "Infopulse (Mai 2006 - Jan 2010)",
             "oneC": "1C PROGRAMMER",
             "atl": "ATL-TradeLine (Feb 2002 - Mai 2006)"
