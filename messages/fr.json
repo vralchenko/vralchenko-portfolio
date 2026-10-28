@@ -124,6 +124,11 @@
             "title": "Participant au NASA Space Apps Challenge",
             "date": "Oct 2025",
             "desc": "J'ai collaboré au sein d'une équipe internationale lors d'un hackathon de 48 heures pour résoudre un défi réel présenté par la NASA. J'ai contribué au développement d'un prototype de projet significatif en mélangeant technologie, science et données spatiales."
+        },
+        "artisanRoot": {
+            "title": "Artisan Root – Marketplace de créations artisanales",
+            "date": "Juin 2026",
+            "desc": "Une marketplace en ligne de créations artisanales signées par des créateurs indépendants, cofondée avec une associée qui gère les ventes et le marketing ; je suis responsable de la technique, du SEO et de l'analytics. La boutique propose actuellement des étuis à cigares en cuir faits main par Bosquet Paris, synchronisés automatiquement depuis la boutique Shopify du créateur. Développée avec React + Vite, une API Express et PocketBase : paiement Stripe, prix multidevises avec taux de change en direct et TVA, moteur de commissions avec tableau de bord admin pour les commandes et les versements, livraison par pays. Avec un flux produits Google Merchant Center validé automatiquement, des campagnes Google Shopping avec un rapport quotidien par Ads Script, GA4 et une bannière cookies en Consent Mode. Hébergée sur Fly.io."
         }
     },
     "Impressum": {

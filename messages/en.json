@@ -124,6 +124,11 @@
             "title": "NASA Space Apps Challenge Participant",
             "date": "Oct 2025",
             "desc": "Collaborated in an international team during a 48-hour hackathon to solve a real-world challenge presented by NASA. Contributed to the development of a meaningful project prototype by blending technology, science, and space-related data."
+        },
+        "artisanRoot": {
+            "title": "Artisan Root – Marketplace for Handmade Goods",
+            "date": "Jun 2026",
+            "desc": "A curated online marketplace for handmade goods from independent makers, co-founded with a partner who runs sales and marketing; I own the technology, SEO and analytics. The boutique currently sells handcrafted leather cigar cases by Bosquet Paris, synced automatically from the maker's Shopify store. Built with React + Vite, an Express API and PocketBase, with Stripe checkout, multi-currency pricing with live FX rates and VAT, a commission engine with an admin dashboard for orders and payouts, and per-country shipping. Includes a Google Merchant Center product feed with automated validation, Google Shopping campaigns with a daily Ads Script report, GA4 and consent-mode cookie banner. Deployed on Fly.io."
         }
     },
     "Impressum": {

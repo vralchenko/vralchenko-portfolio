@@ -1,6 +1,7 @@
 import { ProjectCard } from "@/components/ProjectCard"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 const projects = [
+    { id: "artisan-root", key: "artisanRoot" },
     { id: "personal-analysis", key: "personalAnalysis" },
     { id: "natalchart", key: "natalChart" },
     { id: "fuehrerschein", key: "fuehrerschein" },
@@ -34,6 +35,19 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                         </a>
                     ))}
                 </nav>
+                <ProjectCard
+                    id="artisan-root"
+                    title={
+                        <div className="flex justify-between items-center w-full">
+                            <span className="text-2xl font-bold tracking-tight">{t('artisanRoot.title')}</span>
+                            <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('artisanRoot.date')}</span>
+                        </div>
+                    }
+                    description={t('artisanRoot.desc')}
+                    technologies={["React", "Vite", "Tailwind", "Node.js", "Express", "PocketBase", "Stripe", "Fly.io", "Google Merchant Center", "Google Ads Scripts", "GA4"]}
+                    liveLink="https://boutique.artisanroot.com/"
+                    imageSrcs={["/artisan-root1.png", "/artisan-root2.png"]}
+                />
                 <ProjectCard
                     id="personal-analysis"
                     title={
