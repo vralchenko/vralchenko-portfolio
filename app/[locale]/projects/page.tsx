@@ -43,7 +43,9 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
                             <span className="text-muted-foreground text-sm font-medium whitespace-nowrap ml-4 uppercase">{t('artisanRoot.date')}</span>
                         </div>
                     }
-                    description={t('artisanRoot.desc')}
+                    description={t.rich('artisanRoot.desc', {
+                        partner: (chunks) => <a href="https://adamircea.com/" target="_blank" rel="noopener" className="underline hover:text-primary">{chunks}</a>,
+                    })}
                     technologies={["React", "Vite", "Tailwind", "Node.js", "Express", "PocketBase", "Stripe", "Fly.io", "Google Merchant Center", "Google Ads Scripts", "GA4"]}
                     liveLink="https://boutique.artisanroot.com/"
                     imageSrcs={["/artisan-root1.png", "/artisan-root2.png"]}

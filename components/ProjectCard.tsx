@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl"
 interface ProjectCardProps {
     id?: string;
     title: React.ReactNode;
-    description: string;
+    description: React.ReactNode;
     technologies: string[];
     githubLink?: string;
     liveLink?: string;
